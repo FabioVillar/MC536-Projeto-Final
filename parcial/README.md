@@ -15,5 +15,6 @@ Estrutura de pastas:
 ## Resumo do Projeto
 Em nosso trabalho, realizaremos uma coletânea de dados dos jogos de todas as 8 edições de Copas do Mundo femininas que já ocorreram, o que inclui placares, estatísticas de desempenho e informações do torneio como um todo.
 ## Slides da Apresentação
+[Apresentação Akers](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/parcial/slides/Apresenta%C3%A7%C3%A3o%20-%20Akers.pdf)
 
                   
