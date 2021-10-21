@@ -12,6 +12,7 @@ Estrutura de pastas:
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
 ![](images/modelo_logico.png)
 ![](images/modelo_distancia.png)
+![](images/modelo_selecao.png)
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 ### Pergunta/Análise 1
   * Pergunta 1
