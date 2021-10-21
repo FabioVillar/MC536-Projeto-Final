@@ -6,7 +6,7 @@ Estrutura de pastas:
 └── images     <- arquivos de imagem usados na tarefa
 ```
 # Equipe Akers - Akers
-* Arthur Cemim Baia -  213259
+* Arthur Cemin Baia -  213259
 * Fábio Santos Villar - 234135
 * José Augusto Nascimento Afonso Marcos - 200025
 ## Modelo Lógico Combinado do Banco de Dados de Grafos
