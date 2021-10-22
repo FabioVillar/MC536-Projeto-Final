@@ -15,7 +15,7 @@ Estrutura de pastas:
 
 A partir do modelo combinado, podemos fazer uma operação de projeção entre 2 elementos: Jogadoras e Seleções. O intuito disso é montar um grafo cuja associação entre eles é determinada por uma variável chamada desempenho, ou seja, o desempenho do jogador perante à uma seleção. Cada desempenho é determinado por diversas características contra a seleção alvo, como número de minutos jogados, número de gols marcados, número de assistências, expulsões e cartões amarelos, ou seja, por uma função. A partir do desempenho, vamos calcular uma distância (float) entre a jogadora e a seleção dentro do grafo, normalizada por exemplo entre 0 e 1, onde 1 corresponde ao desempenho mínimo.
 
-![](images/modelo_distancia.png)
+![](images/modelo_desempenho.png)
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
