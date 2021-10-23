@@ -13,20 +13,17 @@ Estrutura de pastas:
 
 ![](images/modelo_logico.png)
 
-A partir do modelo combinado, podemos fazer uma operação de projeção entre 2 elementos: Jogadoras e Seleções. O intuito disso é montar um grafo cuja associação entre eles é determinada por uma variável chamada desempenho, ou seja, o desempenho do jogador perante à uma seleção. Cada desempenho é determinado por diversas características contra a seleção alvo, como número de minutos jogados, número de gols marcados, número de assistências, expulsões e cartões amarelos, ou seja, por uma função. A partir do desempenho, vamos calcular uma distância (float) entre a jogadora e a seleção dentro do grafo, normalizada por exemplo entre 0 e 1, onde 1 corresponde ao desempenho mínimo.
+A partir do modelo combinado, podemos fazer uma operação de projeção entre seleções (copa a copa). O intuito disso é montar um grafo cuja associação entre seleções é determinada por uma variável chamada histórico, ou seja, o desempenho da seleção em relação a outra ao longo das copas. Cada desempenho é determinado por diversas características como número de jogos jogados, saldo de gols entre confrontos, expulsões e cartões amarelos, ou seja, por uma função baseada no histórico de partidas entre elas. A cada histórico (isto é, a aresta que liga duas seleções), é estabelecido uma métrica que indica qual seleção tem um histórico melhor que a outra. Cada seleção, além disso, possui um score próprio, total, fruto de todas as relações com outras seleções e baseado também nas características do time na copa atual.
 
 ![](images/modelo_desempenho.png)
+
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
 ### Pergunta/Análise 1
-  * Quais jogadoras tem melhor desempenho contra a seleção X?
-    * A partir de uma análise de centralidades podemos estabelecer vínculos entre cada seleção e as jogadoras mais próximas a elas.
+  * Qual seleção é mais provável de ganhar a copa neste ano?
+    * Podemos usar alguns métodos para verificar aspectos que possam ter relação com a seleção ganhadora. Um deles é o método de centralidade baseado em grau de ligação, onde poderíamos fazer a associação do desempenho da seleção baseada no número de relações que ela tem contra todas as outras (por exemplo, indicando que ela possui mais tradição, já que participou de mais copas). Além disso, outro método possível é pela análise usando centralidade e Page-rank, onde scores positivos contra seleções com bons scores (que podem funcionar como importancia), poderiam indicar a possível performance geral da seleção.
 
 ### Pergunta/Análise 2
-  * Quais são as jogadoras com melhor performance total?
-    * Jogadoras que atraem várias seleções pra si, ou seja, que tem baixas distâncias contra várias formarão clusteres no grafo, onde podemos fazer análises de comunidades.
-
-### Pergunta/Análise 3
-  * Qual a relação entre as jogadoras baseada em sua posição no grafo?
-    * Podemos estabelecer conexões entre jogadoras próximas. Por exemplo, podemos conferir se todas fazem parte de um mesmo país, se possuem uma posição em comum, se já foram campeãs do torneio, etc. Para isso, podemos fazer uma análise de comunidades.
+  * Qual a espectativa de performance de uma seleção X que nunca jogou uma copa?
+    * Podemos encarar as métricas entre seleções como distâncias, onde poderíamos achar clusteres de seleções com características parecidas com a seleção que está ingressando na copa, fazendo uma análise de comunidades para encaixar a seleção em questão em alguma categoria, possivelmente podendo predizer qual será seu desempenho.
