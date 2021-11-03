@@ -97,11 +97,3 @@ CREATE TABLE Event (
   FOREIGN KEY(TeamName)
     REFERENCES Team(Name)
 )
-    
-  
-  
-
-
-  
-  
-   
