@@ -9,6 +9,7 @@ requests = "*"
 lxml = "*"
 pydantic = "*"
 typing = "*"
+bs4 = "*"
 
 [dev-packages]
 
