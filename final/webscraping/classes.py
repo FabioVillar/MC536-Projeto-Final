@@ -11,11 +11,6 @@ class Player(BaseModel):
     red_cards: int = 0
 
 
-class Award(BaseModel):
-    award: str = ''
-    winner: List[Player] = []
-
-
 class Stage(BaseModel):
     type: str = ''
 
@@ -32,8 +27,15 @@ class Team(BaseModel):
 
 class Event(BaseModel):
     event: str = ''
-    time: Team
-    player: str = ''
+    time: int
+    team: Team
+    player: Player
+
+
+class Award(BaseModel):
+    award: str = ''
+    team: Team
+    winner: List[Player] = []
 
 
 class Match(BaseModel):

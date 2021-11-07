@@ -22,5 +22,6 @@ if __name__ == "__main__":
             for k in j.players:
                 print(k.name, k.age, k.position, k.goals_scored)
             print()
+        cup_list.append(i)
         start_year += 4
         page_id += 1
