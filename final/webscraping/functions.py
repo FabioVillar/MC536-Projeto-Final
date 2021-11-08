@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 from classes import *
+import pandas as pd
 
 def create_new_player(name, stats):
     new_player = Player()
@@ -64,13 +65,32 @@ def create_new_cup(year, page_id):
 
 
     #getting teams overall stats
-    stats_links = f'https://fbref.com/en/comps/106/1782/2003-Womens-World-Cup-Stats'
+    stats_link = f"https://en.wikipedia.org/wiki/{year}_FIFA_Women's_World_Cup"
+    print(stats_link)
+    stats_page = requests.get(stats_link).text
+    stats_soup = BeautifulSoup(stats_page, 'lxml')
+    content = stats_soup.find('div', class_='mw-parser-output')
+    tables = content.find_all('table', class_='wikitable')
 
-
-
-
-
-
+    for i in new_cup.teams:
+        for j in tables[-1].find('tbody').find_all('tr'):
+            if (j.find('th') == None or j.find('th').find('a') == None):
+                continue
+            elif (i.name == j.find('th').find('a').text):
+                st = j.find_all('td')
+                i.group = st[1].find('a').text
+                i.ved.append(int(st[3].text))
+                i.ved.append(int(st[4].text))
+                i.ved.append(int(st[5].text))
+                i.goals.append(int(st[6].text))
+                i.goals.append(int(st[7].text))
+                i.goals.append(i.goals[0] - i.goals[1]) 
+                i.points_overall = int(st[9].text)
+                print(i.name, i.group, i.points_overall)
+            
+    #stats_table = tables[tables.size()-1]
+    #df = pd.read_html(str(tables))
+    #print(df.head)
 
     return new_cup
 

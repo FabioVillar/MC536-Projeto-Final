@@ -10,6 +10,11 @@ lxml = "*"
 pydantic = "*"
 typing = "*"
 bs4 = "*"
+wikipedia = "*"
+wikipedia-api = "*"
+pandas = "*"
+"html.parser" = "*"
+html5lib = "*"
 
 [dev-packages]
 
