@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 pymongo = "*"
 pydantic = "*"
+dnspython = "*"
+mysql-connector-python = "*"
 
 [dev-packages]
 
