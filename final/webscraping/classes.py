@@ -15,10 +15,10 @@ class Team(BaseModel):
     name: str = '' #done
     coach: str ='' #done
     points_group_stage: int = 0
-    group: str = ''
-    points_overall: int = 0
-    goals: List[int] = []
-    ved: List[int] = []
+    group: str = '' #done
+    points_overall: int = 0 #done
+    goals: List[int] = [] #done
+    ved: List[int] = [] #done
     players: List[Player] = [] #done
     year: int = 0 #done
 
@@ -37,13 +37,13 @@ class Award(BaseModel):
 
 
 class Match(BaseModel):
-    phase: str = ''
-    group: str = ''
-    teams: List[Team] = []
+    phase: str = '' #done
+    group: str = '' #done
+    teams: List[Team] = [] #done
     score: List[int] = []
-    stadium: str = ''
-    total_audience: int = 0
-    referee: str = ''
+    stadium: str = '' #done
+    attendance: int = 0 #done
+    referee: str = '' #done
     penalties: List[int] = []
     formations: List[str] = []
     initial_squads: List[List[Player]] = []
