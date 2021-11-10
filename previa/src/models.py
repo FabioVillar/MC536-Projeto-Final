@@ -2,6 +2,7 @@ from pydantic import BaseModel
 from typing import List
 
 class Player(BaseModel):
+
     name: str = '' 
     position: str = '' 
     age: int = 0 
@@ -15,6 +16,7 @@ class Team(BaseModel):
     name: str = '' 
     coach: str ='' 
     points_group_stage: int = 0
+    points_overall: int
     group: str = '' 
     position_group: int
     goals: List[int] = [] 

@@ -1,6 +1,5 @@
+
 #instruções do codigo
-
-
 
 pipenv shell
 
