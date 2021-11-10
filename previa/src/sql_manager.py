@@ -1,17 +1,17 @@
 import mysql.connector as connection
 from mysql.connector import errorcode
 from models import *
-from src import models
 
 
 
 
-def insert_player_wc(cursor, player_obj: models.Player):
+
+def insert_player_wc(cursor, player_obj: Player):
     pass
 
 
 
-def insert_teams_wc(cursor, year_wc, team_obj: models.Team):
+def insert_teams_wc(cursor, year_wc, team_obj: Team):
     if year_wc == team_obj.year:
         add_team = ("INSERT INTO Team_wc "
                     "(year_wc, team_name, coach, group_in_wc, group_points, ranking_group, goals_scored, goals_suffered, wins, draws, losses) "
@@ -38,7 +38,7 @@ def insert_teams_wc(cursor, year_wc, team_obj: models.Team):
         print(f"Anos diferentes entre copa do mundo e time.\nAno copa: {year_wc}\nAno time: {team_obj.year}")
         return None     
 
-def insert_world_cup(cursor, wc_object: models.WorldCup):
+def insert_world_cup(cursor, wc_object: WorldCup):
     add_wc = ("INSERT INTO WorldCup "
               "(year_wc, host, winner) "
               "VALUES (%s, %s, %s)")
@@ -72,10 +72,11 @@ def mysql_connection(user, database, password):
 
 
 def main():
+    print('bgfhryj')
+    # cnx = mysql_connection()
+    # cursor = cnx.cursor()
 
-    cnx = mysql_connection()
-    cursor = cnx.cursor()
-
-    cnx.commit()
-    cursor.close()
-    cnx.close()
+    # cnx.commit()
+    # cursor.close()
+    # cnx.close()
+main()
