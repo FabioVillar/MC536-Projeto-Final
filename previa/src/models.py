@@ -27,9 +27,9 @@ class Team(BaseModel):
 
 class Event(BaseModel):
     event: str = ''
-    time: int
-    team: Team
-    player: Player
+    time: str = ''
+    team: str = ''
+    player: str = ''
 
 
 class Award(BaseModel):
@@ -41,15 +41,17 @@ class Award(BaseModel):
 class Match(BaseModel):
     phase: str = '' 
     group: str = '' 
-    teams: List[Team] = [] 
+    teams: List[str] = [] 
     score: List[int] = []
     stadium: str = '' 
     attendance: int = 0 
     referee: str = '' 
     penalties: List[int] = []
     formations: List[str] = []
-    initial_squads: List[List[Player]] = []
-    bench_players: List[List[Player]] = []
+    initial_squad1: List[str] = []
+    bench_players1: List[str] = []
+    initial_squad2: List[str] = []
+    bench_players2: List[str] = []
     events: List[Event] = []
 
 

@@ -133,8 +133,10 @@ def match_report_2019(link, match):
         aux = player.find('a')
         player_name = aux.text
         print(player_name)
-        if count < 13:
-            match
+        if count < 13: 
+            match.initial_squad1.append(player_name)
+        elif count > 13:
+            match.bench_players1.append(player_name)
         count += 1
     #Info from team2:
     b = f.find('div', id = 'b')
@@ -154,10 +156,101 @@ def match_report_2019(link, match):
         aux = player.find('a')
         player_name = aux.text
         print(player_name)
+        if count < 13:
+            match.initial_squad2.append(player_name)
+        elif count > 13:
+            match.bench_players2.append(player_name)
         count += 1
     match.formations.append(formation1)
     match.formations.append(formation2)
-    #Penalties:
+    #Events:
+    print("\nEvents:")
+    m = c.find('div', id = 'events_wrap')
+    m = m.find('div', id = '')
+    eventsa = m.find_all('div', class_ = 'event a')
+    for a in eventsa:
+        all_div = a.find_all('div')
+        t1 = all_div[0].text.split()
+        t2 = all_div[1].text.split()
+        t3 = all_div[2].text.split()
+        #print(t1, t2, t3)
+        event = Event()
+        event.team = match.teams[0]
+        time = t1[0].split('&')
+        time = time[0]
+        event.time = time
+        if a.find('div', class_ = 'event_icon goal'):
+            event.event = 'Goal'
+            name = ''
+            for i in t2:
+                if i == 'Assist:':
+                    break
+                name = name + ' ' + i
+            event.player = name
+            assist = Event()
+            assist.event = 'Assist'
+            assist.time = time
+            boolean_assist = False
+            name = ''
+            for j in t2:
+                if j == i:
+                    boolean_assist = True
+                    continue
+                elif j != i and boolean_assist == False:
+                    continue
+                else:
+                    if j == '—':
+                        break
+                    name = name + ' ' + j
+            assist.player = name
+            assist.team = event.team
+            print(assist.event, assist.time, assist.team, assist.player)
+        elif a.find('div', class_ = 'event_icon substitute_in'):
+            event.event = 'Substituted'
+            name = ''
+            for i in t2:
+                if i == 'for':
+                    break
+                name = name + ' ' + i
+            event.player = name
+            s = Event()
+            s.event = "Substitute"
+            s.time = event.time
+            s.team = event.team
+            name = ''
+            boolean_substitute = False
+            for j in t2:
+                if j == i:
+                    boolean_substitute = True
+                    continue
+                elif j != i and boolean_substitute == False:
+                    continue
+                else:
+                    if j == '—':
+                        break
+                    name = name + ' ' + j
+            s.player = name
+            print(s.event, s.time, s.team, s.player)
+        elif a.find('div', class_ = 'event_icon yellow_card'):
+            event.event = 'Yellow Card'
+            name = ''
+            for i in t2:
+                if i == '—':
+                    break
+                name = name + ' ' + i
+            event.player = name
+        elif a.find('div', class_ = 'event_icon red_card'):
+            event.event = 'Red Card'
+            name = ''
+            for i in t2:
+                if i == '—':
+                    break
+                name = name + ' ' + i
+            event.player = name
+        print(event.event, event.time, event.team, event.player)
+                
+
+        
 
 def get_matches(year, page_id, new_cup):
     if year == 2019:
@@ -168,7 +261,7 @@ def get_matches(year, page_id, new_cup):
     c = soup.find('div', id = 'content')
     switcher = c.find('div', id = 'div_sched_all')
     t = switcher.find('table', id = 'sched_all')
-    rows = soup.select('tbody tr')
+    rows = t.select('tbody tr')
     count = 0
     for i in rows:
         if i.has_attr('class') == True:
