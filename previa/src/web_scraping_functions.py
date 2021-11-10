@@ -4,9 +4,10 @@ import requests
 from models import *
 import re
 
-def create_new_player(name, stats): 
 
-    #assign stats elements to new_player attributes
+def create_new_player(name, stats):
+
+    # assign stats elements to new_player attributes
     new_player = Player()
     new_player.name = name
     new_player.position = stats[0].text
@@ -15,7 +16,6 @@ def create_new_player(name, stats):
     new_player.assists = stats[7].text
     new_player.yellow_cards = stats[11].text
     new_player.red_cards = stats[12].text
-
     return new_player
 
 
@@ -23,15 +23,16 @@ def create_new_team(link, name, page_id, year):
 
     new_link = 'https://fbref.com'+link
     print(new_link)
-    #requests
-    team_page = requests.get('https://fbref.com'+link).text #request
-    soup = BeautifulSoup(team_page, 'lxml') #parsing
+    # requests
+    team_page = requests.get('https://fbref.com'+link).text  # request
+    print('https://fbref.com'+link)
+    soup = BeautifulSoup(team_page, 'lxml')  # parsing
     content = soup.find('div', id='content')
     table = content.find('div', id=f'div_stats_standard_{page_id}')
     player_links = table.find('tbody')
     players = player_links.find_all('tr')
 
-    #creating object
+    # creating object
     new_team = Team()
     new_team.name = name
     new_team.year = year
@@ -69,10 +70,10 @@ def get_stats(year, new_cup):
                 i.ved.append(int(st[5].text))
                 i.goals.append(int(st[6].text))
                 i.goals.append(int(st[7].text))
-                i.goals.append(i.goals[0] - i.goals[1]) 
+                i.goals.append(i.goals[0] - i.goals[1])
                 i.points_overall = int(st[9].text)
 
-    return    
+    return
 
 
 def create_new_cup(year, page_id):
@@ -81,42 +82,44 @@ def create_new_cup(year, page_id):
     if (year == 2019):
         link = link + '/qual/Womens-World-Cup-Qualifying-Rounds'
     else:
-        link = link + f'/{page_id}/qual/{year}-Womens-World-Cup-Qualifying-Rounds'
-
-    #requests
+        link = link + \
+            f'/{page_id}/qual/{year}-Womens-World-Cup-Qualifying-Rounds'
+    # requests
     cup_page = requests.get(link).text
     soup = BeautifulSoup(cup_page, 'lxml')
     table = soup.find('div', id='div_qualification')
     team_links = table.find('tbody')
     teams = team_links.find_all('tr')
 
-    #creating
+    # creating
     new_cup = WorldCup()
     new_cup.year = year
     new_cup.host = soup.find('div', id='meta').find_all('p')[0].find('a').text
 
-    #creating teams
-    for i in teams:
-        new_team = create_new_team(i.find('a')['href'], i.find('a').text, page_id, year)
+    # creating teams
+    for team in teams:
+        new_team = create_new_team(
+            team.find('a')['href'], team.find('a').text, page_id, year)
         new_cup.teams.append(new_team)
 
-    #getting teams overall stats
-    get_stats(year, new_cup)
+    # #getting teams overall stats
+    # get_stats(year, new_cup)
 
-    #getting matches
-    get_matches(year, page_id, new_cup)
-    
+    # #getting matches
+    # get_matches(year, page_id, new_cup)
+
     return new_cup
+
 
 def match_report_2019(link, match):
     r = requests.get(link)
-    #print(r.status_code)
+    # print(r.status_code)
     soup = BeautifulSoup(r.content, 'lxml')
-    #Formations:
-    c = soup.find('div', id = 'content')
-    f = c.find('div', id = 'field_wrap')
-    #Info from team1:
-    a = f.find('div', id = 'a')
+    # Formations:
+    c = soup.find('div', id='content')
+    f = c.find('div', id='field_wrap')
+    # Info from team1:
+    a = f.find('div', id='a')
     n = a.find('tr')
     n = n.text.split(' ')
     formation1 = n[-1]
@@ -136,8 +139,8 @@ def match_report_2019(link, match):
         if count < 13:
             match
         count += 1
-    #Info from team2:
-    b = f.find('div', id = 'b')
+    # Info from team2:
+    b = f.find('div', id='b')
     n = b.find('tr')
     n = n.text.split(' ')
     formation2 = n[-1]
@@ -157,17 +160,18 @@ def match_report_2019(link, match):
         count += 1
     match.formations.append(formation1)
     match.formations.append(formation2)
-    #Penalties:
+    # Penalties:
+
 
 def get_matches(year, page_id, new_cup):
     if year == 2019:
         link = 'https://fbref.com/en/comps/106/schedule/Womens-World-Cup-Scores-and-Fixture'
     r = requests.get(link)
-    #print(r.status_code)
+    # print(r.status_code)
     soup = BeautifulSoup(r.content, 'lxml')
-    c = soup.find('div', id = 'content')
-    switcher = c.find('div', id = 'div_sched_all')
-    t = switcher.find('table', id = 'sched_all')
+    c = soup.find('div', id='content')
+    switcher = c.find('div', id='div_sched_all')
+    t = switcher.find('table', id='sched_all')
     rows = soup.select('tbody tr')
     count = 0
     for i in rows:
@@ -182,7 +186,7 @@ def get_matches(year, page_id, new_cup):
         stadium = match_data[10].text
         referee = match_data[11].text
         match_link = 'https://fbref.com' + match_data[12].find('a').get('href')
-        #Object match created:
+        # Object match created:
         match = Match()
         match.phase = phase
         match.teams = [team1, team2]
@@ -190,19 +194,21 @@ def get_matches(year, page_id, new_cup):
         match.stadium = stadium
         match.attendance = attendance
         match.referee = referee
-        #Prints:
+        # Prints:
         print(attendance)
         print("Phase:", phase)
         print("Home:", team1, "/ Guest:", team2, " /Score:", result)
-        print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
+        print("Attendance: ", attendance, " /Stadium: ",
+              stadium, " /Referee: ", referee)
         print(match_link)
         if year == 2019:
             match_report_2019(match_link, match)
         print("\n")
         count += 1
-        if count == 52: #count vai no max ate 52
+        if count == 52:  # count vai no max ate 52
             break
     return
+
 
 def get_regex_single_winners(tags):
     tags_re = []
@@ -223,26 +229,26 @@ def get_regex_multiple_winners(tags):
             else:
                 string = str(p)
                 regex = r"\"(.*?)\""
-                substring = re.search(regex,string)
+                substring = re.search(regex, string)
                 if substring:
                     tags_re.append(substring.group(1))
     return tags_re
 
+
 def get_young_player_award(award_, tags):
     award_list = []
     candidates = get_regex_single_winners(tags)
-    for i in range(0,len(candidates)-1,2):
+    for i in range(0, len(candidates)-1, 2):
         year, team = candidates[i].split()
         award_obj = Award(
-            award = award_,
-            year = int(year),
-            team = team,
-            winner = candidates[i+1]
+            award=award_,
+            year=int(year),
+            team=team,
+            winner=candidates[i+1]
         )
         award_list.append(award_obj)
 
     return award_list
-
 
 
 def get_golden_glove(award_, tags):
@@ -251,7 +257,7 @@ def get_golden_glove(award_, tags):
     aux = candidates[0]
     candidates[0] = candidates[1]
     candidates[1] = aux
-    for i in range(0,len(candidates)-1,2):
+    for i in range(0, len(candidates)-1, 2):
         infos = candidates[i+1].split()
         if len(infos) > 2:
             year = infos[0]
@@ -260,22 +266,21 @@ def get_golden_glove(award_, tags):
         else:
             year, team = candidates[i+1].split()
         award_obj = Award(
-            award = award_,
-            year = int(year),
-            team = str(team),
-            winner = str(candidates[i])
+            award=award_,
+            year=int(year),
+            team=str(team),
+            winner=str(candidates[i])
         )
         award_list.append(award_obj)
 
     return award_list
-    
 
 
 def get_multiple_award(award_, tags):
     award_list = []
     candidates = get_regex_multiple_winners(tags)
     for i in range(len(candidates)-1):
-        if re.match(r'\d+\s\w+',candidates[i]):
+        if re.match(r'\d+\s\w+', candidates[i]):
             infos = candidates[i].split()
             if len(infos) > 2:
                 year = infos[0]
@@ -285,15 +290,14 @@ def get_multiple_award(award_, tags):
                 year, host = candidates[i].split()
         else:
             award_obj = Award(
-                award = award_,
-                year = int(year),
-                team = candidates[i],
-                winner = str(candidates[i+1])
+                award=award_,
+                year=int(year),
+                team=candidates[i],
+                winner=str(candidates[i+1])
             )
             award_list.append(award_obj)
-    
+
     return award_list
-    
 
 
 def create_awards():
@@ -315,8 +319,9 @@ def create_awards():
         table.find_all('a') for table in tables
     ]
     tags = tags[:len(possible_awards)]
-    func_list = [get_multiple_award, get_multiple_award, get_golden_glove, get_young_player_award]
+    func_list = [get_multiple_award, get_multiple_award,
+                 get_golden_glove, get_young_player_award]
     awards_list = [
         func_list[i](possible_awards[i], tags[i]) for i in range(len(tags))
     ]
-    return
+    return awards_list

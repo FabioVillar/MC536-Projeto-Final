@@ -16,7 +16,6 @@ DROP TABLE if exists WorldCup;
 CREATE TABLE if not exists WorldCup (
     year_wc INTEGER not null,
     host VARCHAR(50) not null,
-    winner VARCHAR(50) not null,
     PRIMARY KEY(Year_wc)
 );
 
@@ -47,6 +46,7 @@ CREATE TABLE Player_wc (
     age INTEGER not null,
     position VARCHAR(50) not null,
     goals INTEGER not null,
+    assists INTEGER not NULL,
     yellow_cards INTEGER not null,
     red_cards INTEGER not null,
     PRIMARY key(player_id),

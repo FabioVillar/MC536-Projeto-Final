@@ -4,7 +4,8 @@ from typing import List
 class Player(BaseModel):
 
     name: str = '' 
-    position: str = '' 
+    position: str = ''
+    number: int = 0
     age: int = 0 
     goals: int = 0 
     assists: int = 0 
@@ -16,9 +17,8 @@ class Team(BaseModel):
     name: str = '' 
     coach: str ='' 
     points_group_stage: int = 0
-    points_overall: int
-    group: str = '' 
-    position_group: int
+    points_overall: int = 0
+    group: str = ''
     goals: List[int] = [] 
     ved: List[int] = [] 
     players: List[Player] = [] 
@@ -28,8 +28,8 @@ class Team(BaseModel):
 class Event(BaseModel):
     event: str = ''
     time: int
-    team: Team
-    player: Player
+    team: str
+    player: str
 
 
 class Award(BaseModel):
@@ -37,26 +37,27 @@ class Award(BaseModel):
     team: Team
     winner: Player
 
-
 class Match(BaseModel):
     phase: str = '' 
     group: str = '' 
     teams: List[Team] = [] 
     score: List[int] = []
     stadium: str = '' 
-    attendance: int = 0 
+    attendance: int = 0
+    possesion: str
     referee: str = '' 
     penalties: List[int] = []
     formations: List[str] = []
-    initial_squads: List[List[Player]] = []
-    bench_players: List[List[Player]] = []
+    initial_squad1: List[str] = []
+    bench_players1: List[str] = []
+    initial_squad2: List[str] = []
+    bench_players2: List[str] = []
     events: List[Event] = []
 
 
 class WorldCup(BaseModel):
     year: int = 0 
     host: str = ''
-    winner: str
     awards: List[Award] = []
     teams: List[Team] = [] 
     matches: List[Match] = []
