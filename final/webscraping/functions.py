@@ -108,71 +108,22 @@ def create_new_cup(year, page_id):
 
 
 def get_matches(year, page_id, new_cup):
-
-    link = 'https://fbref.com/en/comps/106'
-
-    if (year == 2019):
-        link = link + '/schedule/Womens-World-Cup-Scores-and-Fixtures'
-    else:
-        link = link + f'/{page_id}/schedule/{year}-Womens-World-Cup-Scores-and-Fixtures'
-
-    print(link)
-
-    matches_page = requests.get(link).text
-    soup = BeautifulSoup(matches_page, 'lxml')
-    content = soup.find('div', id='content')
-    table1 = content.find('div', id='div_sched_all')
-    body = table1.find('tbody')
-    
-    for i in body.find_all('tr'):
-
-        if (i.has_attr('class')):
+    if year == 2019:
+        link = 'https://fbref.com/en/comps/106/schedule/Womens-World-Cup-Scores-and-Fixture'
+    r = requests.get(link)
+    #print(r.status_code)
+    soup = BeautifulSoup(r.content, 'lxml')
+    c = soup.find('div', id = 'content')
+    switcher = c.find('div', id = 'div_sched_all')
+    t = switcher.find('table', id = 'sched_all')
+    rows = soup.select('tbody tr')
+    count = 0
+    for i in rows:
+        if i.has_attr('class') == True:
             continue
-        else:   
-            new_match = Match()
-            info = i.find_all('td')
-            stage = i.find('th').find('a').text
-            team_name1 = None
-            team_name2 = None
-
-            if(year < 2011):
-                team_name1 = info[3].find('a').text
-                team_name2 = info[5].find('a').text
-                new_match.attendance = info[6].text
-                new_match.stadium = info[7].text
-                new_match.referee = info[8].text
-            elif (year == 2019):
-                team_name1 = info[4].find('a').text
-                team_name2 = info[8].find('a').text
-                new_match.attendance = info[9].text
-                new_match.stadium = info[10].text
-                new_match.referee = info[11].text
-            else:
-                team_name1 = info[4].find('a').text
-                team_name2 = info[6].find('a').text
-                new_match.attendance = info[7].text
-                new_match.stadium = info[8].text
-                new_match.referee = info[9].text
-            
-            for j in new_cup.teams:
-                if (team_name1 == j.name):
-                    new_match.teams.append(j)
-            for j in new_cup.teams:
-                if (team_name2 == j.name):
-                    new_match.teams.append(j)
-
-            if (stage == "Group stage"):
-                new_match.phase = "GP"
-                new_match.group = new_match.teams[0].group
-            elif (stage == "Round of 16"):
-                new_match.phase = "OF"
-            elif (stage == "Quarter-finals"):
-                new_match.phase = "QF"
-            elif (stage == "Semi-finals"):
-                new_match.phase = "SF"
-            elif (stage == "Third-place match"):
-                new_match.phase = "TF"
-            elif (stage == "Final"):
-                new_match.phase = "F"
-
+        phase = i.find('th').find('a').text
+        print(phase)
+        count += 1
+        if count == 52:
+            break
     return
