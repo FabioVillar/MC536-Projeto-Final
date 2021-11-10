@@ -2,25 +2,27 @@ from pydantic import BaseModel
 from typing import List
 
 class Player(BaseModel):
-    name: str = '' #done
-    position: str = '' #done
-    age: int = 0 #done
-    goals: int = 0 #done
-    assists: int = 0 #done
-    yellow_cards: int = 0 #done
-    red_cards: int = 0 #done
+
+    name: str = '' 
+    position: str = '' 
+    age: int = 0 
+    goals: int = 0 
+    assists: int = 0 
+    yellow_cards: int = 0 
+    red_cards: int = 0 
 
 
 class Team(BaseModel):
-    name: str = '' #done
-    coach: str ='' #done
+    name: str = '' 
+    coach: str ='' 
     points_group_stage: int = 0
-    group: str = '' #done
-    points_overall: int = 0 #done
-    goals: List[int] = [] #done
-    ved: List[int] = [] #done
-    players: List[Player] = [] #done
-    year: int = 0 #done
+    points_overall: int
+    group: str = '' 
+    position_group: int
+    goals: List[int] = [] 
+    ved: List[int] = [] 
+    players: List[Player] = [] 
+    year: int = 0 
 
 
 class Event(BaseModel):
@@ -37,23 +39,24 @@ class Award(BaseModel):
 
 
 class Match(BaseModel):
-    phase: str = '' #done
+    phase: str = '' 
     group: str = '' 
-    teams: List[Team] = [] #done
-    score: List[int] = [] #done
-    stadium: str = '' #done
-    attendance: int = 0 #done
-    referee: str = '' #done
+    teams: List[Team] = [] 
+    score: List[int] = []
+    stadium: str = '' 
+    attendance: int = 0 
+    referee: str = '' 
     penalties: List[int] = []
-    formations: List[str] = [] #done
-    initial_squads: List[List[Player]] = [] #almost done
-    bench_players: List[List[Player]] = [] #almost done
+    formations: List[str] = []
+    initial_squads: List[List[Player]] = []
+    bench_players: List[List[Player]] = []
     events: List[Event] = []
 
 
 class WorldCup(BaseModel):
-    year: int = 0 #done
-    host: str = '' #done
+    year: int = 0 
+    host: str = ''
+    winner: str
     awards: List[Award] = []
-    teams: List[Team] = [] #done
+    teams: List[Team] = [] 
     matches: List[Match] = []

@@ -1,5 +1,4 @@
 
-=======
 # Modelo de Apresentação da Entrega Prévia
 
 # Estrutura de Arquivos e Pastas
@@ -151,3 +150,4 @@ título da base | link | breve descrição
 >     responde à pergunta.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+
