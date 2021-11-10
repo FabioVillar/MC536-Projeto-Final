@@ -1,7 +1,14 @@
+import sys  
+sys.path.insert(0, '')
 from pymongo import MongoClient
-
-
+from models import *
 # id copa do mundo - > ano
+
+
+
+def wc_schema(objeto_wc):
+    pass
+
 
 
 def insert_wc_db(collection, object):
@@ -22,7 +29,7 @@ def create_table(client):
         raise e
 
 
-def main():
+def mongo():
 
     try:
         client = MongoClient('mongodb://localhost:27017/')
@@ -36,4 +43,4 @@ def main():
         insert_wc_db(table, wc)
 
 
-main()
+mongo()
