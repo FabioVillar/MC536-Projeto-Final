@@ -38,16 +38,16 @@ class Award(BaseModel):
 
 class Match(BaseModel):
     phase: str = '' #done
-    group: str = '' #done
+    group: str = '' 
     teams: List[Team] = [] #done
-    score: List[int] = []
+    score: List[int] = [] #done
     stadium: str = '' #done
     attendance: int = 0 #done
     referee: str = '' #done
     penalties: List[int] = []
-    formations: List[str] = []
-    initial_squads: List[List[Player]] = []
-    bench_players: List[List[Player]] = []
+    formations: List[str] = [] #done
+    initial_squads: List[List[Player]] = [] #almost done
+    bench_players: List[List[Player]] = [] #almost done
     events: List[Event] = []
 
 
