@@ -1,6 +1,6 @@
 from requests.api import get
-from functions import *
-from classes import *
+from web_scraping_functions import *
+from models import *
 
 if __name__ == "__main__":
 
