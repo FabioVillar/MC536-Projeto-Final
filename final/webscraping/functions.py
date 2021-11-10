@@ -113,6 +113,7 @@ def match_report_2019(link, match):
     #Formations:
     c = soup.find('div', id = 'content')
     f = c.find('div', id = 'field_wrap')
+    #Info from team1:
     a = f.find('div', id = 'a')
     n = a.find('tr')
     n = n.text.split(' ')
@@ -130,7 +131,10 @@ def match_report_2019(link, match):
         aux = player.find('a')
         player_name = aux.text
         print(player_name)
+        if count < 13:
+            match
         count += 1
+    #Info from team2:
     b = f.find('div', id = 'b')
     n = b.find('tr')
     n = n.text.split(' ')
@@ -176,7 +180,7 @@ def get_matches(year, page_id, new_cup):
         stadium = match_data[10].text
         referee = match_data[11].text
         match_link = 'https://fbref.com' + match_data[12].find('a').get('href')
-
+        #Object match created:
         match = Match()
         match.phase = phase
         match.teams = [team1, team2]
@@ -184,6 +188,7 @@ def get_matches(year, page_id, new_cup):
         match.stadium = stadium
         match.attendance = attendance
         match.referee = referee
+        #Prints:
         print(attendance)
         print("Phase:", phase)
         print("Home:", team1, "/ Guest:", team2, " /Score:", result)
