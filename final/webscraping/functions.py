@@ -106,73 +106,98 @@ def create_new_cup(year, page_id):
     
     return new_cup
 
+def match_report_2019(link, match):
+    r = requests.get(link)
+    #print(r.status_code)
+    soup = BeautifulSoup(r.content, 'lxml')
+    #Formations:
+    c = soup.find('div', id = 'content')
+    f = c.find('div', id = 'field_wrap')
+    #Info from team1:
+    a = f.find('div', id = 'a')
+    n = a.find('tr')
+    n = n.text.split(' ')
+    formation1 = n[-1]
+    print("Formation 1:", formation1)
+    print("Starters:")
+    rows = a.select('tr')
+    count = 1
+    for player in rows:
+        if count == 1 or count == 13:
+            if count == 13:
+                print("\nBench:")
+            count += 1
+            continue
+        aux = player.find('a')
+        player_name = aux.text
+        print(player_name)
+        if count < 13:
+            match
+        count += 1
+    #Info from team2:
+    b = f.find('div', id = 'b')
+    n = b.find('tr')
+    n = n.text.split(' ')
+    formation2 = n[-1]
+    print("\nFormation 2:", formation2)
+    print("Starters:")
+    rows = b.select('tr')
+    count = 1
+    for player in rows:
+        if count == 1 or count == 13:
+            if count == 13:
+                print("\nBench:")
+            count += 1
+            continue
+        aux = player.find('a')
+        player_name = aux.text
+        print(player_name)
+        count += 1
+    match.formations.append(formation1)
+    match.formations.append(formation2)
+    #Penalties:
 
 def get_matches(year, page_id, new_cup):
-
-    link = 'https://fbref.com/en/comps/106'
-
-    if (year == 2019):
-        link = link + '/schedule/Womens-World-Cup-Scores-and-Fixtures'
-    else:
-        link = link + f'/{page_id}/schedule/{year}-Womens-World-Cup-Scores-and-Fixtures'
-
-    print(link)
-
-    matches_page = requests.get(link).text
-    soup = BeautifulSoup(matches_page, 'lxml')
-    content = soup.find('div', id='content')
-    table1 = content.find('div', id='div_sched_all')
-    body = table1.find('tbody')
-    
-    for i in body.find_all('tr'):
-
-        if (i.has_attr('class')):
+    if year == 2019:
+        link = 'https://fbref.com/en/comps/106/schedule/Womens-World-Cup-Scores-and-Fixture'
+    r = requests.get(link)
+    #print(r.status_code)
+    soup = BeautifulSoup(r.content, 'lxml')
+    c = soup.find('div', id = 'content')
+    switcher = c.find('div', id = 'div_sched_all')
+    t = switcher.find('table', id = 'sched_all')
+    rows = soup.select('tbody tr')
+    count = 0
+    for i in rows:
+        if i.has_attr('class') == True:
             continue
-        else:   
-            new_match = Match()
-            info = i.find_all('td')
-            stage = i.find('th').find('a').text
-            team_name1 = None
-            team_name2 = None
-
-            if(year < 2011):
-                team_name1 = info[3].find('a').text
-                team_name2 = info[5].find('a').text
-                new_match.attendance = info[6].text
-                new_match.stadium = info[7].text
-                new_match.referee = info[8].text
-            elif (year == 2019):
-                team_name1 = info[4].find('a').text
-                team_name2 = info[8].find('a').text
-                new_match.attendance = info[9].text
-                new_match.stadium = info[10].text
-                new_match.referee = info[11].text
-            else:
-                team_name1 = info[4].find('a').text
-                team_name2 = info[6].find('a').text
-                new_match.attendance = info[7].text
-                new_match.stadium = info[8].text
-                new_match.referee = info[9].text
-            
-            for j in new_cup.teams:
-                if (team_name1 == j.name):
-                    new_match.teams.append(j)
-            for j in new_cup.teams:
-                if (team_name2 == j.name):
-                    new_match.teams.append(j)
-
-            if (stage == "Group stage"):
-                new_match.phase = "GP"
-                new_match.group = new_match.teams[0].group
-            elif (stage == "Round of 16"):
-                new_match.phase = "OF"
-            elif (stage == "Quarter-finals"):
-                new_match.phase = "QF"
-            elif (stage == "Semi-finals"):
-                new_match.phase = "SF"
-            elif (stage == "Third-place match"):
-                new_match.phase = "TF"
-            elif (stage == "Final"):
-                new_match.phase = "F"
-
+        phase = i.find('th').find('a').text
+        match_data = i.find_all('td')
+        team1 = match_data[4].find('a').text
+        team2 = match_data[8].find('a').text
+        result = match_data[6].find('a').text
+        attendance = match_data[9].text
+        stadium = match_data[10].text
+        referee = match_data[11].text
+        match_link = 'https://fbref.com' + match_data[12].find('a').get('href')
+        #Object match created:
+        match = Match()
+        match.phase = phase
+        match.teams = [team1, team2]
+        match.score = [result[0], result[2]]
+        match.stadium = stadium
+        match.attendance = attendance
+        match.referee = referee
+        #Prints:
+        print(attendance)
+        print("Phase:", phase)
+        print("Home:", team1, "/ Guest:", team2, " /Score:", result)
+        print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
+        print(match_link)
+        if year == 2019:
+            match_report_2019(match_link, match)
+        print("\n")
+        count += 1
+        if count == 52: #count vai no max ate 52
+            break
     return
