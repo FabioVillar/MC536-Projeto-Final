@@ -39,12 +39,12 @@ def get_matches(year, page_id, new_cup):
             match.attendance = attendance
             match.referee = referee
             #Prints:
-            print("Phase:", phase)
-            print("Home:", team1, "/ Guest:", team2, " /Score:", result)
-            print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
-            print(match_link)
+            #print("Phase:", phase)
+            #print("Home:", team1, "/ Guest:", team2, " /Score:", result)
+            #print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
+            #print(match_link)
             match_report_2015_and_2019(match_link, match)
-            print("\n")
+            #print("\n")
             count += 1
             if count == 52: #count vai no max ate 52
                 break
@@ -85,10 +85,10 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
-            print("\n\nPhase:", phase)
-            print("Home:", team1, "/ Guest:", team2, " /Score:", result)
-            print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
-            print(match_link)
+            #print("\n\nPhase:", phase)
+            #print("Home:", team1, "/ Guest:", team2, " /Score:", result)
+            #print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
+            #print(match_link)
             if year == 2015:
                 match_report_2015_and_2019(match_link, match)
             else:
@@ -155,22 +155,22 @@ def match_report(link, match):
         if count == 2:
             break
     #Print of the players
-    print("\nTeam: ", match.teams[0])
-    print("\nInitial squad:\n")
-    for i in match.initial_squad1:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players1:
-        print(i)
-    print("\nTeam: ", match.teams[1])
-    print("\nInitial squad:\n")
-    for i in match.initial_squad2:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players2:
-        print(i)
+    #print("\nTeam: ", match.teams[0])
+    #print("\nInitial squad:\n")
+    #for i in match.initial_squad1:
+        #print(i)
+    #print("\nBench:")
+    #for i in match.bench_players1:
+        #print(i)
+    #print("\nTeam: ", match.teams[1])
+    #print("\nInitial squad:\n")
+    #for i in match.initial_squad2:
+        #print(i)
+    #print("\nBench:")
+    #for i in match.bench_players2:
+        #print(i)
     #Events:
-    print("\nEvents:")
+    #print("\nEvents:")
     match_report_event(c, match, 'event a')
     match_report_event(c, match, 'event b')
 
@@ -208,14 +208,14 @@ def match_report_goal_related(match, event, a, t2):
                     name = name + ' ' + j
             assist.player = name
             assist.team = event.team
-            print(assist.event, assist.time, assist.team, assist.player)
+            #print(assist.event, assist.time, assist.team, assist.player)
         elif i == 'Penalty':
             penalty = Event()
             penalty.event = 'Penalty'
             penalty.time = time
             penalty.player = event.player
             penalty.team = event.team
-            print(penalty.event, penalty.time, penalty.team, penalty.player)
+            #print(penalty.event, penalty.time, penalty.team, penalty.player)
 
 
 def match_report_substitution(event, t2):
@@ -243,7 +243,7 @@ def match_report_substitution(event, t2):
                 break
             name = name + ' ' + j
     s.player = name
-    print(s.event, s.time, s.team, s.player)
+    #print(s.event, s.time, s.team, s.player)
 
 
 def match_report_card(event, t2, card):
@@ -260,7 +260,7 @@ def match_report_card(event, t2, card):
         red_card.time = event.time
         red_card.team = event.team
         red_card.player = event.player
-        print(red_card.event, red_card.time, red_card.team, red_card.player)
+        #print(red_card.event, red_card.time, red_card.team, red_card.player)
     else:
         event.event = card
 
@@ -315,7 +315,7 @@ def match_report_event(c, match, cl):
             match_report_card(event, t2, 'Both')
         elif a.find('div', class_ = 'event_icon penalty_shootout_goal') or a.find('div', class_ = 'event_icon penalty_shootout_miss'):
             match_report_penalties(match, event, a, t2)
-        print(event.event, event.time, event.team, event.player)
+        #print(event.event, event.time, event.team, event.player)
         match.events.append(event)
 
 
@@ -330,20 +330,20 @@ def match_report_2015_and_2019(link, match):
     n = a.find('tr')
     n = n.text.split(' ')
     formation1 = n[-1]
-    print("Team :", match.teams[0])
-    print("Formation 1:", formation1)
-    print("Starters:")
+    #print("Team :", match.teams[0])
+    #print("Formation 1:", formation1)
+    #print("Starters:")
     rows = a.select('tr')
     count = 1
     for player in rows:
         if count == 1 or count == 13:
-            if count == 13:
-                print("\nBench:")
+            #if count == 13:
+                #print("\nBench:")
             count += 1
             continue
         aux = player.find('a')
         player_name = aux.text
-        print(player_name)
+        #print(player_name)
         if count < 13: 
             match.initial_squad1.append(player_name)
         elif count > 13:
@@ -354,20 +354,20 @@ def match_report_2015_and_2019(link, match):
     n = b.find('tr')
     n = n.text.split(' ')
     formation2 = n[-1]
-    print("Team :", match.teams[1])
-    print("\nFormation 2:", formation2)
-    print("Starters:")
+    #print("Team :", match.teams[1])
+    #print("\nFormation 2:", formation2)
+    #print("Starters:")
     rows = b.select('tr')
     count = 1
     for player in rows:
         if count == 1 or count == 13:
-            if count == 13:
-                print("\nBench:")
+            #if count == 13:
+                #print("\nBench:")
             count += 1
             continue
         aux = player.find('a')
         player_name = aux.text
-        print(player_name)
+        #print(player_name)
         if count < 13:
             match.initial_squad2.append(player_name)
         elif count > 13:
@@ -376,6 +376,6 @@ def match_report_2015_and_2019(link, match):
     match.formations.append(formation1)
     match.formations.append(formation2)
     #Events:
-    print("\nEvent/ Time/ Country/ Player:")
+    #print("\nEvent/ Time/ Country/ Player:")
     match_report_event(c, match, 'event a')
     match_report_event(c, match, 'event b')
