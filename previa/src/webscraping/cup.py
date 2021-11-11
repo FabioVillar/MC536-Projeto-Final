@@ -32,9 +32,12 @@ def create_new_cup(year, page_id):
         new_cup.teams.append(new_team)
 
     #getting teams overall stats
-    get_stats(year, new_cup)
+    if (year == 2019):
+        get_stats_2019(new_cup)
+    else:
+        get_stats(year, new_cup)
 
     #getting matches
-    get_matches(year, page_id, new_cup)
+    #get_matches(year, page_id, new_cup)
     
     return new_cup

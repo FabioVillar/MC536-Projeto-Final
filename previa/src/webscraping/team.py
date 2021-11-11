@@ -3,12 +3,26 @@ from bs4 import BeautifulSoup
 import requests
 from models import *
 import re
+from unidecode import unidecode
+
+def check_name(name):
+    if (name == 'Zhang Honghong'):
+        return 'Zhang Hongdong'
+    elif (name == 'Kim Yoo-mi'):
+        return 'Kim Yu-mi'
+    elif (name == 'Kim Joo-hee'):
+        return 'Kim Ju-hee'
+    elif (name == 'Myung-Hwa Lee'):
+        return 'Lee Myung-hwa'
+    else:
+        return name
 
 def create_new_player(name, stats, year, team_name): 
 
+    tm = team_name
     #assign stats elements to new_player attributes
     new_player = Player()
-    new_player.name = name
+    new_player.name = unidecode(name)
     new_player.position = stats[0].text
     new_player.age = stats[1].text
     new_player.goals = stats[6].text
@@ -22,30 +36,32 @@ def create_new_player(name, stats, year, team_name):
         problem_count = 1
         
     if (problem_count):
-        print(new_player.name)
+        comparing_name = check_name(new_player.name)
         wiki_link = f"https://en.wikipedia.org/wiki/{year}_FIFA_Women's_World_Cup_squads"
         wiki_page = requests.get(wiki_link).text #request
         soup = BeautifulSoup(wiki_page, 'lxml') #parsing
         content = soup.find('div', id='mw-content-text')
         count = 0
+        if (tm == 'Korea DPR'):
+            tm = 'North Korea'
+        if (tm == 'Korea Republic'):
+            tm = 'South Korea'
         for i in content.find_all('h3'):
-            if (i.find('span').text == team_name):
-                print("count = " + str(count))
+            if (i.find('span').text == tm):
                 table = content.find_all('table')[count]
                 body = table.find('tbody')
                 meter = 0
                 for k in body.find_all('tr'):
                     if (meter != 0):
-                        if (name in k.find('th').find('a').text or name in  k.find('th').find('a')['href']):
+                        if (comparing_name in unidecode(k.find('th').find('a').text) or comparing_name in unidecode(k.find('th').find('a')['href'])
+                        or unidecode(k.find('th').find('a').text) in comparing_name):
                             stat = k.find_all('td')
                             if (new_player.position == ''):
                                 new_player.position = stat[1].find('a').text
-                                print(new_player.position)
-                            if (new_player.age == 0):
-                                string  = stat[2].find('span').text
+                            if (new_player.age == ''):
+                                string  = stat[2].text
                                 age = [int(s) for s in string.split() if s.isdigit()]
-                                new_player.age = age[0]
-                                print(new_player.age)
+                                new_player.age = year - age[0]
                     else:
                         meter+=1
                 break
@@ -57,8 +73,6 @@ def create_new_player(name, stats, year, team_name):
 
 def create_new_team(link, name, page_id, year):
 
-    new_link = 'https://fbref.com'+link
-    print(new_link)
     #requests
     team_page = requests.get('https://fbref.com'+link).text #request
     soup = BeautifulSoup(team_page, 'lxml') #parsing
@@ -93,13 +107,23 @@ def get_stats(year, new_cup):
     tables = content.find_all('table', class_='wikitable')
 
     for j in tables[-1].find('tbody').find_all('tr'):
-        print(j)
         for i in new_cup.teams:
+            comparing_name = ''
+            if (i.name == 'Korea DPR'):
+                comparing_name = 'North Korea'
+            elif (i.name == 'Korea Republic'):
+                comparing_name = 'South Korea'
+            elif (i.name == "Côte d'Ivoire"):
+                comparing_name = 'Ivory Coast'
+            else:
+                comparing_name = i.name
+
             if (j.find('th') == None or j.find('th').find('a') == None):
                 continue
-            elif (i.name == j.find('th').find('a').text):
+            elif (comparing_name == j.find('th').find('a').text):
                 st = j.find_all('td')
                 i.group = st[1].find('a').text
+                print(i.name, i.group)
                 i.ved.append(int(st[3].text))
                 i.ved.append(int(st[4].text))
                 i.ved.append(int(st[5].text))
@@ -107,5 +131,51 @@ def get_stats(year, new_cup):
                 i.goals.append(int(st[7].text))
                 i.goals.append(i.goals[0] - i.goals[1]) 
                 i.points_overall = int(st[9].text)
-
     return    
+
+def get_stats_2019(new_cup):
+
+    wiki_link = f"https://en.wikipedia.org/wiki/2019_FIFA_Women's_World_Cup_squads"
+    wiki_page = requests.get(wiki_link).text #request
+    soup = BeautifulSoup(wiki_page, 'lxml') #parsing
+    content = soup.find('div', id='mw-content-text')
+    teams = content.find_all('h3')
+    print(2019)
+    print()
+
+    for i in new_cup.teams:
+        comparing_name = ''
+        group_count = 0
+        if (i.name == 'Korea DPR'):
+            comparing_name = 'North Korea'
+        elif (i.name == 'Korea Republic'):
+            comparing_name = 'South Korea'
+        elif (i.name == "Côte d'Ivoire"):
+            comparing_name = 'Ivory Coast'
+        else:
+            comparing_name = i.name
+        for k in teams:
+            if (k.find('span').text == comparing_name):
+                if (group_count <= 3):
+                    i.group = 'A'
+                    print(i.name, i.group)
+                elif (group_count > 3 and group_count <= 7):
+                    i.group = 'B'
+                    print(i.name, i.group)
+                elif (group_count > 7 and group_count <= 11):
+                    i.group = 'C'
+                    print(i.name, i.group)
+                elif (group_count > 11 and group_count <= 15):
+                    i.group = 'D'
+                    print(i.name, i.group)
+                elif (group_count > 15 and group_count <= 19):
+                    i.group = 'E'
+                    print(i.name, i.group)
+                else:
+                    i.group = 'F'
+                    print(i.name, i.group)
+            else:
+                group_count+=1
+                
+
+
