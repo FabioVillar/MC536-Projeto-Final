@@ -3,7 +3,7 @@ from requests.api import get
 from models import *
 sys.path.insert(0, '/previa/src/webscraping/')
 from webscraping import cup
-
+from webscraping import matches
 
 if __name__ == "__main__":
 

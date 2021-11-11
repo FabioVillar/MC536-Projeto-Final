@@ -38,6 +38,7 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            
             #Prints:
             #print("Phase:", phase)
             #print("Home:", team1, "/ Guest:", team2, " /Score:", result)
@@ -104,7 +105,10 @@ def match_report(link, match):
     c = soup.find('div', id = 'content')
     #Finding the initial squads and bench
     t = c.find_all('div', class_ = 'table_wrapper tabbed')
-    y = 0
+    y = 0 #Variable used to iterate the for on line 111 two times
+    for z in range(3):#Each formation will have the structure x x x (ex.: 4 4 2)
+        match.formation1.append(0)
+        match.formation2.append(0)
     for x in t:
         id = x['id']
         v = id.split('_')
@@ -115,12 +119,25 @@ def match_report(link, match):
         for i in rows:
             name = i.find('th').text
             data = i.find_all('td')
-            time_played = data[3].text
-            if name[0].isascii() == True:#This separates the initial squad from the substitutes
+            player_position = data[1].text
+            player_position = player_position.split(',')[0]
+            if name[0].isascii() == True or name[1].isascii() == True:#This separates the initial squad from the substitutes
                 if y == 0:
                     match.initial_squad1.append(name)
+                    if player_position == 'FW':
+                        match.formation1[2] += 1
+                    elif player_position == 'MF':
+                        match.formation1[1] += 1
+                    elif player_position == 'DF':
+                        match.formation1[0] += 1
                 else:
                     match.initial_squad2.append(name)
+                    if player_position == 'FW':
+                        match.formation2[2] += 1
+                    elif player_position == 'MF':
+                        match.formation2[1] += 1
+                    elif player_position == 'DF':
+                        match.formation2[0] += 1
             else:
                 name = name.split()
                 new_name = ''
@@ -155,20 +172,23 @@ def match_report(link, match):
         if count == 2:
             break
     #Print of the players
-    #print("\nTeam: ", match.teams[0])
-    #print("\nInitial squad:\n")
-    #for i in match.initial_squad1:
-        #print(i)
-    #print("\nBench:")
-    #for i in match.bench_players1:
-        #print(i)
-    #print("\nTeam: ", match.teams[1])
-    #print("\nInitial squad:\n")
-    #for i in match.initial_squad2:
-        #print(i)
-    #print("\nBench:")
-    #for i in match.bench_players2:
-        #print(i)
+
+    print("\nTeam: ", match.teams[0])
+    print("\nInitial squad:\n")
+    print('Formation: ', match.formation1, '\n')
+    for i in match.initial_squad1:
+        print(i)
+    print("\nBench:")
+    for i in match.bench_players1:
+        print(i)
+    print("\nTeam: ", match.teams[1])
+    print("\nInitial squad:\n")
+    print('Formation: ', match.formation2, '\n')
+    for i in match.initial_squad2:
+        print(i)
+    print("\nBench:")
+    for i in match.bench_players2:
+        print(i)
     #Events:
     #print("\nEvents:")
     match_report_event(c, match, 'event a')
@@ -330,9 +350,25 @@ def match_report_2015_and_2019(link, match):
     n = a.find('tr')
     n = n.text.split(' ')
     formation1 = n[-1]
-    #print("Team :", match.teams[0])
-    #print("Formation 1:", formation1)
-    #print("Starters:")
+    for character in formation1:
+        if character == '(' or character == ')':
+            formation1 = formation1.replace(character, '')
+    formation1 = formation1.split('-')
+    new_form1 = []
+    for number in formation1:
+        try:
+            new_form1.append(int(number))
+        except ValueError:
+            try:
+                new_form1.append(int(number[0]))
+            except ValueError:
+                continue
+    formation1 = new_form1
+    match.formation1 = formation1
+    print("\nTeam :", match.teams[0])
+    print("Formation:", match.formation1)
+    print("Starters:")
+
     rows = a.select('tr')
     count = 1
     for player in rows:
@@ -354,9 +390,26 @@ def match_report_2015_and_2019(link, match):
     n = b.find('tr')
     n = n.text.split(' ')
     formation2 = n[-1]
-    #print("Team :", match.teams[1])
-    #print("\nFormation 2:", formation2)
-    #print("Starters:")
+    for character in formation2:
+        if character == '(' or character == ')':
+            formation2 = formation2.replace(character, '')
+    formation2 = formation2.split('-')
+    new_form2 = []
+    for number in formation2:
+        try:
+            new_form2.append(int(number))
+        except ValueError:
+            try:
+                new_form2.append(int(number[0]))
+            except ValueError:
+                continue
+    formation2 = new_form2
+    match.formation2 = formation2
+    print("Team :", match.teams[0])
+    print("\nTeam :", match.teams[1])
+    print("\nFormation:", match.formation2)
+    print("Starters:")
+
     rows = b.select('tr')
     count = 1
     for player in rows:
@@ -373,8 +426,6 @@ def match_report_2015_and_2019(link, match):
         elif count > 13:
             match.bench_players2.append(player_name)
         count += 1
-    match.formations.append(formation1)
-    match.formations.append(formation2)
     #Events:
     #print("\nEvent/ Time/ Country/ Player:")
     match_report_event(c, match, 'event a')

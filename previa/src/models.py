@@ -47,7 +47,8 @@ class Match(BaseModel):
     attendance: int = 0 
     referee: str = '' 
     penalties: List[Event] = []
-    formations: List[str] = []
+    formation1: List[int] = []
+    formation2: List[int] = []
     initial_squad1: List[str] = []
     bench_players1: List[str] = []
     initial_squad2: List[str] = []
