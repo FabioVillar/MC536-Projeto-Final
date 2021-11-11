@@ -1,4 +1,4 @@
-import mysql.connector as connection
+import mysql.connector
 from mysql.connector import errorcode
 from models import *
 
@@ -31,6 +31,7 @@ def find_player_id(cursor, player: Player):
     except Exception as e:
         print("Erro na busca pelo Id do time", e)
         raise
+
 
 def find_team_id(cursor, team: Team):
 
@@ -167,9 +168,9 @@ def insert_world_cup(cursor, wc_object: WorldCup):
 
 def mysql_connection(user, database, password):
     try:
-        cnx = connection.connect(
+        cnx = mysql.connector.connect(
             user=user, password=password, database=database)
-    except connection.Error as err:
+    except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("Something is wrong with your user name or password")
         elif err.errno == errorcode.ER_BAD_DB_ERROR:
@@ -181,9 +182,18 @@ def mysql_connection(user, database, password):
 
 
 def main():
-    print('bgfhryj')
-    # cnx = mysql_connection()
-    # cursor = cnx.cursor()
+    user, password, database = 'root', 'admin','womans_world_cup'
+    try:
+        cnx = mysql.connector.connect(
+            user=user, password=password, database=database, host = 'localhost')
+    except mysql.connector.Error as err:
+        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+            print("Something is wrong with your user name or password")
+        elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            print("Database does not exist")
+        else:
+            print(err)
+    
 
 
     # cnx.commit()
