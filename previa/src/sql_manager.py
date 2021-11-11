@@ -3,6 +3,7 @@ from mysql.connector import errorcode
 from models import *
 from main import *
 import json
+import os
 def insert_award(cursor, year_wc, player_id, team_id, award_obj: Award):
     add_award = ("INSERT INTO Awards"
                  "(award_type, year_wc, player_id, team_id) "
@@ -126,7 +127,9 @@ def insert_world_cup(cursor, wc_object: WorldCup):
 
 
 def main():
-    user, password, database = 'root', 'admin123', 'womens_world_cup'
+    user = os.environ.get('sql_user')
+    password = os.environ.get('sql_password')
+    database = 'womens_world_cup'
     try:
         cnx = mysql.connector.connect(
             user=user, password=password, database=database, host='localhost')
