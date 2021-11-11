@@ -120,4 +120,4 @@ def create_awards():
     awards_list = [
         func_list[i](possible_awards[i], tags[i]) for i in range(len(tags))
     ]
-    return
+    return awards_list

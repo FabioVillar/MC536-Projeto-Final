@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 from models import *
 import re
+from unidecode import unidecode
 
 def get_matches(year, page_id, new_cup):
     if year == 2019:
@@ -38,6 +39,10 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            for team in new_cup.teams:
+                if match.phase == 'Group stage':
+                    if team.name == match.teams[0] or team.name == match.teams[1]:
+                        match.group = team.group
             
             #Prints:
             #print("Phase:", phase)
@@ -63,6 +68,7 @@ def get_matches(year, page_id, new_cup):
                 continue
             phase = i.find('th').find('a').text
             match_data = i.find_all('td')
+
             if year == 2015 or year == 2011:
                 team1 = match_data[4].find('a').text
                 team2 = match_data[6].find('a').text
@@ -87,6 +93,10 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            for team in new_cup.teams:
+                if match.phase == 'Group stage':
+                    if team.name == match.teams[0] or team.name == match.teams[1]:
+                        match.group = team.group
             #print("\n\nPhase:", phase)
             #print("Home:", team1, "/ Guest:", team2, " /Score:", result)
             #print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
@@ -96,7 +106,7 @@ def get_matches(year, page_id, new_cup):
             else:
                 match_report(match_link, match, new_cup)
             new_cup.matches.append(match)
-
+    
     return
 
 
@@ -128,8 +138,9 @@ def match_report(link, match, new_cup):
                     for team in new_cup.teams:
                         if (match.teams[y] == team.name):
                             for player in team.players:
-                                if (player.name == name):
+                                if (unidecode(player.name) == unidecode(name)):
                                     player_position = player.position.split(',')[0]
+                                    print("Fixed: " + player_position)
                 if y == 0:
                     match.initial_squad1.append(name)
                     if (player_position == 'FW' or player_position == 'RW' or
