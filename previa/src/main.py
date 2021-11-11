@@ -7,9 +7,9 @@ from webscraping import matches
 
 if __name__ == "__main__":
 
-    start_year = 1991
+    start_year = 2015
     final_year = 2019
-    page_id = 1779
+    page_id = 1785
     cup_list = []
     while (start_year<=final_year):
         i = cup.create_new_cup(start_year, page_id)
