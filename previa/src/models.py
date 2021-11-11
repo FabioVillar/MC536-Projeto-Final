@@ -16,9 +16,9 @@ class Team(BaseModel):
     name: str = '' 
     coach: str ='' 
     points_group_stage: int = 0
-    points_overall: int
+    points_overall: int = 0
     group: str = '' 
-    position_group: int
+    position_group: int = 0
     goals: List[int] = [] 
     ved: List[int] = [] 
     players: List[Player] = [] 
@@ -58,7 +58,7 @@ class Match(BaseModel):
 class WorldCup(BaseModel):
     year: int = 0 
     host: str = ''
-    winner: str
+    winner: str = ''
     awards: List[Award] = []
     teams: List[Team] = [] 
     matches: List[Match] = []
