@@ -5,7 +5,6 @@ class Player(BaseModel):
 
     name: str = '' 
     position: str = ''
-    number: int = 0
     age: int = 0 
     goals: int = 0 
     assists: int = 0 
@@ -19,8 +18,8 @@ class Team(BaseModel):
     points_group_stage: int = 0
     points_overall: int = 0
     group: str = ''
-    goals: List[int] = [] 
-    ved: List[int] = [] 
+    goals: List[int] = [0,0] 
+    ved: List[int] = [0,0,0] 
     players: List[Player] = [] 
     year: int = 0 
 
@@ -40,18 +39,18 @@ class Award(BaseModel):
 class Match(BaseModel):
     phase: str = '' 
     group: str = '' 
-    teams: List[Team] = [] 
-    score: List[int] = []
+    teams: List[Team] = ['',''] 
+    score: str = ''
     stadium: str = '' 
+    possesion: str = ''
     attendance: int = 0
-    possesion: str
     referee: str = '' 
-    penalties: List[int] = []
-    formations: List[str] = []
-    initial_squad1: List[str] = []
-    bench_players1: List[str] = []
-    initial_squad2: List[str] = []
-    bench_players2: List[str] = []
+    penalties: List[int] = ''
+    formations: List[str] = [0,0]
+    initial_squad1: List[str] = ''
+    bench_players1: List[str] = ''
+    initial_squad2: List[str] = ''
+    bench_players2: List[str] = ''
     events: List[Event] = []
 
 

@@ -2,8 +2,7 @@ from requests.api import get
 from web_scraping_functions import *
 from models import *
 
-if __name__ == "__main__":
-
+def get_world_cups():
     start_year = 1991
     final_year = 2019
     page_id = 1779

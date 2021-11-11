@@ -14,9 +14,9 @@ DROP TABLE if exists WorldCup;
 
 -- WC -> Group -> team -> player -> match -> events -> awards 
 CREATE TABLE if not exists WorldCup (
-    year_wc INTEGER not null,
+    id INTEGER not null AUTO_INCREMENT,
     host VARCHAR(50) not null,
-    PRIMARY KEY(Year_wc)
+    PRIMARY KEY(id)
 );
 
 
@@ -27,22 +27,20 @@ CREATE TABLE if not exists Team_wc(
     coach VARCHAR(50) not null,
     group_in_wc VARCHAR(50) not null,
     group_points INTEGER not null,
-    ranking_group INTEGER not null,
     goals_scored INTEGER not null,
-    goals_suffered INTEGER not null,
+    overall_points integer not null,
+    goals_conceded INTEGER not null,
     wins INTEGER not null,
     draws INTEGER not null,
     losses INTEGER not null,
     PRIMARY key(team_id),
-    FOREIGN key(year_wc) REFERENCES WorldCup(year_wc)
+    FOREIGN key(year_wc) REFERENCES WorldCup(id)
 );
 
 CREATE TABLE Player_wc (
     player_id integer NOT NULL AUTO_INCREMENT,
-    team_name VARCHAR(50) not null,
     team_id integer not null,
     player_name VARCHAR(50) not null,
-    player_number INTEGER not null,
     age INTEGER not null,
     position VARCHAR(50) not null,
     goals INTEGER not null,
@@ -55,7 +53,7 @@ CREATE TABLE Player_wc (
 
 CREATE TABLE Match_wc (
     match_id INTEGER not null AUTO_INCREMENT,
-    penaltys VARCHAR(50),
+    penalties VARCHAR(50),
     phase VARCHAR(50) not null,
     teamA integer NOT null,
     teamB integer not null,
@@ -93,6 +91,6 @@ CREATE TABLE Awards_wc (
     year_wc INTEGER not null,
     player integer not null,
     team integer not null,
-    FOREIGN KEY(year_wc) REFERENCES WorldCup(year_wc),
+    FOREIGN KEY(year_wc) REFERENCES WorldCup(id),
     FOREIGN Key(player) REFERENCES Player_wc(player_id)
 );
