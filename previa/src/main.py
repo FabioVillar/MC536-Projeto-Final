@@ -7,13 +7,21 @@ from webscraping import matches
 from webscraping import awards
 import json
 
-if __name__ == "__main__":
+
+def get_awards_by_year(awards_list, year):
+    awards_list_year = []
+    for awards in awards_list:
+        for award in awards:
+            if award.year == year:
+                awards_list_year.append(award)
+    return awards_list_year
+
+def get_world_cups():
 
     start_year = 1991
     final_year = 1991
     page_id = 1779
     cup_list = []
-    print(awards.create_awards())
     #while (start_year<=final_year):
         #i = cup.create_new_cup(start_year, page_id)
         
@@ -28,4 +36,5 @@ if __name__ == "__main__":
 #                ensure_ascii=False,
 #                indent=2
 #            )
-    
+
+get_world_cups()

@@ -26,6 +26,7 @@ def get_regex_multiple_winners(tags):
                 substring = re.search(regex,string)
                 if substring:
                     tags_re.append(substring.group(1))
+    
     return tags_re
 
 
@@ -38,7 +39,7 @@ def get_young_player_award(award_, tags):
             award = award_,
             year = int(year),
             team = team,
-            winner = candidates[i+1]
+            player = candidates[i+1]
         )
         award_list.append(award_obj)
 
@@ -64,7 +65,7 @@ def get_golden_glove(award_, tags):
             award = award_,
             year = int(year),
             team = str(team),
-            winner = str(candidates[i])
+            player = str(candidates[i])
         )
         award_list.append(award_obj)
 
@@ -75,7 +76,9 @@ def get_golden_glove(award_, tags):
 def get_multiple_award(award_, tags):
     award_list = []
     candidates = get_regex_multiple_winners(tags)
-    for i in range(len(candidates)-1):
+    
+    i = 0
+    while i < len(candidates) - 3:
         if re.match(r'\d+\s\w+',candidates[i]):
             infos = candidates[i].split()
             if len(infos) > 2:
@@ -84,15 +87,21 @@ def get_multiple_award(award_, tags):
                 host = ' '.join(infos)
             else:
                 year, host = candidates[i].split()
+            i+=1
         else:
-            award_obj = Award(
-                award = award_,
-                year = int(year),
-                team = candidates[i],
-                winner = str(candidates[i+1])
-            )
-            award_list.append(award_obj)
-    
+            j = i
+            position = 1
+            while j < len(candidates) and not bool(re.match(r'\d+\s\w+',candidates[j])):
+                award_obj = Award(
+                    award = award_+' '+str(position),
+                    year = int(year),
+                    team = candidates[j],
+                    player = str(candidates[j+1])
+                )
+                position +=1
+                award_list.append(award_obj)
+                j+=2
+            i = j
     return award_list
     
 
@@ -121,3 +130,4 @@ def create_awards():
         func_list[i](possible_awards[i], tags[i]) for i in range(len(tags))
     ]
     return awards_list
+create_awards()

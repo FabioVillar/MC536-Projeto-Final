@@ -34,8 +34,9 @@ class Event(BaseModel):
 
 class Award(BaseModel):
     award: str = ''
-    team: Team
-    winner: Player
+    team: str
+    player: str
+    year: int
 
 
 class Match(BaseModel):
