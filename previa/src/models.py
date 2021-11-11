@@ -59,7 +59,6 @@ class Match(BaseModel):
 class WorldCup(BaseModel):
     year: int = 0 
     host: str = ''
-    winner: str = ''
     awards: List[Award] = []
     teams: List[Team] = [] 
     matches: List[Match] = []

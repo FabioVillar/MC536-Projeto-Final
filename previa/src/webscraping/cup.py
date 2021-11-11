@@ -38,6 +38,6 @@ def create_new_cup(year, page_id):
         get_stats(year, new_cup)
 
     #getting matches
-    #get_matches(year, page_id, new_cup)
+    get_matches(year, page_id, new_cup)
     
     return new_cup
