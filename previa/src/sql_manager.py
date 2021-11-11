@@ -2,7 +2,7 @@ import mysql.connector
 from mysql.connector import errorcode
 from models import *
 from main import *
-
+import json
 def insert_award(cursor, year_wc, player_id, team_id, award_obj: Award):
     add_award = ("INSERT INTO Awards"
                  "(award_type, year_wc, player_id, team_id) "
@@ -139,10 +139,8 @@ def main():
             print(err)
 
     cursor = cnx.cursor(buffered=True)
-    wc_list = get_world_cups()
+    # wc_list = get_world_cups()
     
-
-
     cnx.commit()
     cursor.close()
     cnx.close()
