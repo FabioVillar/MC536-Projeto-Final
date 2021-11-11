@@ -38,6 +38,7 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            
             #Prints:
             print("Phase:", phase)
             print("Home:", team1, "/ Guest:", team2, " /Score:", result)
