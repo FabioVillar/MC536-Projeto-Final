@@ -34,6 +34,10 @@ def get_matches(year, page_id, new_cup):
             #Object match created:
             match = Match()
             match.phase = phase
+            if team1 == 'USA':
+                team1 = 'United States'
+            elif team2 == 'USA':
+                team2 = 'United States'
             match.teams = [team1, team2]
             match.score = [result[0], result[2]]
             match.stadium = stadium
@@ -88,6 +92,10 @@ def get_matches(year, page_id, new_cup):
             #Object match created:
             match = Match()
             match.phase = phase
+            if team1 == 'USA':
+                team1 = 'United States'
+            elif team2 == 'USA':
+                team2 = 'United States'
             match.teams = [team1, team2]
             match.score = [result[0], result[2]]
             match.stadium = stadium
@@ -140,7 +148,7 @@ def match_report(link, match, new_cup):
                             for player in team.players:
                                 if (unidecode(player.name) == unidecode(name)):
                                     player_position = player.position.split(',')[0]
-                                    print("Fixed: " + player_position)
+                                    # print("Fixed: " + player_position)
                 if y == 0:
                     match.initial_squad1.append(name)
                     if (player_position == 'FW' or player_position == 'RW' or
@@ -198,22 +206,22 @@ def match_report(link, match, new_cup):
             break
     #Print of the players
 
-    print("\nTeam: ", match.teams[0])
-    print("\nInitial squad:\n")
-    print('Formation: ', match.formation1, '\n')
-    for i in match.initial_squad1:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players1:
-        print(i)
-    print("\nTeam: ", match.teams[1])
-    print("\nInitial squad:\n")
-    print('Formation: ', match.formation2, '\n')
-    for i in match.initial_squad2:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players2:
-        print(i)
+    # print("\nTeam: ", match.teams[0])
+    # print("\nInitial squad:\n")
+    # print('Formation: ', match.formation1, '\n')
+    # for i in match.initial_squad1:
+    #     print(i)
+    # print("\nBench:")
+    # for i in match.bench_players1:
+    #     print(i)
+    # print("\nTeam: ", match.teams[1])
+    # print("\nInitial squad:\n")
+    # print('Formation: ', match.formation2, '\n')
+    # for i in match.initial_squad2:
+    #     print(i)
+    # print("\nBench:")
+    # for i in match.bench_players2:
+    #     print(i)
     #Events:
     #print("\nEvents:")
     match_report_event(c, match, 'event a')
@@ -374,9 +382,9 @@ def match_report_2015_and_2019(link, match):
                 continue
     formation1 = new_form1
     match.formation1 = formation1
-    print("\nTeam :", match.teams[0])
-    print("Formation:", match.formation1)
-    print("Starters:")
+    # print("\nTeam :", match.teams[0])
+    # print("Formation:", match.formation1)
+    # print("Starters:")
 
     rows = a.select('tr')
     count = 1
@@ -414,10 +422,10 @@ def match_report_2015_and_2019(link, match):
                 continue
     formation2 = new_form2
     match.formation2 = formation2
-    print("Team :", match.teams[0])
-    print("\nTeam :", match.teams[1])
-    print("\nFormation:", match.formation2)
-    print("Starters:")
+    # print("Team :", match.teams[0])
+    # print("\nTeam :", match.teams[1])
+    # print("\nFormation:", match.formation2)
+    # print("Starters:")
 
     rows = b.select('tr')
     count = 1

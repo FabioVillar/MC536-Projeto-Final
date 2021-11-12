@@ -103,8 +103,7 @@ def create_new_team(link, name, page_id, year):
 
 def get_stats(year, new_cup):
 
-    print(year)
-    print()
+    
 
     stats_link = f"https://en.wikipedia.org/wiki/{year}_FIFA_Women's_World_Cup"
     stats_page = requests.get(stats_link).text
@@ -129,7 +128,7 @@ def get_stats(year, new_cup):
             elif (comparing_name == j.find('th').find('a').text):
                 st = j.find_all('td')
                 i.group = st[1].find('a').text
-                print(i.name, i.group)
+                # #print(i.name, i.group)
                 i.ved.append(int(st[3].text))
                 i.ved.append(int(st[4].text))
                 i.ved.append(int(st[5].text))
@@ -146,8 +145,8 @@ def get_stats_2019(new_cup):
     soup = BeautifulSoup(wiki_page, 'lxml') #parsing
     content = soup.find('div', id='mw-content-text')
     teams = content.find_all('h3')
-    print(2019)
-    print()
+    # #print(2019)
+    # #print()
 
     for i in new_cup.teams:
         comparing_name = ''
@@ -164,22 +163,22 @@ def get_stats_2019(new_cup):
             if (k.find('span').text == comparing_name):
                 if (group_count <= 3):
                     i.group = 'A'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
                 elif (group_count > 3 and group_count <= 7):
                     i.group = 'B'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
                 elif (group_count > 7 and group_count <= 11):
                     i.group = 'C'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
                 elif (group_count > 11 and group_count <= 15):
                     i.group = 'D'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
                 elif (group_count > 15 and group_count <= 19):
                     i.group = 'E'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
                 else:
                     i.group = 'F'
-                    print(i.name, i.group)
+                    #print(i.name, i.group)
             else:
                 group_count+=1
     
