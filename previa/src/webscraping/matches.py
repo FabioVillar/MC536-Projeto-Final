@@ -24,8 +24,8 @@ def get_matches(year, page_id, new_cup):
                 continue
             phase = i.find('th').find('a').text
             match_data = i.find_all('td')
-            team1 = match_data[4].find('a').text
-            team2 = match_data[8].find('a').text
+            team1 = match_data[4].find('span')['title']
+            team2 = match_data[8].find('span')['title']
             result = match_data[6].find('a').text
             attendance = match_data[9].text
             stadium = match_data[10].text
@@ -102,7 +102,7 @@ def get_matches(year, page_id, new_cup):
             #print("Attendance: ", attendance, " /Stadium: ", stadium, " /Referee: ", referee)
             #print(match_link)
             if year == 2015:
-                match_report_2015_and_2019(match_link, match, new_cup)
+                match_report_2015_and_2019(match_link, match)
             else:
                 match_report(match_link, match, new_cup)
             new_cup.matches.append(match)

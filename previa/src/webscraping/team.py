@@ -24,11 +24,17 @@ def create_new_player(name, stats, year, team_name):
     new_player = Player()
     new_player.name = unidecode(name)
     new_player.position = stats[0].text
-    new_player.age = stats[1].text
-    new_player.goals = stats[6].text
-    new_player.assists = stats[7].text
-    new_player.yellow_cards = stats[11].text
-    new_player.red_cards = stats[12].text
+
+    if (stats[1].text!=''):
+        new_player.age = int(stats[1].text)
+    if (stats[6].text!=''):
+        new_player.goals = int(stats[6].text)
+    if (stats[7].text!=''):
+        new_player.assists = int(stats[7].text)
+    if (stats[11].text!=''):   
+        new_player.yellow_cards = int(stats[11].text)
+    if (stats[12].text!=''):
+        new_player.red_cards = int(stats[12].text)
 
     problem_count = 0
 
@@ -61,7 +67,7 @@ def create_new_player(name, stats, year, team_name):
                             if (new_player.age == ''):
                                 string  = stat[2].text
                                 age = [int(s) for s in string.split() if s.isdigit()]
-                                new_player.age = year - age[0]
+                                new_player.age = int(year - age[0])
                     else:
                         meter+=1
                 break
@@ -85,7 +91,7 @@ def create_new_team(link, name, page_id, year):
     new_team = Team()
     new_team.name = name
     new_team.year = year
-    new_team.coach = soup.find('div', id='meta').find_all('p')[0].text
+    new_team.coach = soup.find('div', id='meta').find_all('p')[0].text.replace('Manager: ', '', 1)
 
     for i in players:
         stats = i.find_all('td')
@@ -176,6 +182,29 @@ def get_stats_2019(new_cup):
                     print(i.name, i.group)
             else:
                 group_count+=1
+    
+    fbref_link = 'https://fbref.com/en/comps/106/Womens-World-Cup-Stats'
+    fbref_page = requests.get(fbref_link).text #request
+    soup = BeautifulSoup(fbref_page, 'lxml') #parsing
+    content = soup.find('div', id='content')
+    results = content.find('div', id='all_results17860')
+    table = results.find('table', id='results17860_overall')
+    body = table.find('tbody')
+
+    for i in body.find_all('tr'):
+        if (not i.has_attr('class')):
+            info = i.find_all('td')
+            for k in new_cup.teams:
+                if (k.name == info[0].find('span')['title']):
+                    k.ved.append(int(info[2].text))
+                    k.ved.append(int(info[3].text))
+                    k.ved.append(int(info[4].text))
+                    k.goals.append(int(info[5].text))
+                    k.goals.append(int(info[6].text))
+                    k.goals.append(k.goals[0] - k.goals[1])
+                    k.points_overall = int(info[8].text)
+
+
                 
 
 
