@@ -49,8 +49,8 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 > Nosso projeto consiste em reunir informações, em um banco de dados, sobre todas as copas do mundo de futebol feminino realizadas até hoje (1991 - 2019). O projeto envolve, principalmente, funções de webscraping, para retirar e agregar dados de múltiplas fontes não-estruturadas e apresentá-los em dois modelos: Relacional e Hierárquico.
 
 ## Slides da Apresentação
-> Coloque aqui o link para o PDF da apresentação prévia
 
+[Slides](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/previa/assets/Apresenta%C3%A7%C3%A3o%20Pr%C3%A9via%20-%20Akers.pdf)
 ## Modelo Conceitual Preliminar
 
 > Modelo de Entidade-Relacionamento:
