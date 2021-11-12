@@ -122,21 +122,18 @@ Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados pa
 > demonstrar o potencial da base.
 >
 ### Pergunta/Análise 1
-> * Pergunta 1
+> * Pergunta 1: Qual a taxa de vitória de cada formação? 
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
+>   * Será feita uma coleta de todas as ocorrências da formação, que está presente nos objetos da classe Match, e, por meio desta, o número de vitórias obtidas por cada seleção que utilizou esta formação. Desta forma, será possível obter a taxa de vitória.
 
 ### Pergunta/Análise 2
-> * Pergunta 2
+> * Pergunta 2: Qual a porcentagem de vitória de uma seleção que abre o placar?
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
+>   * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a taxa de vitória.
 
 ### Pergunta/Análise 3
-> * Pergunta 3
+> * Pergunta 3: Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?
 >   
->   * Explicação sucinta da análise que será feita ou conjunto de queries que
->     responde à pergunta.
+>   * Cada jogadora tem a sua idade salva como atributo de classe, e, com base nisso e na seleção em que atuam, é possível traçar alguma relação entre a média de idade e o desempenho da seleção na Copa.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
