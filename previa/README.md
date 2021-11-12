@@ -1,5 +1,3 @@
-# Modelo de Apresentação da Entrega Prévia
-
 # Estrutura de Arquivos e Pastas
 
 A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
