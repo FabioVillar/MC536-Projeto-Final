@@ -1,7 +1,5 @@
 # Estrutura de Arquivos e Pastas
 
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
 ~~~
 ├── README.md  <- arquivo apresentando a proposta
 │
@@ -21,8 +19,6 @@ A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cooki
 └── assets             <- mídias usadas no projeto
 ~~~
 
-Na raiz deve haver um arquivo de nome `README.md` contendo a apresentação do projeto, como detalhado na seção seguinte.
-
 ## `data`
 
 Arquivos de dados usados no projeto, quando isso ocorrer.
@@ -41,13 +37,12 @@ Projeto na linguagem escolhida, incluindo todos os arquivos de dados e bibliotec
 
 Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. Coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
 
-# Modelo para Apresentação da Entrega Prévia do Projeto
-
 # Projeto `Construindo um dataset sobre a Copa do Mundo de Futebol Feminino`
 
 # Equipe `AKERS` - `AKERS`
-* `Fábio Santos Villar` - `234135`
+
 * `Arthur Cemin Baia` - `213259`
+* `Fábio Santos Villar` - `234135`
 * `José Augusto Nascimento Afonso Marcos` - `200025`
 
 ## Resumo do Projeto
