@@ -134,6 +134,6 @@ Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados pa
 ### Pergunta/Análise 3
 > * Pergunta 3: Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?
 >   
->   * Cada jogadora tem a sua idade salva como atributo de classe, e, com base nisso e na seleção em que atuam, é possível traçar alguma relação entre a média de idade e o desempenho da seleção na Copa.
+>   * Cada jogadora tem a sua idade salva como atributo de classe, e, com base nisso e na seleção em que atuam, é possível traçar uma relação entre a média de idade e o desempenho da seleção na Copa.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
