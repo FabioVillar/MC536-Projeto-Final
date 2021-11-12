@@ -100,7 +100,8 @@ título do arquivo/base | link | breve descrição
 
 título da base | link | breve descrição
 ----- | ----- | -----
-`<título da base>` | `<link para a página da base>` | `<breve descrição da base>`
+FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às partidas, seleções e sobre as Copas no geral
+Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados para coleta de dados que não estavam presentes na base supracitada
 
 ## Operações realizadas para a construção do dataset
 
