@@ -1,4 +1,3 @@
-
 # Modelo de Apresentação da Entrega Prévia
 
 # Estrutura de Arquivos e Pastas
@@ -46,15 +45,15 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 # Modelo para Apresentação da Entrega Prévia do Projeto
 
-# Projeto `<Título do Projeto>`
+# Projeto `Construindo um dataset sobre a Copa do Mundo de Futebol Feminino`
 
-# Equipe `<nome da equipe>` - `<sigla da equipe>`
-* `<nome completo>` - `<RA>`
-* `<nome completo>` - `<RA>`
-* `<nome completo>` - `<RA>`
+# Equipe `AKERS` - `AKERS`
+* `Fábio Santos Villar` - `234135`
+* `Arthur Cemin Baia` - `213259`
+* `José Augusto Nascimento Afonso Marcos` - `200025`
 
 ## Resumo do Projeto
-> Texto resumindo o projeto.
+> Nosso projeto consiste em reunir informações, em um banco de dados, sobre todas as copas do mundo de futebol feminino realizadas até hoje (1991 - 2019). O projeto envolve, principalmente, funções de webscraping, para retirar e agregar dados de múltiplas fontes não-estruturadas e apresentá-los em dois modelos: Relacional e Hierárquico.
 
 ## Slides da Apresentação
 > Coloque aqui o link para o PDF da apresentação prévia
@@ -66,35 +65,31 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ## Modelos Lógicos Preliminares
 
-> Coloque aqui os primeiros modelos lógicos dos bancos de dados relacionados aos modelos conceituais. Para o modelo relacional, sugere-se o formato a seguir. Para outros modelos lógicos o formato é livre, pode ser adotado aqueles apresentados em sala.
+> Modelo lógico relacional
 
-> Exemplo de modelo lógico relacional
-~~~
-PESSOA(_Código_, Nome, Telefone)
-ARMÁRIO(_Código_, Tamanho, Ocupante)
-  Ocupante chave estrangeira -> PESSOA(Código)
 ~~~
 
-> Para o modelo de grafos de propriedades, utilize este
-> [modelo de base](https://docs.google.com/presentation/d/10RN7bDKUka_Ro2_41WyEE76Wxm4AioiJOrsh6BRY3Kk/edit?usp=sharing) para construir o seu.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image`):
->
-> ![Modelo Lógico de Grafos](images/modelo-logico-grafos.png)
+WorldCup(_year_wc_, host, winner)
+Team_wc(_team_id_, year_wc, team_name, coach, group_in_wc, group_points, ovr_points, group, goals_scored, goals_suffered, wins, draws, losses)
+  Ocupante chave estrangeira -> WorldCup(year_wc)
+Player_wc(_player_id_, team_id, player_name, age, position, goals, yellow_cards, red_cards)
+  Ocupante chave estrangeira -> Team_wc(team_id)
+Match_wc(_match_id_, penalties, phase, group, teamA, teamB, scoreA, scoreB, stadium, attendance, referee, formationA, formationB, lineupA, lineupB, benchA, benchB)
+  Ocupante chave estrangeira -> Team_wc(teamA)
+  Ocupante chave estrangeira -> Team_wc(teamB)
+Events_wc(_event_id_, match_id, event_type, match_time, team_id, player_id)
+  Ocupante chave estrangeira -> Player_wc(player_id)
+  Ocupante chave estrangeira -> Team_wc(team_id)
+  Ocupante chave estrangeira -> Match_wc(match_id)
+Awards(award_type, year_wc, player_id, team_id)
+  Ocupante chave estrangeira -> Player_wc(player_id)
+  Ocupante chave estrangeira -> Team_wc(team_id)
 
-> Para o modelo de grafos de conhecimento, utilize a abordagem
-> (recurso, propriedade, valor) para apresentar seu grafo exemplo.
-> Coloque a imagem do PNG do seu modelo lógico como ilustrado abaixo (a imagem estará na pasta `image).
->
-> Você pode usar um grafo ilustrando as classes, como este:
-> ![Modelo Lógico de Grafos de Conhecimento](images/grafo-conhecimento-classes.png)
->
-> Além de outro com exemplo de instâncias, como este:
-> ![Modelo Lógico de Grafos](images/grafo-conhecimento-exemplo.png)
+~~~
 
-> Para modelos hierárquicos (XML e JSON), utilize um formato
-> conforme o abaixo:
+> Modelo hierárquico:
 
-> ![Modelo Lógico Hierárquico](images/modelo-logico-hierarquico.png)
+> (link)
 
 ## Dataset Preliminar a ser Publicado
 > Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
@@ -150,4 +145,3 @@ título da base | link | breve descrição
 >     responde à pergunta.
 
 > Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
-

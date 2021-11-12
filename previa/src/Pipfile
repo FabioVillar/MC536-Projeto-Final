@@ -17,8 +17,9 @@ wikipedia-api = "*"
 pandas = "*"
 "html.parser" = "*"
 html5lib = "*"
+unidecode = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7.2"
+python_version = "3.9.4"

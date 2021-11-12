@@ -17,40 +17,44 @@ class Team(BaseModel):
     coach: str ='' 
     points_group_stage: int = 0
     points_overall: int = 0
-    group: str = ''
-    goals: List[int] = [0,0] 
-    ved: List[int] = [0,0,0] 
+    group: str = '' 
+    position_group: int = 0
+    goals: List[int] = [] 
+    ved: List[int] = [] 
     players: List[Player] = [] 
     year: int = 0 
 
 
 class Event(BaseModel):
     event: str = ''
-    time: int
-    team: str
-    player: str
+    time: str = ''
+    team: str = ''
+    player: str = ''
+
 
 
 class Award(BaseModel):
     award: str = ''
-    team: Team
-    winner: Player
+    team: str
+    player: str
+    year: int
 
 class Match(BaseModel):
     phase: str = '' 
     group: str = '' 
-    teams: List[Team] = ['',''] 
-    score: str = ''
+    teams: List[str] = [] 
+    score: List[int] = []
     stadium: str = '' 
     possesion: str = ''
     attendance: int = 0
     referee: str = '' 
-    penalties: List[int] = ''
-    formations: List[str] = [0,0]
-    initial_squad1: List[str] = ''
-    bench_players1: List[str] = ''
-    initial_squad2: List[str] = ''
-    bench_players2: List[str] = ''
+    penalties: List[Event] = []
+    formation1: List[int] = []
+    formation2: List[int] = []
+    initial_squad1: List[str] = []
+    bench_players1: List[str] = []
+    initial_squad2: List[str] = []
+    bench_players2: List[str] = []
     events: List[Event] = []
 
 
