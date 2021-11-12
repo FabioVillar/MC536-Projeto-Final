@@ -43,6 +43,7 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            match.penalties = [0, 0]
             for team in new_cup.teams:
                 if match.phase == 'Group stage':
                     if team.name == match.teams[0] or team.name == match.teams[1]:
@@ -101,6 +102,7 @@ def get_matches(year, page_id, new_cup):
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            match.penalties = [0, 0]
             for team in new_cup.teams:
                 if match.phase == 'Group stage':
                     if team.name == match.teams[0] or team.name == match.teams[1]:
@@ -312,13 +314,17 @@ def match_report_card(match, event, t2, card):
         event.event = card
 
 
-def match_report_penalties(match, event, a, t2):
+def match_report_penalties(match, event, a, t2, cl):
     if a.find('div', class_ = 'event_icon penalty_shootout_goal'):
         event.event = 'Penalty shootout goal'
+        if cl == 'event a':
+            match.penalties[0] += 1
+        elif cl == 'event b':
+            match.penalties[1] += 1
     else:
         event.event = 'Penalty shootout miss'
     event.player = t2.find('a').text
-    match.penalties.append(event)
+    
 
 
 def match_report_event(c, match, cl):
@@ -330,7 +336,6 @@ def match_report_event(c, match, cl):
         t1 = all_div[0].text.split()
         t2 = all_div[1].text.split()
         t3 = all_div[1]
-
         #print(t1, t2, t3)
         event = Event()
         if cl == 'event a':
@@ -351,7 +356,7 @@ def match_report_event(c, match, cl):
         elif a.find('div', class_ = 'event_icon yellow_red_card'):
             match_report_card(match, event, t2, 'Both')
         elif a.find('div', class_ = 'event_icon penalty_shootout_goal') or a.find('div', class_ = 'event_icon penalty_shootout_miss'):
-            match_report_penalties(match, event, a, t3)
+            match_report_penalties(match, event, a, t3, cl)
         #print(event.event, event.time, event.team, event.player)
         match.events.append(event)
 
