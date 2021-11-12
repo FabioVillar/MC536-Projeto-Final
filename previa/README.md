@@ -60,12 +60,13 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ## Modelo Conceitual Preliminar
 
-> Coloque aqui a imagem do modelo conceitual preliminar em ER ou UML, como o exemplo a seguir:
-> ![ER Taxi](images/er-taxi.png)
+> Modelo de Entidade-Relacionamento:
+
+![.](assets/previa_er.png)
 
 ## Modelos Lógicos Preliminares
 
-> Modelo lógico relacional
+> Modelo lógico relacional:
 
 ~~~
 
@@ -89,7 +90,7 @@ Awards(award_type, year_wc, player_id, team_id)
 
 > Modelo hierárquico:
 
-> (link)
+![.](assets/previa_hierarquico.png)
 
 ## Dataset Preliminar a ser Publicado
 > Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
