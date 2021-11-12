@@ -55,7 +55,7 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 > Modelo de Entidade-Relacionamento:
 
-![.](assets/previaer.png)
+![.](assets/previaER.png)
 
 ## Modelos Lógicos Preliminares
 
