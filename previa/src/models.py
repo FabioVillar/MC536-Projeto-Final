@@ -4,7 +4,7 @@ from typing import List
 class Player(BaseModel):
 
     name: str = '' 
-    position: str = '' 
+    position: str = ''
     age: int = 0 
     goals: int = 0 
     assists: int = 0 
@@ -32,12 +32,12 @@ class Event(BaseModel):
     player: str = ''
 
 
+
 class Award(BaseModel):
     award: str = ''
     team: str
     player: str
     year: int
-
 
 class Match(BaseModel):
     phase: str = '' 
@@ -45,7 +45,8 @@ class Match(BaseModel):
     teams: List[str] = [] 
     score: List[int] = []
     stadium: str = '' 
-    attendance: int = 0 
+    possesion: str = ''
+    attendance: int = 0
     referee: str = '' 
     penalties: List[Event] = []
     formation1: List[int] = []

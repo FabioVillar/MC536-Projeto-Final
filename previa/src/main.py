@@ -7,6 +7,7 @@ from webscraping import matches
 from webscraping import awards
 import json
 
+
 def get_awards_by_year(awards_list, year):
     awards_list_year = []
     for awards in awards_list:
@@ -39,4 +40,5 @@ def get_world_cups():
     return cup_list
 
 get_world_cups()
+
     
