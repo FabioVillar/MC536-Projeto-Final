@@ -1,4 +1,6 @@
 from pymongo import MongoClient
+import sys
+sys.path.insert(0, '/previa/data/')
 from models import *
 import pymongo
 import json
@@ -32,10 +34,9 @@ def mongo():
 
     except Exception as e:
         raise e
-    print(client.list_database_names())
     table = create_table(client)
-    print(sorted(list(table.index_information())))
-    # with open('teste.json','r+',errors='ignore') as f:
-    #     wc_obj = json.load(f)
-    # print(insert_wc_db(table, wc_obj))
+    for i in range(1991, 2020, 4):
+        with open(f'world_cup{i}.json','r+',errors='ignore') as f:
+            wc_obj = json.load(f)
+        print(insert_wc_db(table, wc_obj))
 mongo()

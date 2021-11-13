@@ -34,11 +34,16 @@ def get_matches(year, page_id, new_cup):
             #Object match created:
             match = Match()
             match.phase = phase
+            if team1 == 'USA':
+                team1 = 'United States'
+            elif team2 == 'USA':
+                team2 = 'United States'
             match.teams = [team1, team2]
             match.score = [result[0], result[2]]
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            match.penalties = [0, 0]
             for team in new_cup.teams:
                 if match.phase == 'Group stage':
                     if team.name == match.teams[0] or team.name == match.teams[1]:
@@ -88,11 +93,16 @@ def get_matches(year, page_id, new_cup):
             #Object match created:
             match = Match()
             match.phase = phase
+            if team1 == 'USA':
+                team1 = 'United States'
+            elif team2 == 'USA':
+                team2 = 'United States'
             match.teams = [team1, team2]
             match.score = [result[0], result[2]]
             match.stadium = stadium
             match.attendance = attendance
             match.referee = referee
+            match.penalties = [0, 0]
             for team in new_cup.teams:
                 if match.phase == 'Group stage':
                     if team.name == match.teams[0] or team.name == match.teams[1]:
@@ -140,7 +150,7 @@ def match_report(link, match, new_cup):
                             for player in team.players:
                                 if (unidecode(player.name) == unidecode(name)):
                                     player_position = player.position.split(',')[0]
-                                    print("Fixed: " + player_position)
+                                    # print("Fixed: " + player_position)
                 if y == 0:
                     match.initial_squad1.append(name)
                     if (player_position == 'FW' or player_position == 'RW' or
@@ -198,22 +208,22 @@ def match_report(link, match, new_cup):
             break
     #Print of the players
 
-    print("\nTeam: ", match.teams[0])
-    print("\nInitial squad:\n")
-    print('Formation: ', match.formation1, '\n')
-    for i in match.initial_squad1:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players1:
-        print(i)
-    print("\nTeam: ", match.teams[1])
-    print("\nInitial squad:\n")
-    print('Formation: ', match.formation2, '\n')
-    for i in match.initial_squad2:
-        print(i)
-    print("\nBench:")
-    for i in match.bench_players2:
-        print(i)
+    # print("\nTeam: ", match.teams[0])
+    # print("\nInitial squad:\n")
+    # print('Formation: ', match.formation1, '\n')
+    # for i in match.initial_squad1:
+    #     print(i)
+    # print("\nBench:")
+    # for i in match.bench_players1:
+    #     print(i)
+    # print("\nTeam: ", match.teams[1])
+    # print("\nInitial squad:\n")
+    # print('Formation: ', match.formation2, '\n')
+    # for i in match.initial_squad2:
+    #     print(i)
+    # print("\nBench:")
+    # for i in match.bench_players2:
+    #     print(i)
     #Events:
     #print("\nEvents:")
     match_report_event(c, match, 'event a')
@@ -304,13 +314,17 @@ def match_report_card(match, event, t2, card):
         event.event = card
 
 
-def match_report_penalties(match, event, a, t2):
+def match_report_penalties(match, event, a, t2, cl):
     if a.find('div', class_ = 'event_icon penalty_shootout_goal'):
         event.event = 'Penalty shootout goal'
+        if cl == 'event a':
+            match.penalties[0] += 1
+        elif cl == 'event b':
+            match.penalties[1] += 1
     else:
         event.event = 'Penalty shootout miss'
     event.player = t2.find('a').text
-    match.penalties.append(event)
+    
 
 
 def match_report_event(c, match, cl):
@@ -322,7 +336,6 @@ def match_report_event(c, match, cl):
         t1 = all_div[0].text.split()
         t2 = all_div[1].text.split()
         t3 = all_div[1]
-
         #print(t1, t2, t3)
         event = Event()
         if cl == 'event a':
@@ -343,7 +356,7 @@ def match_report_event(c, match, cl):
         elif a.find('div', class_ = 'event_icon yellow_red_card'):
             match_report_card(match, event, t2, 'Both')
         elif a.find('div', class_ = 'event_icon penalty_shootout_goal') or a.find('div', class_ = 'event_icon penalty_shootout_miss'):
-            match_report_penalties(match, event, a, t3)
+            match_report_penalties(match, event, a, t3, cl)
         #print(event.event, event.time, event.team, event.player)
         match.events.append(event)
 
@@ -374,9 +387,9 @@ def match_report_2015_and_2019(link, match):
                 continue
     formation1 = new_form1
     match.formation1 = formation1
-    print("\nTeam :", match.teams[0])
-    print("Formation:", match.formation1)
-    print("Starters:")
+    # print("\nTeam :", match.teams[0])
+    # print("Formation:", match.formation1)
+    # print("Starters:")
 
     rows = a.select('tr')
     count = 1
@@ -414,10 +427,10 @@ def match_report_2015_and_2019(link, match):
                 continue
     formation2 = new_form2
     match.formation2 = formation2
-    print("Team :", match.teams[0])
-    print("\nTeam :", match.teams[1])
-    print("\nFormation:", match.formation2)
-    print("Starters:")
+    # print("Team :", match.teams[0])
+    # print("\nTeam :", match.teams[1])
+    # print("\nFormation:", match.formation2)
+    # print("Starters:")
 
     rows = b.select('tr')
     count = 1

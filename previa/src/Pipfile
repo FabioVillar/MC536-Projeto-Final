@@ -4,22 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+mysql-client = "*"
 pymongo = "*"
+mysql-connector-python = "*"
+beautifulsoup4 = "*"
 pydantic = "*"
 dnspython = "*"
-mysql-connector-python = "*"
 requests = "*"
 lxml = "*"
 typing = "*"
 bs4 = "*"
 wikipedia = "*"
 wikipedia-api = "*"
-pandas = "*"
 "html.parser" = "*"
 html5lib = "*"
-unidecode = "*"
+translate = "*"
+textblob = "*"
+deep-translator = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9.4"
+python_version = "3.8"
