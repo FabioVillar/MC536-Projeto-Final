@@ -18,6 +18,9 @@ wikipedia = "*"
 wikipedia-api = "*"
 "html.parser" = "*"
 html5lib = "*"
+translate = "*"
+textblob = "*"
+deep-translator = "*"
 
 [dev-packages]
 

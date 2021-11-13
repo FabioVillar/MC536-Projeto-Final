@@ -25,7 +25,7 @@ def find_player_id(cursor, player, year_wc):
 def find_team_id(cursor, team, year_wc):
 
     query = ("SELECT id FROM Team_wc AS T"
-             " WHERE T.team_name = %s and T.year_wc = %s")
+             " WHERE instr(team_name, %s) and T.year_wc = %s")
     data = (team, year_wc)
     try:
         cursor.execute(query, data)
@@ -67,8 +67,9 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
                  "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, possesion, year_wc) "
-                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
-    penalties = 'x'.join(match_obj['penalties'])
+                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
+    penalties = [str(a) for a in match_obj['penalties'] ]
+    penalties = 'x'.join(penalties)
     score = 'x'.join(match_obj['score'])
     form1 = [str(a) for a in match_obj['formation1']]
     form2 = [str(a) for a in match_obj['formation2']]
@@ -213,19 +214,22 @@ def sql_manager():
             match_id = insert_matches_sql(
                 cursor, id1[0][0], id2[0][0], match, id_wc)
             for event in match['events']:
+                print(event, id_wc)
                 event['player'] = find_player_id(
                     cursor, unidecode(event['player'].strip()), id_wc)[0][0]
                 event['team'] = find_team_id(
                     cursor, event['team'].strip(), id_wc)[0][0]
+                print(event, id_wc)
                 insert_event_sql(cursor, match_id, event)
         awards = wc_obj['awards']
         for award in awards:
-            player_id = find_player_id(
+            print(award)
+            player_id_award = find_player_id(
                 cursor, unidecode(award['player']), id_wc)[0][0]
             team_id = find_team_id(cursor, award['team'], id_wc)[0][0]
-            insert_award_sql(cursor, id_wc, player_id, team_id, award)
+            insert_award_sql(cursor, id_wc, player_id_award, team_id, award)
 
-        cnx.commit()
+    cnx.commit()
     cursor.close()
     cnx.close()
 
