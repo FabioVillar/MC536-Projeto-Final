@@ -130,4 +130,11 @@ def create_awards():
         func_list[i](possible_awards[i], tags[i]) for i in range(len(tags))
     ]
     return awards_list
-create_awards()
+
+def get_awards_by_year(awards_list, year):
+    awards_list_year = []
+    for awards in awards_list:
+        for award in awards:
+            if award.year == year:
+                awards_list_year.append(award)
+    return awards_list_year

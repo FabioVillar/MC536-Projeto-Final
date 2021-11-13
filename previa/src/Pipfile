@@ -21,6 +21,7 @@ html5lib = "*"
 translate = "*"
 textblob = "*"
 deep-translator = "*"
+unidecode = "*"
 
 [dev-packages]
 
