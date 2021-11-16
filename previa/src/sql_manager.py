@@ -66,11 +66,12 @@ def insert_event_sql(cursor, match_id, event_obj: Event):
 def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
-                 "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, possesion, year_wc) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
+                 "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
+                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s)")
     penalties = [str(a) for a in match_obj['penalties'] ]
     penalties = 'x'.join(penalties)
-    score = 'x'.join(match_obj['score'])
+    score = [ str(a) for a in match_obj['score']]
+    score = 'x'.join(score)
     form1 = [str(a) for a in match_obj['formation1']]
     form2 = [str(a) for a in match_obj['formation2']]
     formation1 = '-'.join(form1)
@@ -83,7 +84,7 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     data_match = (str(id_key), penalties, match_obj['phase'], id1, id2, score, match_obj['stadium'],
                   (str(match_obj['attendance'])
                    ), match_obj['referee'], formation1, formation2, initial1,
-                  initial2, bench1, bench2, match_obj['possesion'], year_wc
+                  initial2, bench1, bench2, year_wc
                   )
 
     try:
@@ -185,7 +186,7 @@ def sql_manager():
     database = 'womens_world_cup'
     try:
         cnx = mysql.connector.connect(
-            user='root', password='admin123', database=database, host='localhost')
+            user='root', password='Hahafiqueigaludo123', database=database, host='localhost')
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("Something is wrong with your user name or password")

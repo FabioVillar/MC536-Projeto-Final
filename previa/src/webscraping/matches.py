@@ -5,6 +5,19 @@ from models import *
 import re
 from unidecode import unidecode
 
+
+def fix_name(name, year):
+    if (name == "Karasiova Ol'ga Valentinovna"):
+        return 'Olga Karasseva'
+    if (name == "Monica Hickmann Alves" and year != 2015 and year != 2019):
+        return 'Monica Angelica de Paula'
+    if (name == "Michelle O'Neill"):
+        return "Natalia Pablos"
+    if (name == 'Monica Angelica de Paula' and year == 2015):
+        return "Monica Hickmann Alves"
+    else:
+        return name
+
 def get_matches(year, page_id, new_cup):
 
     print("Getting Matches...", end="")
@@ -60,7 +73,7 @@ def get_matches(year, page_id, new_cup):
                     if team.name == match.teams[0] or team.name == match.teams[1]:
                         match.group = team.group
             
-            match_report_2015_and_2019(match_link, match)
+            match_report_2015_and_2019(match_link, match, new_cup)
             new_cup.matches.append(match)
     else:
 
@@ -119,7 +132,7 @@ def get_matches(year, page_id, new_cup):
                         match.group = team.group
 
             if year == 2015:
-                match_report_2015_and_2019(match_link, match)
+                match_report_2015_and_2019(match_link, match, new_cup)
             else:
                 match_report(match_link, match, new_cup)
 
@@ -148,7 +161,7 @@ def match_report(link, match, new_cup):
         
         for i in stats.find('tbody').find_all('tr'):
 
-            name = i.find('th').text
+            name = i.find('th').text.replace(',', '')
             data = i.find_all('td')
             player_position = data[1].text
             player_position = player_position.split(',')[0]
@@ -162,7 +175,7 @@ def match_report(link, match, new_cup):
                                     player_position = player.position.split(',')[0]
                                     # print("Fixed: " + player_position)
                 if y == 0:
-                    match.initial_squad1.append(unidecode(name))
+                    match.initial_squad1.append(unidecode(fix_name(name, new_cup.year)))
                     if (player_position == 'DF' or player_position == 'LB' or
                     player_position == 'CB' or player_position == 'RB'):
                         match.formation1[0] += 1
@@ -185,7 +198,7 @@ def match_report(link, match, new_cup):
                     player_position == 'CB' or player_position == 'RB'):
                         match.formation2[0] += 1
             else:
-                new_name = i.find('th').find('a').text
+                new_name = fix_name(unidecode(i.find('th').find('a').text).replace(',', ''), new_cup.year)
                 if y == 0:
                     match.bench_players1.append(new_name)
                 else:
@@ -204,21 +217,22 @@ def match_report(link, match, new_cup):
         t_stats = div_stats.find('div', id = 'tfooter_stats_'+ id + '_summary')
 
         for z in t_stats.find_all('a'):
+            name = fix_name(unidecode(z.text).replace(',', ''), new_cup.year)
             if y == 0:
-                match.bench_players1.append(z.text)
+                match.bench_players1.append(name)
             else:
-                match.bench_players2.append(z.text)
+                match.bench_players2.append(name)
         y += 1
         if y == 2:
             break
 
     match_report_event(content, match, 'event a')
     match_report_event(content, match, 'event b')
+    return
 
 
-def match_report_goal_related(match, event, a, t2):
+def match_report_goal_related(match, event, a, t2, new_cup):
     time = event.time
-    event_type= ''
     if a.find('div', class_ = 'event_icon goal'):
         event.event = 'Goal'
     elif a.find('div', class_ = 'event_icon penalty_goal'):
@@ -229,48 +243,52 @@ def match_report_goal_related(match, event, a, t2):
         event.event = 'Own Goal'
 
     links = t2.find_all('a')
-    player_2 = ''
-    event.player = links[0].text
+    name = unidecode(links[0].text).replace(',', '')
+    event.player = fix_name(name, new_cup.year)
  
-    if (len(links)>1):
-        player_2 = links[1].text
-        event_type = 'Assist'
-
-    if event_type == 'Assist:':
+    if (len(links)>1): 
         assist = Event()
         assist.event = 'Assist'
         assist.time = time
-        assist.name = player_2
+        name = fix_name(unidecode(links[1].text).replace(',', ''), new_cup.year)
+        assist.player = name
         assist.team = event.team
         match.events.append(assist)
+    return
 
 
-def match_report_substitution(match, event, t2):
+def match_report_substitution(match, event, t2, new_cup):
     event.event = 'Substitute in'
-    event.player = unidecode(t2.find_all('a')[0].text)
+    name = unidecode(t2.find_all('a')[0].text).replace(',', '')
+    event.player = fix_name(name, new_cup.year)
+
     s = Event()
     s.event = "Substitute out"
     s.time = event.time
     s.team = event.team
-    s.player = unidecode(t2.find_all('a')[1].text)
-    #print(s.event, s.time, s.team, s.player)
+    name = unidecode(t2.find_all('a')[1].text).replace(',', '')
+    s.player = fix_name(name, new_cup.year)
     match.events.append(s)
+    return
 
-def match_report_card(match, event, t2, card):
-    event.player = t2.find('a').text
+def match_report_card(match, event, t2, card, new_cup):
+    name = unidecode(t2.find('a').text).replace(',', '')
+    event.player = fix_name(name, new_cup.year)
     if card == 'Both':
         event.event = 'Yellow Card'
         red_card = Event()
         red_card.event = 'Red Card'
         red_card.time = event.time
         red_card.team = event.team
-        red_card.player = event.player
+        name = event.player
+        red_card.player = name
         match.events.append(red_card)
     else:
         event.event = card
+    return
 
 
-def match_report_penalties(match, event, a, t2, cl):
+def match_report_penalties(match, event, a, t2, cl, new_cup):
     if a.find('div', class_ = 'event_icon penalty_shootout_goal'):
         event.event = 'Penalty shootout goal'
         if cl == 'event a':
@@ -279,11 +297,13 @@ def match_report_penalties(match, event, a, t2, cl):
             match.penalties[1] += 1
     else:
         event.event = 'Penalty shootout miss'
-    event.player = t2.find('a').text
+    name = unidecode(t2.find('a').text).replace(',', '')
+    event.player = fix_name(name, new_cup.year)
+    return
     
 
 
-def match_report_event(c, match, cl):
+def match_report_event(c, match, cl, new_cup):
     m = c.find('div', id = 'events_wrap')
     m = m.find('div', id = '')
     eventsa = m.find_all('div', class_ = cl)
@@ -301,22 +321,23 @@ def match_report_event(c, match, cl):
         time = time[0]
         event.time = time
         if a.find('div', class_ = 'event_icon goal') or a.find('div', class_ = 'event_icon penalty_goal') or a.find('div', class_ = 'event_icon penalty_miss') or a.find('div', class_ = 'event_icon own_goal'):
-            match_report_goal_related(match, event, a, t2)
+            match_report_goal_related(match, event, a, t2, new_cup)
         elif a.find('div', class_ = 'event_icon substitute_in'):
-            match_report_substitution(match, event, t2)
+            match_report_substitution(match, event, t2, new_cup)
         elif a.find('div', class_ = 'event_icon yellow_card'):
-            match_report_card(match, event, t2, 'Yellow Card')
+            match_report_card(match, event, t2, 'Yellow Card', new_cup)
         elif a.find('div', class_ = 'event_icon red_card'):
-            match_report_card(match, event, t2, 'Red Card')
+            match_report_card(match, event, t2, 'Red Card', new_cup)
         elif a.find('div', class_ = 'event_icon yellow_red_card'):
-            match_report_card(match, event, t2, 'Both')
+            match_report_card(match, event, t2, 'Both', new_cup)
         elif a.find('div', class_ = 'event_icon penalty_shootout_goal') or a.find('div', class_ = 'event_icon penalty_shootout_miss'):
-            match_report_penalties(match, event, a, t2, cl)
-        #print(event.event, event.time, event.team, event.player)
+            match_report_penalties(match, event, a, t2, cl, new_cup)
+        
         match.events.append(event)
+    return
 
 
-def match_report_2015_and_2019(link, match):
+def match_report_2015_and_2019(link, match, new_cup):
     r = requests.get(link)
     #print(r.status_code)
     soup = BeautifulSoup(r.content, 'lxml')
@@ -342,10 +363,6 @@ def match_report_2015_and_2019(link, match):
                 continue
     formation1 = new_form1
     match.formation1 = formation1
-    # print("\nTeam :", match.teams[0])
-    # print("Formation:", match.formation1)
-    # print("Starters:")
-
     rows = a.select('tr')
     count = 1
     for player in rows:
@@ -355,7 +372,7 @@ def match_report_2015_and_2019(link, match):
             count += 1
             continue
         aux = player.find('a')
-        player_name = aux.text
+        player_name = unidecode(aux.text).replace(',', '')
         #print(player_name)
         if count < 13: 
             match.initial_squad1.append(player_name)
@@ -396,7 +413,7 @@ def match_report_2015_and_2019(link, match):
             count += 1
             continue
         aux = player.find('a')
-        player_name = aux.text
+        player_name = unidecode(aux.text).replace(',', '')
         #print(player_name)
         if count < 13:
             match.initial_squad2.append(player_name)
@@ -405,5 +422,6 @@ def match_report_2015_and_2019(link, match):
         count += 1
     #Events:
     #print("\nEvent/ Time/ Country/ Player:")
-    match_report_event(c, match, 'event a')
-    match_report_event(c, match, 'event b')
+    match_report_event(c, match, 'event a', new_cup)
+    match_report_event(c, match, 'event b', new_cup)
+    return

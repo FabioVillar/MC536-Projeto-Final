@@ -19,12 +19,20 @@ def check_name(name): #Fixing some names to match Wikipedia
     else:
         return name
 
+def fix_name(name):
+    if (name == 'Hong Myong-hui'):
+        return 'Jon Myong-hui'
+    if (name == 'Ester'):
+        return 'Ester Aparecida dos Santos'
+    else:
+        return name
+
 def create_new_player(name, stats, year, team_name): 
 
     tm = team_name
     #assign stats elements to new_player attributes
     new_player = Player()
-    new_player.name = unidecode(name)
+    new_player.name = fix_name(unidecode(name).replace(',', ''))
     new_player.position = stats[0].text
 
     if (stats[1].text!=''):

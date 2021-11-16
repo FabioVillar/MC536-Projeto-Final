@@ -3,6 +3,14 @@ from bs4 import BeautifulSoup
 import requests
 from models import *
 import re
+from unidecode import unidecode
+
+def fix_name(name):
+    if name == 'Victoria Svensson':
+        return 'Victoria Sandell Svensson'
+    else:
+        return name
+
 
 def get_regex_single_winners(tags):
     tags_re = []
@@ -39,7 +47,7 @@ def get_young_player_award(award_, tags):
             award = award_,
             year = int(year),
             team = team,
-            player = candidates[i+1]
+            player = fix_name(unidecode(candidates[i+1]))
         )
         award_list.append(award_obj)
 
@@ -65,7 +73,7 @@ def get_golden_glove(award_, tags):
             award = award_,
             year = int(year),
             team = str(team),
-            player = str(candidates[i])
+            player = fix_name(unidecode(str(candidates[i])))
         )
         award_list.append(award_obj)
 
@@ -96,7 +104,7 @@ def get_multiple_award(award_, tags):
                     award = award_+' '+str(position),
                     year = int(year),
                     team = candidates[j],
-                    player = str(candidates[j+1])
+                    player = fix_name(unidecode(str(candidates[j+1])))
                 )
                 position +=1
                 award_list.append(award_obj)
