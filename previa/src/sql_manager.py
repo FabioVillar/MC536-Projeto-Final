@@ -2,13 +2,13 @@ import mysql.connector
 from mysql.connector import errorcode
 from models import *
 import uuid
-# from main import *
 import json
 from unidecode import unidecode
+import os
 
 
 def find_player_id(cursor, player, year_wc):
-    
+
     query = (
         "SELECT id FROM Player_wc P"
         " WHERE INSTR(P.player_name, %s) > 0 and P.year_wc = %s"
@@ -67,8 +67,8 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
                  "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, possesion, year_wc) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
-    penalties = [str(a) for a in match_obj['penalties'] ]
+                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
+    penalties = [str(a) for a in match_obj['penalties']]
     penalties = 'x'.join(penalties)
     score = 'x'.join(match_obj['score'])
     form1 = [str(a) for a in match_obj['formation1']]
@@ -180,12 +180,12 @@ def object_management(wc_obj):
 
 
 def sql_manager():
-    # user = os.environ.get('sql_user')
-    # password = os.environ.get('sql_password')
+    user = os.environ.get('mysql_user')
+    password = os.environ.get('mysql_password')
     database = 'womens_world_cup'
     try:
         cnx = mysql.connector.connect(
-            user='root', password='admin123', database=database, host='localhost')
+            user=user, password=password, database=database, host='localhost')
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("Something is wrong with your user name or password")
@@ -197,7 +197,7 @@ def sql_manager():
     cursor = cnx.cursor(buffered=True)
     start_year = 1991
     last_year = 2019
-    for year in range(start_year,last_year +1,4):
+    for year in range(start_year, last_year + 1, 4):
         with open(f'world_cup{year}.json', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
         id_wc = wc_obj['year']
