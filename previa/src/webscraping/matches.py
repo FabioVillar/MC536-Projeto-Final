@@ -226,8 +226,8 @@ def match_report(link, match, new_cup):
         if y == 2:
             break
 
-    match_report_event(content, match, 'event a')
-    match_report_event(content, match, 'event b')
+    match_report_event(content, match, 'event a', new_cup)
+    match_report_event(content, match, 'event b', new_cup)
     return
 
 
