@@ -5,7 +5,7 @@ from models import *
 import re
 from unidecode import unidecode
 
-def check_name(name):
+def check_name(name): #Fixing some names to match Wikipedia
     if (name == 'Zhang Honghong'):
         return 'Zhang Hongdong'
     elif (name == 'Kim Yoo-mi'):
@@ -14,6 +14,16 @@ def check_name(name):
         return 'Kim Ju-hee'
     elif (name == 'Myung-Hwa Lee'):
         return 'Lee Myung-hwa'
+    elif (name == 'Mirian Silva de Paixao'):
+        return 'Miriam'
+    else:
+        return name
+
+def fix_name(name):
+    if (name == 'Hong Myong-hui'):
+        return 'Jon Myong-hui'
+    if (name == 'Ester'):
+        return 'Ester Aparecida dos Santos'
     else:
         return name
 
@@ -22,7 +32,7 @@ def create_new_player(name, stats, year, team_name):
     tm = team_name
     #assign stats elements to new_player attributes
     new_player = Player()
-    new_player.name = unidecode(name)
+    new_player.name = fix_name(unidecode(name).replace(',', ''))
     new_player.position = stats[0].text
 
     if (stats[1].text!=''):
@@ -36,7 +46,9 @@ def create_new_player(name, stats, year, team_name):
     if (stats[12].text!=''):
         new_player.red_cards = int(stats[12].text)
 
-    problem_count = 0
+    #Fixing missing infos from player
+
+    problem_count = 0 
 
     if (new_player.position == '' or new_player.age == 0):
         problem_count = 1
@@ -47,11 +59,13 @@ def create_new_player(name, stats, year, team_name):
         wiki_page = requests.get(wiki_link).text #request
         soup = BeautifulSoup(wiki_page, 'lxml') #parsing
         content = soup.find('div', id='mw-content-text')
-        count = 0
-        if (tm == 'Korea DPR'):
+        count = 0 #table index in Wikipedia's page
+
+        if (tm == 'Korea DPR'): #Matching Wikipeddia
             tm = 'North Korea'
         if (tm == 'Korea Republic'):
             tm = 'South Korea'
+
         for i in content.find_all('h3'):
             if (i.find('span').text == tm):
                 table = content.find_all('table')[count]
@@ -64,9 +78,11 @@ def create_new_player(name, stats, year, team_name):
                             stat = k.find_all('td')
                             if (new_player.position == ''):
                                 new_player.position = stat[1].find('a').text
-                            if (new_player.age == ''):
+                            if (new_player.age == 0):
+                                print(comparing_name)
                                 string  = stat[2].text
                                 age = [int(s) for s in string.split() if s.isdigit()]
+                                print(age)
                                 new_player.age = int(year - age[0])
                     else:
                         meter+=1
@@ -79,6 +95,7 @@ def create_new_player(name, stats, year, team_name):
 
 def create_new_team(link, name, page_id, year):
 
+    print('https://fbref.com'+link)
     #requests
     team_page = requests.get('https://fbref.com'+link).text #request
     soup = BeautifulSoup(team_page, 'lxml') #parsing

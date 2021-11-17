@@ -5,10 +5,12 @@ import uuid
 # from main import *
 import json
 from unidecode import unidecode
+import os
+
 
 
 def find_player_id(cursor, player, year_wc):
-    
+
     query = (
         "SELECT id FROM Player_wc P"
         " WHERE INSTR(P.player_name, %s) > 0 and P.year_wc = %s"
@@ -25,7 +27,7 @@ def find_player_id(cursor, player, year_wc):
 def find_team_id(cursor, team, year_wc):
 
     query = ("SELECT id FROM Team_wc AS T"
-             " WHERE instr(team_name, %s) and T.year_wc = %s")
+             " WHERE instr(team_name, %s) > 0  and T.year_wc = %s")
     data = (team, year_wc)
     try:
         cursor.execute(query, data)
@@ -66,11 +68,12 @@ def insert_event_sql(cursor, match_id, event_obj: Event):
 def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
-                 "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, possesion, year_wc) "
-                "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s,%s)")
-    penalties = [str(a) for a in match_obj['penalties'] ]
+                 "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
+                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s)")
+    penalties = [str(a) for a in match_obj['penalties']]
     penalties = 'x'.join(penalties)
-    score = 'x'.join(match_obj['score'])
+    score = [str(a) for a in match_obj['score']]
+    score = 'x'.join(score)
     form1 = [str(a) for a in match_obj['formation1']]
     form2 = [str(a) for a in match_obj['formation2']]
     formation1 = '-'.join(form1)
@@ -83,7 +86,7 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     data_match = (str(id_key), penalties, match_obj['phase'], id1, id2, score, match_obj['stadium'],
                   (str(match_obj['attendance'])
                    ), match_obj['referee'], formation1, formation2, initial1,
-                  initial2, bench1, bench2, match_obj['possesion'], year_wc
+                  initial2, bench1, bench2, year_wc
                   )
 
     try:
@@ -148,44 +151,51 @@ def insert_world_cup_sql(cursor, wc_object: WorldCup):
         raise
 
 
-def insert_team_and_players(teams):
-    teams_id = 0
+def insert_team_and_players(teams, year_wc, cursor):
     for team in teams:
-        team
-        teams_id += 1
-        for player in team['players']:
-            print(player)
+            team_id = insert_teams_wc_sql(cursor, year_wc, team)
+            for player in team['players']:
+                insert_player_wc_sql(team_id, cursor, player, year_wc)
+        
 
 
-def insert_matches_and_events(matches):
-    matches_id = 0
+def insert_matches_and_events(matches, year_wc, cursor):
     for match in matches:
-        matches_id += 1
-        events = 0
+        print(match)   
+        id1 = find_team_id(cursor, match['teams'][0].strip(), year_wc)
+        id2 = find_team_id(cursor, match['teams'][1].strip(), year_wc)
+        print(id1, id2)
+        match_id = insert_matches_sql(
+            cursor, id1[0][0], id2[0][0], match, year_wc)
         for event in match['events']:
-            event
-            events += 1
+            print(event, year_wc)
+            event['player'] = find_player_id(
+                cursor, unidecode(event['player'].strip()), year_wc)[0][0]
+            event['team'] = find_team_id(
+                cursor, event['team'].strip(), year_wc)[0][0]
+            print(event, year_wc)
+            insert_event_sql(cursor, match_id, event)
 
 
-def insert_awards(awards):
+def insert_awards(awards, year_wc, cursor):
     for award in awards:
         print(award)
+        player_id_award = find_player_id(
+            cursor, unidecode(award['player']), year_wc)[0][0]
+        team_id = find_team_id(cursor, award['team'], year_wc)[0][0]
+        insert_award_sql(cursor, year_wc, player_id_award, team_id, award)
 
-
-def object_management(wc_obj):
-    # wc_id = insert_world_cup(wc_obj)
-    teams = wc_obj['teams']
-    matches = wc_obj['matches']
-    awards = wc_obj['awards']
 
 
 def sql_manager():
-    # user = os.environ.get('sql_user')
-    # password = os.environ.get('sql_password')
+
+    user = os.environ.get('mysql_user')
+    password = os.environ.get('mysql_password')
     database = 'womens_world_cup'
+    print(user, password)
     try:
         cnx = mysql.connector.connect(
-            user='root', password='admin123', database=database, host='localhost')
+            user= user, password= password, database=database, host='localhost')
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print("Something is wrong with your user name or password")
@@ -197,39 +207,19 @@ def sql_manager():
     cursor = cnx.cursor(buffered=True)
     start_year = 1991
     last_year = 2019
-    for year in range(start_year,last_year +1,4):
+    for year in range(start_year, last_year + 1, 4):
         with open(f'world_cup{year}.json', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
-        id_wc = wc_obj['year']
-        id_wc = insert_world_cup_sql(cursor, wc_obj)
-        teams = wc_obj['teams']
-        for team in teams:
-            team_id = insert_teams_wc_sql(cursor, id_wc, team)
-            for player in team['players']:
-                insert_player_wc_sql(team_id, cursor, player, id_wc)
-        matches = wc_obj['matches']
-        for match in matches:
-            id1 = find_team_id(cursor, match['teams'][0].strip(), id_wc)
-            id2 = find_team_id(cursor, match['teams'][1].strip(), id_wc)
-            match_id = insert_matches_sql(
-                cursor, id1[0][0], id2[0][0], match, id_wc)
-            for event in match['events']:
-                print(event, id_wc)
-                event['player'] = find_player_id(
-                    cursor, unidecode(event['player'].strip()), id_wc)[0][0]
-                event['team'] = find_team_id(
-                    cursor, event['team'].strip(), id_wc)[0][0]
-                print(event, id_wc)
-                insert_event_sql(cursor, match_id, event)
-        awards = wc_obj['awards']
-        for award in awards:
-            print(award)
-            player_id_award = find_player_id(
-                cursor, unidecode(award['player']), id_wc)[0][0]
-            team_id = find_team_id(cursor, award['team'], id_wc)[0][0]
-            insert_award_sql(cursor, id_wc, player_id_award, team_id, award)
-
-    cnx.commit()
+        year_wc = wc_obj['year']
+        print(year_wc)
+        insert_world_cup_sql(cursor, wc_obj)
+        cnx.commit()
+        insert_team_and_players(wc_obj['teams'], year_wc, cursor)
+        cnx.commit()
+        insert_matches_and_events(wc_obj['matches'], year_wc, cursor)
+        cnx.commit()
+        insert_awards(wc_obj['awards'], year_wc, cursor)
+        cnx.commit()
     cursor.close()
     cnx.close()
 

@@ -45,12 +45,11 @@ class Match(BaseModel):
     teams: List[str] = [] 
     score: List[int] = []
     stadium: str = '' 
-    possesion: str = ''
     attendance: int = 0
     referee: str = '' 
-    penalties: List[int] = []
-    formation1: List[int] = []
-    formation2: List[int] = []
+    penalties: List[int] = [0,0]
+    formation1: List[int] = [0, 0, 0]
+    formation2: List[int] = [0, 0, 0]
     initial_squad1: List[str] = []
     bench_players1: List[str] = []
     initial_squad2: List[str] = []
