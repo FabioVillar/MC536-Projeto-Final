@@ -11,9 +11,9 @@ Para o FBREF, temos os seguintes links:
 ~~~
 https://fbref.com/en/comps/106/{page_id}/qual/{year}-Womens-World-Cup-Qualifying-Rounds
 
-Onde:
-page_id = id da página correspondente (varia entre 1779 e 1786)
-year = ano da copa (1991 à 2019)
+
+{page_id} = id da página correspondente (varia entre 1779 e 1786)
+{year} = ano da copa (1991 à 2019)
 ~~~
 
 > Dados das seleções na copa de 2019:
@@ -28,8 +28,8 @@ https://en.wikipedia.org/wiki/2019_FIFA_Women's_World_Cup_squads
 ~~~
 https://fbref.com/en/squads/{code}/{year}/{team_name}-Stats
 
-Onde:
-code = code da página correspondente
-year = ano da copa (1991 à 2019)
-team_name = nome da seleção
+
+{code} = code da página correspondente
+{year} = ano da copa (1991 à 2019)
+{team_name} = nome da seleção
 ~~~
