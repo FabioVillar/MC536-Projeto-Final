@@ -111,10 +111,12 @@ Awards(award_type, year_wc, player_id, team_id)
 
 ## Operações realizadas para a construção do dataset
 
-> Coloque um link para o arquivo do notebook, programas ou workflows que executam as operações de construção do dataset:
-* extração de dados de fontes não estruturadas como, por exemplo, páginas Web
-* agregação de dados fragmentados obtidos a partir de API
-* integração de dados de múltiplas fontes
+> As operações utilizadas para a construção do dataset se encontram na pasta `src`. Mais precisamente, para a montagem dos arquivos .json, basta executar o arquivo ![main.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/main.py). Para obter os bancos de dados em SQL e MongoDB, basta seguir as operações contidas em ![README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md).
+
+
+* Extração de dados de fontes não estruturadas: Para toda a composição do projeto, foi utilizado somente webscraping para a obtenção dos dados.
+
+* Integração: Obtivemos dados de dois sites: FBREF e Wikipedia. A utilização de forma mais específica pode ser vista em 
 * tratamento de dados
 * transformação de dados para facilitar análise e pesquisa
 
