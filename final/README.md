@@ -87,21 +87,21 @@ Awards(award_type, year_wc, player_id, team_id)
 
 ## Dataset Preliminar a ser Publicado
 
-world_cup_1991.json | ![link](final/data/processed/world_cup_1991.json) | Documento JSON com os dados da Copa do mundo feminina de 1991
+world_cup_1991.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1991.json) | Documento JSON com os dados da Copa do mundo feminina de 1991
 
-world_cup_1995.json | ![link](final/data/processed/world_cup_1995.json) | Documento JSON com os dados da Copa do mundo feminina de 1995
+world_cup_1995.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1995.json) | Documento JSON com os dados da Copa do mundo feminina de 1995
 
-world_cup_1999.json | ![link](final/data/processed/world_cup_1999.json) | Documento JSON com os dados da Copa do mundo feminina de 1999
+world_cup_1999.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1999.json) | Documento JSON com os dados da Copa do mundo feminina de 1999
 
-world_cup_2003.json | ![link](final/data/processed/world_cup_2003.json) | Documento JSON com os dados da Copa do mundo feminina de 2003
+world_cup_2003.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2003.json) | Documento JSON com os dados da Copa do mundo feminina de 2003
 
-world_cup_2007.json | ![link](final/data/processed/world_cup_2007.json) | Documento JSON com os dados da Copa do mundo feminina de 2007
+world_cup_2007.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2007.json) | Documento JSON com os dados da Copa do mundo feminina de 2007
 
-world_cup_2011.json | ![link](final/data/processed/world_cup_2011.json) | Documento JSON com os dados da Copa do mundo feminina de 2011
+world_cup_2011.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2011.json) | Documento JSON com os dados da Copa do mundo feminina de 2011
 
-world_cup_2015.json | ![link](final/data/processed/world_cup_2015.json) | Documento JSON com os dados da Copa do mundo feminina de 2015
+world_cup_2015.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2015.json) | Documento JSON com os dados da Copa do mundo feminina de 2015
 
-world_cup_2019.json | ![link](final/data/processed/world_cup_2019.json) | Documento JSON com os dados da Copa do mundo feminina de 2019
+world_cup_2019.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2019.json) | Documento JSON com os dados da Copa do mundo feminina de 2019
 
 ## Bases de Dados
 
