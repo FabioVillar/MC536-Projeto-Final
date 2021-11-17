@@ -1,0 +1,7072 @@
+{
+  "year": 1995,
+  "host": "Sweden",
+  "awards": [
+    {
+      "award": "Golden_Ball 1",
+      "team": "Norway",
+      "player": "Hege Riise",
+      "year": 1995
+    },
+    {
+      "award": "Golden_Ball 2",
+      "team": "Norway",
+      "player": "Gro Espeseth",
+      "year": 1995
+    },
+    {
+      "award": "Golden_Ball 3",
+      "team": "Norway",
+      "player": "Ann Kristin Aarones",
+      "year": 1995
+    },
+    {
+      "award": "Golden_Boot 1",
+      "team": "Norway",
+      "player": "Ann Kristin Aarones",
+      "year": 1995
+    },
+    {
+      "award": "Golden_Boot 2",
+      "team": "Norway",
+      "player": "Hege Riise",
+      "year": 1995
+    },
+    {
+      "award": "Golden_Boot 3",
+      "team": "China",
+      "player": "Shi Guihong",
+      "year": 1995
+    }
+  ],
+  "teams": [
+    {
+      "name": "Australia",
+      "coach": "Tom Sermanni",
+      "points_group_stage": 0,
+      "points_overall": 0,
+      "group": "C",
+      "position_group": 0,
+      "goals": [
+        3,
+        13,
+        -10
+      ],
+      "ved": [
+        0,
+        0,
+        3
+      ],
+      "players": [
+        {
+          "name": "Sarah Cooper",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Alison Forman",
+          "position": "MF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Anissa Tann",
+          "position": "DF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tracey Wheeler",
+          "position": "GK",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Julie Murray",
+          "position": "FW,MF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Jane Oakley",
+          "position": "DF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sunni Hughes",
+          "position": "FW",
+          "age": 27,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Angela Iannotta",
+          "position": "FW",
+          "age": 24,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Michelle Watson",
+          "position": "FW",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Kim Lembryk",
+          "position": "MF",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Lisa Casagrande",
+          "position": "MF",
+          "age": 17,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Cheryl Salisbury",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Sonia Gegenhuber",
+          "position": "DF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 1
+        },
+        {
+          "name": "Lizzy Claydon",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sacha Wainwright",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Denie Pentecost",
+          "position": "MF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kaylene Janssen",
+          "position": "MF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Traci Bartlett",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Louise McMurtriel",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Claire Nichols",
+          "position": "GK",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Brazil",
+      "coach": "Ademar Fonseca",
+      "points_group_stage": 0,
+      "points_overall": 3,
+      "group": "A",
+      "position_group": 0,
+      "goals": [
+        3,
+        8,
+        -5
+      ],
+      "ved": [
+        1,
+        0,
+        2
+      ],
+      "players": [
+        {
+          "name": "Roseli de Belo",
+          "position": "FW",
+          "age": 25,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Cenira",
+          "position": "MF",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Fanta",
+          "position": "MF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Margarete Pioresan",
+          "position": "GK",
+          "age": 39,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Elane Rego dos Santos",
+          "position": "DF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Sissi",
+          "position": "MF",
+          "age": 28,
+          "goals": 0,
+          "assists": 1,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Valeria",
+          "position": "MF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Pretinha",
+          "position": "FW",
+          "age": 20,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Suzy",
+          "position": "DF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 2
+        },
+        {
+          "name": "Solange",
+          "position": "DF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Michael Jackson",
+          "position": "FW",
+          "age": 31,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Leda Maria",
+          "position": "MF",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Tania Maria",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Formiga",
+          "position": "MF",
+          "age": 17,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nalvinha",
+          "position": "FW",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Marcia Taffarel",
+          "position": "MF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Eliane",
+          "position": "GK",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Katia",
+          "position": "FW",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nene",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Yara",
+          "position": "DF",
+          "age": 31,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Canada",
+      "coach": "Sylvie Béliveau",
+      "points_group_stage": 0,
+      "points_overall": 1,
+      "group": "B",
+      "position_group": 0,
+      "goals": [
+        5,
+        13,
+        -8
+      ],
+      "ved": [
+        0,
+        1,
+        2
+      ],
+      "players": [
+        {
+          "name": "Silvana Burtini",
+          "position": "FW",
+          "age": 26,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Carla Chin",
+          "position": "GK",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Geri Donnelly",
+          "position": "MF",
+          "age": 29,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Janine Helland",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Charmaine Hooper",
+          "position": "FW",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Angela Kelly",
+          "position": "MF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Michelle Ring",
+          "position": "DF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Helen Stoumbos",
+          "position": "DF,MF",
+          "age": 24,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Andrea Neil",
+          "position": "MF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Cathy Ross",
+          "position": "DF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Annie Caron",
+          "position": "FW",
+          "age": 31,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Veronica O'Brien",
+          "position": "MF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Suzanne Muir",
+          "position": "DF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Luce Mongrain",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Suzanne Gerrior",
+          "position": "MF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Wendy Hawthorne",
+          "position": "GK",
+          "age": 34,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Joan McEachern",
+          "position": "MF",
+          "age": 31,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Isabelle Morneau",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nicole Sedgwick",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tania Singfield",
+          "position": "GK",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "China PR",
+      "coach": "Ma Yuanan",
+      "points_group_stage": 0,
+      "points_overall": 8,
+      "group": "C",
+      "position_group": 0,
+      "goals": [
+        11,
+        10,
+        1
+      ],
+      "ved": [
+        2,
+        2,
+        2
+      ],
+      "players": [
+        {
+          "name": "Zhao Lihong",
+          "position": "MF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Wang Liping",
+          "position": "MF",
+          "age": 21,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Fan Yunjie",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sun Wen",
+          "position": "FW",
+          "age": 22,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Shi Guihong",
+          "position": "FW",
+          "age": 27,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Liu Ailing",
+          "position": "MF",
+          "age": 28,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Wen Lirong",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Xie Huilin",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Zhou Yang",
+          "position": "MF",
+          "age": 24,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Gao Hong",
+          "position": "GK",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sun Qingmei",
+          "position": "FW",
+          "age": 28,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Zhong Honglian",
+          "position": "GK",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Niu Lijie",
+          "position": "DF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Chen Yufeng",
+          "position": "MF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Wei Haiying",
+          "position": "FW",
+          "age": 24,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Shui Qingxia",
+          "position": "MF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Yu Hongqi",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Zhou Hua",
+          "position": "MF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Man Yanling",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Li Ying",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Denmark",
+      "coach": "Keld Gantzhorn",
+      "points_group_stage": 0,
+      "points_overall": 3,
+      "group": "C",
+      "position_group": 0,
+      "goals": [
+        7,
+        8,
+        -1
+      ],
+      "ved": [
+        1,
+        0,
+        3
+      ],
+      "players": [
+        {
+          "name": "Birgit Christensen",
+          "position": "MF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Rikke Holm",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Dorthe Larsen",
+          "position": "GK",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Anne Dot Eggers Nielsen",
+          "position": "MF",
+          "age": 19,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Lene Terp",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Katrine Pedersen",
+          "position": "DF,MF",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Helle Jensen",
+          "position": "FW,MF",
+          "age": 26,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Lene Madsen",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Gitte Krogh",
+          "position": "FW",
+          "age": 18,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kamma Flaeng",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Louise Hansen",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Annette Laursen",
+          "position": "DF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Christina Hansen",
+          "position": "FW",
+          "age": 25,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Jeanne Axelsen",
+          "position": "MF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Christina Bonde",
+          "position": "MF",
+          "age": 21,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Bettina Allentoft",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Christina Petersen",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Helle Bjerregaard",
+          "position": "GK",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Karina Christensen",
+          "position": "FW",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Annie Gam-Pedersen",
+          "position": "FW",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Lisbet Kolding",
+          "position": "MF",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "England",
+      "coach": "Ted Copeland",
+      "points_group_stage": 0,
+      "points_overall": 6,
+      "group": "B",
+      "position_group": 0,
+      "goals": [
+        6,
+        9,
+        -3
+      ],
+      "ved": [
+        2,
+        0,
+        2
+      ],
+      "players": [
+        {
+          "name": "Debbie Bampton",
+          "position": "MF",
+          "age": 33,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Karen Burke",
+          "position": "MF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Karen Farley",
+          "position": "FW",
+          "age": 24,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Clare Taylor",
+          "position": "DF",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Karen Walker",
+          "position": "FW",
+          "age": 25,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tina Mapes",
+          "position": "DF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Brenda Sempare",
+          "position": "MF",
+          "age": 33,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Gillian Coultard",
+          "position": "DF,MF",
+          "age": 31,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Marieanne Spacey",
+          "position": "FW",
+          "age": 29,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Pauline Cope",
+          "position": "GK",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kerry Davis",
+          "position": "FW",
+          "age": 32,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Samantha Britton",
+          "position": "DF,MF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Lesley Higgs",
+          "position": "GK",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Hope Powell",
+          "position": "MF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Becky Easton",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Louise Waller",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Julie Fletcher",
+          "position": "DF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Mary Phillip",
+          "position": "DF,MF",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Donna Smith",
+          "position": "DF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sian Williams",
+          "position": "MF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Germany",
+      "coach": "Gero Bisanz",
+      "points_group_stage": 0,
+      "points_overall": 12,
+      "group": "A",
+      "position_group": 0,
+      "goals": [
+        13,
+        6,
+        7
+      ],
+      "ved": [
+        4,
+        0,
+        2
+      ],
+      "players": [
+        {
+          "name": "Anouschka Bernhard",
+          "position": "DF",
+          "age": 24,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Manuela Goller",
+          "position": "GK",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ursula Lohn",
+          "position": "MF",
+          "age": 28,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Heidi Mohr",
+          "position": "FW",
+          "age": 28,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Silvia Neid",
+          "position": "MF",
+          "age": 31,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Bettina Wiegmann",
+          "position": "MF",
+          "age": 23,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Dagmar Pohlmann",
+          "position": "MF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Maren Meinert",
+          "position": "MF",
+          "age": 21,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Martina Voss-Tecklenburg",
+          "position": "FW,MF",
+          "age": 27,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Birgitt Austermuhl",
+          "position": "DF",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Birgit Prinz",
+          "position": "FW",
+          "age": 17,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Patricia Brocker",
+          "position": "FW",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sandra Minnert",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tina Wunderlich",
+          "position": "DF",
+          "age": 17,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Pia Wunderlich",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Melanie Hoffmann",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sandra Smisek",
+          "position": "FW,MF",
+          "age": 17,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Christine Francke",
+          "position": "GK",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Claudia Klein",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Katja Kraus",
+          "position": "GK",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Japan",
+      "coach": "Tamotsu Suzuki",
+      "points_group_stage": 0,
+      "points_overall": 3,
+      "group": "A",
+      "position_group": 0,
+      "goals": [
+        2,
+        8,
+        -6
+      ],
+      "ved": [
+        1,
+        0,
+        3
+      ],
+      "players": [
+        {
+          "name": "Maki Haneta",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kae Nishina",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Akemi Noda",
+          "position": "MF",
+          "age": 25,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Yumi Obe",
+          "position": "FW",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Junko Ozawa",
+          "position": "GK",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Asako Takakura",
+          "position": "MF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Rie Yamaki",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Futaba Kioka",
+          "position": "FW",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tamaki Uchiyama",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Homare Sawa",
+          "position": "FW,MF",
+          "age": 16,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nami Otake",
+          "position": "FW",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Yumi Tomei",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Etsuko Handa",
+          "position": "FW",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kaori Nagamine",
+          "position": "FW",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kaoru Kadohara",
+          "position": "MF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tsuru Morimoto",
+          "position": "FW",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Shiho Onodera",
+          "position": "GK",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Megumi Sakata",
+          "position": "GK",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Inesu Takeoka",
+          "position": "FW",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ryoko Uno",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Nigeria",
+      "coach": "Paul Hamilton",
+      "points_group_stage": 0,
+      "points_overall": 1,
+      "group": "B",
+      "position_group": 0,
+      "goals": [
+        5,
+        14,
+        -9
+      ],
+      "ved": [
+        0,
+        1,
+        2
+      ],
+      "players": [
+        {
+          "name": "Ann Chiejine",
+          "position": "GK",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Phoebe Ebimiekumo",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Rita Nwadike",
+          "position": "MF",
+          "age": 20,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Mavis Ogun",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Adaku Okoroafor",
+          "position": "FW",
+          "age": 20,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Florence Omagbemi",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ann Mukoro",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Prisca Emeafu",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Patience Avre",
+          "position": "FW",
+          "age": 19,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Yinka Kudaisi",
+          "position": "DF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Ngozi Ezeocha",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Omo-Love Branch",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nkiru Okosieme",
+          "position": "MF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Maureen Mmadu",
+          "position": "FW",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Mercy Akide",
+          "position": "MF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nkechi Mbilitam",
+          "position": "MF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Louisa Akpagu",
+          "position": "GK",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Maureen Mmadu",
+          "position": "MF",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Diana Nwaiwu",
+          "position": "DF,GK",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ugochi Opara",
+          "position": "GK",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ngozi Uche",
+          "position": "FW",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Norway",
+      "coach": "Even Pellerud",
+      "points_group_stage": 0,
+      "points_overall": 18,
+      "group": "B",
+      "position_group": 0,
+      "goals": [
+        23,
+        1,
+        22
+      ],
+      "ved": [
+        6,
+        0,
+        0
+      ],
+      "players": [
+        {
+          "name": "Gro Espeseth",
+          "position": "DF",
+          "age": 22,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Merete Myklebust",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Bente Nordby",
+          "position": "GK",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tina Svensson",
+          "position": "DF",
+          "age": 28,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Anne Nymark Andersen",
+          "position": "MF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Ann Kristin Aarones",
+          "position": "FW",
+          "age": 22,
+          "goals": 6,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Tone Haugen",
+          "position": "MF",
+          "age": 31,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Linda Medalen",
+          "position": "FW",
+          "age": 29,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 2,
+          "red_cards": 0
+        },
+        {
+          "name": "Hege Riise",
+          "position": "MF",
+          "age": 25,
+          "goals": 5,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Heidi Store",
+          "position": "MF",
+          "age": 31,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 2
+        },
+        {
+          "name": "Marianne Pettersen",
+          "position": "FW",
+          "age": 20,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Nina Nymark Andersen",
+          "position": "DF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kristin Sandberg",
+          "position": "FW",
+          "age": 23,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Randi Leinan",
+          "position": "FW",
+          "age": 27,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Agnete Carlsen",
+          "position": "MF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tone Gunn Frustol",
+          "position": "DF,MF",
+          "age": 19,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Hege Gunnerod",
+          "position": "DF,MF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Reidun Seth",
+          "position": "GK",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ingrid Sternhoff",
+          "position": "GK",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Anita Waage",
+          "position": "DF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "Sweden",
+      "coach": "Bengt Simonsson",
+      "points_group_stage": 0,
+      "points_overall": 7,
+      "group": "A",
+      "position_group": 0,
+      "goals": [
+        6,
+        4,
+        2
+      ],
+      "ved": [
+        2,
+        1,
+        1
+      ],
+      "players": [
+        {
+          "name": "Malin Andersson",
+          "position": "MF",
+          "age": 22,
+          "goals": 2,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Ulrika Kalte",
+          "position": "FW",
+          "age": 25,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Elisabeth Leidinge",
+          "position": "GK",
+          "age": 38,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Pia Sundhage",
+          "position": "FW,MF",
+          "age": 35,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Lena Videkull",
+          "position": "FW",
+          "age": 32,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Anneli Andelen",
+          "position": "FW",
+          "age": 26,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Kristin Bengtsson",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Eva Zeikfalvy",
+          "position": "DF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Anna Pohjanen",
+          "position": "MF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Helen Nilsson",
+          "position": "FW",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Asa Jakobsson",
+          "position": "DF",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Susanne Hedberg",
+          "position": "MF",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Anneli Olsson",
+          "position": "MF",
+          "age": 28,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Malin Lundgren",
+          "position": "DF",
+          "age": 27,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Asa Lonnqvist",
+          "position": "DF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Malin Flink",
+          "position": "MF",
+          "age": 20,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Annika Nessvold",
+          "position": "DF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sofia Johansson",
+          "position": "MF",
+          "age": 25,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Anika Bozicevic",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Annelie Nilsson",
+          "position": "GK",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    },
+    {
+      "name": "United States",
+      "coach": "Tony DiCicco",
+      "points_group_stage": 0,
+      "points_overall": 13,
+      "group": "C",
+      "position_group": 0,
+      "goals": [
+        15,
+        5,
+        10
+      ],
+      "ved": [
+        4,
+        1,
+        1
+      ],
+      "players": [
+        {
+          "name": "Joy Fawcett",
+          "position": "DF",
+          "age": 27,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Carla Overbeck",
+          "position": "DF",
+          "age": 27,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tisha Venturini",
+          "position": "MF",
+          "age": 22,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Kristine Lilly",
+          "position": "FW,MF",
+          "age": 23,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Mia Hamm",
+          "position": "FW,MF",
+          "age": 23,
+          "goals": 2,
+          "assists": 2,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Linda Hamilton",
+          "position": "DF",
+          "age": 26,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Carin Jennings-Gabarra",
+          "position": "FW",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Julie Foudy",
+          "position": "MF",
+          "age": 24,
+          "goals": 1,
+          "assists": 2,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Briana Scurry",
+          "position": "GK",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tiffeny Milbrett",
+          "position": "FW",
+          "age": 22,
+          "goals": 3,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Tiffany Roberts",
+          "position": "DF,MF",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 1,
+          "red_cards": 0
+        },
+        {
+          "name": "Thori Staples Bryan",
+          "position": "DF",
+          "age": 21,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Michelle Akers",
+          "position": "FW,MF",
+          "age": 29,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Saskia Webber",
+          "position": "GK",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Amanda Cromwell",
+          "position": "MF",
+          "age": 24,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Holly Manthei",
+          "position": "FW",
+          "age": 18,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Debbie Keller",
+          "position": "FW",
+          "age": 20,
+          "goals": 1,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Sarah Rafanelli",
+          "position": "FW",
+          "age": 22,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Mary Harvey",
+          "position": "GK",
+          "age": 30,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        },
+        {
+          "name": "Jennifer Lalor",
+          "position": "MF",
+          "age": 23,
+          "goals": 0,
+          "assists": 0,
+          "yellow_cards": 0,
+          "red_cards": 0
+        }
+      ],
+      "year": 1995
+    }
+  ],
+  "matches": [
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Sweden",
+        "Brazil"
+      ],
+      "score": [
+        0,
+        1
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "14,500",
+      "referee": "Sonia Denoncourt",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        2,
+        5,
+        3
+      ],
+      "initial_squad1": [
+        "Anneli Andelen",
+        "Malin Andersson",
+        "Kristin Bengtsson",
+        "Asa Jakobsson",
+        "Ulrika Kalte",
+        "Elisabeth Leidinge",
+        "Malin Lundgren",
+        "Anneli Olsson",
+        "Pia Sundhage",
+        "Lena Videkull",
+        "Eva Zeikfalvy"
+      ],
+      "bench_players1": [
+        "Sofia Johansson",
+        "Anna Pohjanen",
+        "Susanne Hedberg",
+        "Anika Bozicevic",
+        "Malin Flink",
+        "Asa Lonnqvist",
+        "Annika Nessvold",
+        "Annelie Nilsson",
+        "Helen Nilsson"
+      ],
+      "initial_squad2": [
+        "Roseli de Belo",
+        "Cenira",
+        "Fanta",
+        "Michael Jackson",
+        "Leda Maria",
+        "Margarete Pioresan",
+        "Pretinha",
+        "Elane Rego dos Santos",
+        "Sissi",
+        "Suzy",
+        "Valeria"
+      ],
+      "bench_players2": [
+        "Solange",
+        "Tania Maria",
+        "Eliane",
+        "Formiga",
+        "Katia",
+        "Nalvinha",
+        "Nene",
+        "Marcia Taffarel",
+        "Yara"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "43",
+          "team": "Sweden",
+          "player": "Malin Lundgren"
+        },
+        {
+          "event": "Substitute in",
+          "time": "43",
+          "team": "Sweden",
+          "player": "Anna Pohjanen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "Sweden",
+          "player": "Anneli Olsson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "Sweden",
+          "player": "Susanne Hedberg"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "75",
+          "team": "Sweden",
+          "player": "Elisabeth Leidinge"
+        },
+        {
+          "event": "Substitute out",
+          "time": "83",
+          "team": "Sweden",
+          "player": "Asa Jakobsson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "83",
+          "team": "Sweden",
+          "player": "Sofia Johansson"
+        },
+        {
+          "event": "Substitute out",
+          "time": "16",
+          "team": "Brazil",
+          "player": "Leda Maria"
+        },
+        {
+          "event": "Substitute in",
+          "time": "16",
+          "team": "Brazil",
+          "player": "Solange"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "21",
+          "team": "Brazil",
+          "player": "Pretinha"
+        },
+        {
+          "event": "Goal",
+          "time": "37",
+          "team": "Brazil",
+          "player": "Roseli de Belo"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "57",
+          "team": "Brazil",
+          "player": "Michael Jackson"
+        },
+        {
+          "event": "Substitute out",
+          "time": "83",
+          "team": "Brazil",
+          "player": "Solange"
+        },
+        {
+          "event": "Substitute in",
+          "time": "83",
+          "team": "Brazil",
+          "player": "Tania Maria"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Germany",
+        "Japan"
+      ],
+      "score": [
+        1,
+        0
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "3,824",
+      "referee": "Petros Mathabela",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        2,
+        5,
+        3
+      ],
+      "formation2": [
+        4,
+        2,
+        4
+      ],
+      "initial_squad1": [
+        "Birgitt Austermuhl",
+        "Anouschka Bernhard",
+        "Patricia Brocker",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players1": [
+        "Melanie Hoffmann",
+        "Birgit Prinz",
+        "Christine Francke",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Minnert",
+        "Sandra Smisek",
+        "Pia Wunderlich",
+        "Tina Wunderlich"
+      ],
+      "initial_squad2": [
+        "Maki Haneta",
+        "Futaba Kioka",
+        "Kae Nishina",
+        "Akemi Noda",
+        "Yumi Obe",
+        "Junko Ozawa",
+        "Homare Sawa",
+        "Asako Takakura",
+        "Yumi Tomei",
+        "Tamaki Uchiyama",
+        "Rie Yamaki"
+      ],
+      "bench_players2": [
+        "Etsuko Handa",
+        "Kaori Nagamine",
+        "Kaoru Kadohara",
+        "Tsuru Morimoto",
+        "Shiho Onodera",
+        "Nami Otake",
+        "Megumi Sakata",
+        "Inesu Takeoka",
+        "Ryoko Uno"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "23",
+          "team": "Germany",
+          "player": "Silvia Neid"
+        },
+        {
+          "event": "Substitute out",
+          "time": "65",
+          "team": "Germany",
+          "player": "Martina Voss-Tecklenburg"
+        },
+        {
+          "event": "Substitute in",
+          "time": "65",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Substitute out",
+          "time": "82",
+          "team": "Germany",
+          "player": "Patricia Brocker"
+        },
+        {
+          "event": "Substitute in",
+          "time": "82",
+          "team": "Germany",
+          "player": "Melanie Hoffmann"
+        },
+        {
+          "event": "Substitute out",
+          "time": "73",
+          "team": "Japan",
+          "player": "Tamaki Uchiyama"
+        },
+        {
+          "event": "Substitute in",
+          "time": "73",
+          "team": "Japan",
+          "player": "Kaori Nagamine"
+        },
+        {
+          "event": "Substitute out",
+          "time": "80",
+          "team": "Japan",
+          "player": "Futaba Kioka"
+        },
+        {
+          "event": "Substitute in",
+          "time": "80",
+          "team": "Japan",
+          "player": "Etsuko Handa"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "Norway",
+        "Nigeria"
+      ],
+      "score": [
+        8,
+        0
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "4,344",
+      "referee": "Alain Hamer",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        4,
+        3
+      ],
+      "formation2": [
+        4,
+        5,
+        1
+      ],
+      "initial_squad1": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarones",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Hege Riise",
+        "Kristin Sandberg",
+        "Heidi Store",
+        "Tina Svensson"
+      ],
+      "bench_players1": [
+        "Nina Nymark Andersen",
+        "Tone Gunn Frustol",
+        "Marianne Pettersen",
+        "Agnete Carlsen",
+        "Hege Gunnerod",
+        "Randi Leinan",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Anita Waage"
+      ],
+      "initial_squad2": [
+        "Mercy Akide",
+        "Omo-Love Branch",
+        "Ann Chiejine",
+        "Phoebe Ebimiekumo",
+        "Ngozi Ezeocha",
+        "Ann Mukoro",
+        "Rita Nwadike",
+        "Mavis Ogun",
+        "Adaku Okoroafor",
+        "Nkiru Okosieme",
+        "Florence Omagbemi"
+      ],
+      "bench_players2": [
+        "Patience Avre",
+        "Nkechi Mbilitam",
+        "Prisca Emeafu",
+        "Louisa Akpagu",
+        "Yinka Kudaisi",
+        "Maureen Mmadu",
+        "Diana Nwaiwu",
+        "Ugochi Opara",
+        "Ngozi Uche"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "30",
+          "team": "Norway",
+          "player": "Kristin Sandberg"
+        },
+        {
+          "event": "Goal",
+          "time": "44",
+          "team": "Norway",
+          "player": "Kristin Sandberg"
+        },
+        {
+          "event": "Goal",
+          "time": "49",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute out",
+          "time": "55",
+          "team": "Norway",
+          "player": "Heidi Store"
+        },
+        {
+          "event": "Substitute in",
+          "time": "55",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Goal",
+          "time": "60",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Goal",
+          "time": "67",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "69",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute in",
+          "time": "69",
+          "team": "Norway",
+          "player": "Tone Gunn Frustol"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "76",
+          "team": "Norway",
+          "player": "Tina Svensson"
+        },
+        {
+          "event": "Substitute out",
+          "time": "77",
+          "team": "Norway",
+          "player": "Anne Nymark Andersen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "77",
+          "team": "Norway",
+          "player": "Nina Nymark Andersen"
+        },
+        {
+          "event": "Goal",
+          "time": "82",
+          "team": "Norway",
+          "player": "Kristin Sandberg"
+        },
+        {
+          "event": "Goal",
+          "time": "90",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Nigeria",
+          "player": "Mercy Akide"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Nigeria",
+          "player": "Patience Avre"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "69",
+          "team": "Nigeria",
+          "player": "Ngozi Ezeocha"
+        },
+        {
+          "event": "Substitute out",
+          "time": "71",
+          "team": "Nigeria",
+          "player": "Ngozi Ezeocha"
+        },
+        {
+          "event": "Substitute in",
+          "time": "71",
+          "team": "Nigeria",
+          "player": "Prisca Emeafu"
+        },
+        {
+          "event": "Substitute out",
+          "time": "73",
+          "team": "Nigeria",
+          "player": "Omo-Love Branch"
+        },
+        {
+          "event": "Substitute in",
+          "time": "73",
+          "team": "Nigeria",
+          "player": "Nkechi Mbilitam"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "86",
+          "team": "Nigeria",
+          "player": "Nkechi Mbilitam"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "United States",
+        "China PR"
+      ],
+      "score": [
+        3,
+        3
+      ],
+      "stadium": "Stromvallen (Neutral Site)",
+      "attendance": "4,635",
+      "referee": "Ingrid Jonsson",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        3,
+        4,
+        3
+      ],
+      "initial_squad1": [
+        "Michelle Akers",
+        "Joy Fawcett",
+        "Julie Foudy",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Carin Jennings-Gabarra",
+        "Kristine Lilly",
+        "Carla Overbeck",
+        "Tiffany Roberts",
+        "Briana Scurry",
+        "Tisha Venturini"
+      ],
+      "bench_players1": [
+        "Tiffeny Milbrett",
+        "Holly Manthei",
+        "Amanda Cromwell",
+        "Mary Harvey",
+        "Debbie Keller",
+        "Jennifer Lalor",
+        "Sarah Rafanelli",
+        "Thori Staples Bryan",
+        "Saskia Webber"
+      ],
+      "initial_squad2": [
+        "Shi Guihong",
+        "Zhong Honglian",
+        "Zhao Lihong",
+        "Niu Lijie",
+        "Wang Liping",
+        "Wen Lirong",
+        "Sun Qingmei",
+        "Sun Wen",
+        "Zhou Yang",
+        "Chen Yufeng",
+        "Fan Yunjie"
+      ],
+      "bench_players2": [
+        "Wei Haiying",
+        "Shui Qingxia",
+        "Liu Ailing",
+        "Gao Hong",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Xie Huilin",
+        "Man Yanling",
+        "Li Ying"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "18",
+          "team": "United States",
+          "player": "Michelle Akers"
+        },
+        {
+          "event": "Substitute in",
+          "time": "18",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Goal",
+          "time": "22",
+          "team": "United States",
+          "player": "Tisha Venturini"
+        },
+        {
+          "event": "Goal",
+          "time": "34",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Goal",
+          "time": "51",
+          "team": "United States",
+          "player": "Mia Hamm"
+        },
+        {
+          "event": "Substitute out",
+          "time": "76",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Substitute in",
+          "time": "76",
+          "team": "United States",
+          "player": "Holly Manthei"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "3",
+          "team": "China PR",
+          "player": "Wang Liping"
+        },
+        {
+          "event": "Substitute out",
+          "time": "35",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute in",
+          "time": "35",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Goal",
+          "time": "38",
+          "team": "China PR",
+          "player": "Wang Liping"
+        },
+        {
+          "event": "Substitute out",
+          "time": "47",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        },
+        {
+          "event": "Substitute in",
+          "time": "47",
+          "team": "China PR",
+          "player": "Liu Ailing"
+        },
+        {
+          "event": "Goal",
+          "time": "74",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Goal",
+          "time": "79",
+          "team": "China PR",
+          "player": "Sun Wen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "84",
+          "team": "China PR",
+          "player": "Sun Qingmei"
+        },
+        {
+          "event": "Substitute in",
+          "time": "84",
+          "team": "China PR",
+          "player": "Shui Qingxia"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "England",
+        "Canada"
+      ],
+      "score": [
+        3,
+        2
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "655",
+      "referee": "Eva Oedlund",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        3,
+        3
+      ],
+      "formation2": [
+        4,
+        4,
+        2
+      ],
+      "initial_squad1": [
+        "Debbie Bampton",
+        "Samantha Britton",
+        "Karen Burke",
+        "Pauline Cope",
+        "Gillian Coultard",
+        "Karen Farley",
+        "Tina Mapes",
+        "Brenda Sempare",
+        "Marieanne Spacey",
+        "Clare Taylor",
+        "Karen Walker"
+      ],
+      "bench_players1": [
+        "Hope Powell",
+        "Kerry Davis",
+        "Becky Easton",
+        "Julie Fletcher",
+        "Lesley Higgs",
+        "Mary Phillip",
+        "Donna Smith",
+        "Louise Waller",
+        "Sian Williams"
+      ],
+      "initial_squad2": [
+        "Silvana Burtini",
+        "Carla Chin",
+        "Geri Donnelly",
+        "Janine Helland",
+        "Charmaine Hooper",
+        "Angela Kelly",
+        "Andrea Neil",
+        "Veronica O'Brien",
+        "Michelle Ring",
+        "Cathy Ross",
+        "Helen Stoumbos"
+      ],
+      "bench_players2": [
+        "Suzanne Muir",
+        "Annie Caron",
+        "Suzanne Gerrior",
+        "Wendy Hawthorne",
+        "Joan McEachern",
+        "Luce Mongrain",
+        "Isabelle Morneau",
+        "Nicole Sedgwick",
+        "Tania Singfield"
+      ],
+      "events": [
+        {
+          "event": "Penalty Goal",
+          "time": "51",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Substitute out",
+          "time": "70",
+          "team": "England",
+          "player": "Tina Mapes"
+        },
+        {
+          "event": "Substitute in",
+          "time": "70",
+          "team": "England",
+          "player": "Hope Powell"
+        },
+        {
+          "event": "Substitute out",
+          "time": "75",
+          "team": "England",
+          "player": "Karen Walker"
+        },
+        {
+          "event": "Substitute in",
+          "time": "75",
+          "team": "England",
+          "player": "Kerry Davis"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "76",
+          "team": "England",
+          "player": "Marieanne Spacey"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "77",
+          "team": "England",
+          "player": "Karen Farley"
+        },
+        {
+          "event": "Goal",
+          "time": "85",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "17",
+          "team": "Canada",
+          "player": "Helen Stoumbos"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "44",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        },
+        {
+          "event": "Substitute out",
+          "time": "78",
+          "team": "Canada",
+          "player": "Cathy Ross"
+        },
+        {
+          "event": "Substitute in",
+          "time": "78",
+          "team": "Canada",
+          "player": "Suzanne Muir"
+        },
+        {
+          "event": "Goal",
+          "time": "87",
+          "team": "Canada",
+          "player": "Helen Stoumbos"
+        },
+        {
+          "event": "Goal",
+          "time": "90+1",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "Denmark",
+        "Australia"
+      ],
+      "score": [
+        5,
+        0
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "1,500",
+      "referee": "Bente Skogvang",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        5,
+        2,
+        3
+      ],
+      "formation2": [
+        5,
+        2,
+        3
+      ],
+      "initial_squad1": [
+        "Birgit Christensen",
+        "Kamma Flaeng",
+        "Rikke Holm",
+        "Helle Jensen",
+        "Gitte Krogh",
+        "Dorthe Larsen",
+        "Annette Laursen",
+        "Lene Madsen",
+        "Anne Dot Eggers Nielsen",
+        "Katrine Pedersen",
+        "Lene Terp"
+      ],
+      "bench_players1": [
+        "Christina Bonde",
+        "Christina Hansen",
+        "Jeanne Axelsen",
+        "Bettina Allentoft",
+        "Helle Bjerregaard",
+        "Karina Christensen",
+        "Annie Gam-Pedersen",
+        "Louise Hansen",
+        "Lisbet Kolding",
+        "Christina Petersen"
+      ],
+      "initial_squad2": [
+        "Lisa Casagrande",
+        "Sarah Cooper",
+        "Alison Forman",
+        "Sonia Gegenhuber",
+        "Sunni Hughes",
+        "Julie Murray",
+        "Jane Oakley",
+        "Cheryl Salisbury",
+        "Anissa Tann",
+        "Michelle Watson",
+        "Tracey Wheeler"
+      ],
+      "bench_players2": [
+        "Lizzy Claydon",
+        "Angela Iannotta",
+        "Kim Lembryk",
+        "Traci Bartlett",
+        "Kaylene Janssen",
+        "Louise McMurtriel",
+        "Claire Nichols",
+        "Denie Pentecost",
+        "Sacha Wainwright"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "12",
+          "team": "Denmark",
+          "player": "Gitte Krogh"
+        },
+        {
+          "event": "Goal",
+          "time": "25",
+          "team": "Denmark",
+          "player": "Anne Dot Eggers Nielsen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "28",
+          "team": "Denmark",
+          "player": "Annette Laursen"
+        },
+        {
+          "event": "Goal",
+          "time": "37",
+          "team": "Denmark",
+          "player": "Helle Jensen"
+        },
+        {
+          "event": "Goal",
+          "time": "48",
+          "team": "Denmark",
+          "player": "Gitte Krogh"
+        },
+        {
+          "event": "Substitute out",
+          "time": "63",
+          "team": "Denmark",
+          "player": "Lene Madsen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "63",
+          "team": "Denmark",
+          "player": "Christina Hansen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "65",
+          "team": "Denmark",
+          "player": "Annette Laursen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "65",
+          "team": "Denmark",
+          "player": "Christina Bonde"
+        },
+        {
+          "event": "Substitute out",
+          "time": "78",
+          "team": "Denmark",
+          "player": "Katrine Pedersen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "78",
+          "team": "Denmark",
+          "player": "Jeanne Axelsen"
+        },
+        {
+          "event": "Goal",
+          "time": "86",
+          "team": "Denmark",
+          "player": "Christina Hansen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "25",
+          "team": "Australia",
+          "player": "Alison Forman"
+        },
+        {
+          "event": "Red Card",
+          "time": "30",
+          "team": "Australia",
+          "player": "Sonia Gegenhuber"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "37",
+          "team": "Australia",
+          "player": "Cheryl Salisbury"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "45",
+          "team": "Australia",
+          "player": "Michelle Watson"
+        },
+        {
+          "event": "Substitute out",
+          "time": "57",
+          "team": "Australia",
+          "player": "Sunni Hughes"
+        },
+        {
+          "event": "Substitute in",
+          "time": "57",
+          "team": "Australia",
+          "player": "Angela Iannotta"
+        },
+        {
+          "event": "Substitute out",
+          "time": "57",
+          "team": "Australia",
+          "player": "Cheryl Salisbury"
+        },
+        {
+          "event": "Substitute in",
+          "time": "57",
+          "team": "Australia",
+          "player": "Kim Lembryk"
+        },
+        {
+          "event": "Substitute out",
+          "time": "79",
+          "team": "Australia",
+          "player": "Lisa Casagrande"
+        },
+        {
+          "event": "Substitute in",
+          "time": "79",
+          "team": "Australia",
+          "player": "Lizzy Claydon"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Brazil",
+        "Japan"
+      ],
+      "score": [
+        1,
+        2
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "2,286",
+      "referee": "Catherine Leann Hepburn",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        4,
+        3
+      ],
+      "formation2": [
+        3,
+        2,
+        5
+      ],
+      "initial_squad1": [
+        "Roseli de Belo",
+        "Cenira",
+        "Fanta",
+        "Michael Jackson",
+        "Margarete Pioresan",
+        "Pretinha",
+        "Elane Rego dos Santos",
+        "Sissi",
+        "Solange",
+        "Suzy",
+        "Valeria"
+      ],
+      "bench_players1": [
+        "Nalvinha",
+        "Formiga",
+        "Eliane",
+        "Katia",
+        "Leda Maria",
+        "Tania Maria",
+        "Nene",
+        "Marcia Taffarel",
+        "Yara"
+      ],
+      "initial_squad2": [
+        "Maki Haneta",
+        "Futaba Kioka",
+        "Kae Nishina",
+        "Akemi Noda",
+        "Yumi Obe",
+        "Nami Otake",
+        "Junko Ozawa",
+        "Homare Sawa",
+        "Asako Takakura",
+        "Tamaki Uchiyama",
+        "Rie Yamaki"
+      ],
+      "bench_players2": [
+        "Etsuko Handa",
+        "Kaoru Kadohara",
+        "Tsuru Morimoto",
+        "Kaori Nagamine",
+        "Shiho Onodera",
+        "Megumi Sakata",
+        "Inesu Takeoka",
+        "Yumi Tomei",
+        "Ryoko Uno"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "7",
+          "team": "Brazil",
+          "player": "Pretinha"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "10",
+          "team": "Brazil",
+          "player": "Michael Jackson"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "26",
+          "team": "Brazil",
+          "player": "Elane Rego dos Santos"
+        },
+        {
+          "event": "Substitute out",
+          "time": "72",
+          "team": "Brazil",
+          "player": "Solange"
+        },
+        {
+          "event": "Substitute in",
+          "time": "72",
+          "team": "Brazil",
+          "player": "Formiga"
+        },
+        {
+          "event": "Substitute out",
+          "time": "83",
+          "team": "Brazil",
+          "player": "Michael Jackson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "83",
+          "team": "Brazil",
+          "player": "Nalvinha"
+        },
+        {
+          "event": "Goal",
+          "time": "13",
+          "team": "Japan",
+          "player": "Akemi Noda"
+        },
+        {
+          "event": "Goal",
+          "time": "45",
+          "team": "Japan",
+          "player": "Akemi Noda"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "48",
+          "team": "Japan",
+          "player": "Yumi Obe"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Sweden",
+        "Germany"
+      ],
+      "score": [
+        3,
+        2
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "5,855",
+      "referee": "Linda May Black",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        2,
+        5
+      ],
+      "formation2": [
+        2,
+        5,
+        3
+      ],
+      "initial_squad1": [
+        "Anneli Andelen",
+        "Malin Andersson",
+        "Kristin Bengtsson",
+        "Asa Jakobsson",
+        "Ulrika Kalte",
+        "Elisabeth Leidinge",
+        "Helen Nilsson",
+        "Anna Pohjanen",
+        "Pia Sundhage",
+        "Lena Videkull",
+        "Eva Zeikfalvy"
+      ],
+      "bench_players1": [
+        "Asa Lonnqvist",
+        "Malin Flink",
+        "Anneli Olsson",
+        "Anika Bozicevic",
+        "Susanne Hedberg",
+        "Sofia Johansson",
+        "Malin Lundgren",
+        "Annika Nessvold",
+        "Annelie Nilsson"
+      ],
+      "initial_squad2": [
+        "Birgitt Austermühl",
+        "Anouschka Bernhard",
+        "Patricia Brocker",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players2": [
+        "Birgit Prinz",
+        "Sandra Minnert",
+        "Christine Francke",
+        "Melanie Hoffmann",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Smisek",
+        "Pia Wunderlich",
+        "Tina Wunderlich"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "35",
+          "team": "Sweden",
+          "player": "Kristin Bengtsson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "35",
+          "team": "Sweden",
+          "player": "Asa Lonnqvist"
+        },
+        {
+          "event": "Substitute out",
+          "time": "51",
+          "team": "Sweden",
+          "player": "Anna Pohjanen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "51",
+          "team": "Sweden",
+          "player": "Malin Flink"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "65",
+          "team": "Sweden",
+          "player": "Malin Andersson"
+        },
+        {
+          "event": "Goal",
+          "time": "80",
+          "team": "Sweden",
+          "player": "Pia Sundhage"
+        },
+        {
+          "event": "Substitute out",
+          "time": "84",
+          "team": "Sweden",
+          "player": "Eva Zeikfalvy"
+        },
+        {
+          "event": "Substitute in",
+          "time": "84",
+          "team": "Sweden",
+          "player": "Anneli Olsson"
+        },
+        {
+          "event": "Goal",
+          "time": "86",
+          "team": "Sweden",
+          "player": "Malin Andersson"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "9",
+          "team": "Germany",
+          "player": "Bettina Wiegmann"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "14",
+          "team": "Germany",
+          "player": "Silvia Neid"
+        },
+        {
+          "event": "Goal",
+          "time": "42",
+          "team": "Germany",
+          "player": "Ursula Lohn"
+        },
+        {
+          "event": "Substitute out",
+          "time": "57",
+          "team": "Germany",
+          "player": "Patricia Brocker"
+        },
+        {
+          "event": "Substitute in",
+          "time": "57",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "61",
+          "team": "Germany",
+          "player": "Birgitt Austermuhl"
+        },
+        {
+          "event": "Substitute out",
+          "time": "84",
+          "team": "Germany",
+          "player": "Martina Voss-Tecklenburg"
+        },
+        {
+          "event": "Substitute in",
+          "time": "84",
+          "team": "Germany",
+          "player": "Sandra Minnert"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "Norway",
+        "England"
+      ],
+      "score": [
+        2,
+        0
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "5,520",
+      "referee": "Eduardo Gamboa Martinez",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        3,
+        3
+      ],
+      "formation2": [
+        4,
+        3,
+        3
+      ],
+      "initial_squad1": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarones",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Nina Nymark Andersen",
+        "Hege Riise",
+        "Kristin Sandberg",
+        "Tina Svensson"
+      ],
+      "bench_players1": [
+        "Randi Leinan",
+        "Hege Gunnerod",
+        "Marianne Pettersen",
+        "Agnete Carlsen",
+        "Tone Gunn Frustol",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Heidi Store",
+        "Anita Waage"
+      ],
+      "initial_squad2": [
+        "Debbie Bampton",
+        "Samantha Britton",
+        "Karen Burke",
+        "Pauline Cope",
+        "Gillian Coultard",
+        "Karen Farley",
+        "Tina Mapes",
+        "Brenda Sempare",
+        "Marieanne Spacey",
+        "Clare Taylor",
+        "Karen Walker"
+      ],
+      "bench_players2": [
+        "Kerry Davis",
+        "Becky Easton",
+        "Hope Powell",
+        "Julie Fletcher",
+        "Lesley Higgs",
+        "Mary Phillip",
+        "Donna Smith",
+        "Louise Waller",
+        "Sian Williams"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "7",
+          "team": "Norway",
+          "player": "Tone Haugen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "34",
+          "team": "Norway",
+          "player": "Anne Nymark Andersen"
+        },
+        {
+          "event": "Goal",
+          "time": "37",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute out",
+          "time": "66",
+          "team": "Norway",
+          "player": "Kristin Sandberg"
+        },
+        {
+          "event": "Substitute in",
+          "time": "66",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "73",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "73",
+          "team": "Norway",
+          "player": "Randi Leinan"
+        },
+        {
+          "event": "Substitute out",
+          "time": "85",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute in",
+          "time": "85",
+          "team": "Norway",
+          "player": "Hege Gunnerod"
+        },
+        {
+          "event": "Substitute out",
+          "time": "36",
+          "team": "England",
+          "player": "Marieanne Spacey"
+        },
+        {
+          "event": "Substitute in",
+          "time": "36",
+          "team": "England",
+          "player": "Hope Powell"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "54",
+          "team": "England",
+          "player": "Brenda Sempare"
+        },
+        {
+          "event": "Substitute out",
+          "time": "65",
+          "team": "England",
+          "player": "Samantha Britton"
+        },
+        {
+          "event": "Substitute in",
+          "time": "65",
+          "team": "England",
+          "player": "Kerry Davis"
+        },
+        {
+          "event": "Substitute out",
+          "time": "82",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Substitute in",
+          "time": "82",
+          "team": "England",
+          "player": "Becky Easton"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "China PR",
+        "Australia"
+      ],
+      "score": [
+        4,
+        2
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "1,500",
+      "referee": "Maria Siqueira",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        1,
+        7,
+        2
+      ],
+      "formation2": [
+        4,
+        2,
+        4
+      ],
+      "initial_squad1": [
+        "Liu Ailing",
+        "Shi Guihong",
+        "Zhong Honglian",
+        "Xie Huilin",
+        "Zhao Lihong",
+        "Wang Liping",
+        "Shui Qingxia",
+        "Sun Wen",
+        "Zhou Yang",
+        "Chen Yufeng",
+        "Fan Yunjie"
+      ],
+      "bench_players1": [
+        "Wei Haiying",
+        "Wen Lirong",
+        "Gao Hong",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Niu Lijie",
+        "Sun Qingmei",
+        "Man Yanling",
+        "Li Ying"
+      ],
+      "initial_squad2": [
+        "Sarah Cooper",
+        "Alison Forman",
+        "Sunni Hughes",
+        "Angela Iannotta",
+        "Kim Lembryk",
+        "Julie Murray",
+        "Jane Oakley",
+        "Cheryl Salisbury",
+        "Anissa Tann",
+        "Michelle Watson",
+        "Tracey Wheeler"
+      ],
+      "bench_players2": [
+        "Lisa Casagrande",
+        "Denie Pentecost",
+        "Lizzy Claydon",
+        "Traci Bartlett",
+        "Sonia Gegenhuber",
+        "Kaylene Janssen",
+        "Louise McMurtriel",
+        "Claire Nichols",
+        "Sacha Wainwright"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "23",
+          "team": "China PR",
+          "player": "Zhou Yang"
+        },
+        {
+          "event": "Substitute out",
+          "time": "27",
+          "team": "China PR",
+          "player": "Shui Qingxia"
+        },
+        {
+          "event": "Substitute in",
+          "time": "27",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Goal",
+          "time": "54",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute out",
+          "time": "69",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        },
+        {
+          "event": "Substitute in",
+          "time": "69",
+          "team": "China PR",
+          "player": "Wen Lirong"
+        },
+        {
+          "event": "Goal",
+          "time": "78",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "79",
+          "team": "China PR",
+          "player": "Zhou Yang"
+        },
+        {
+          "event": "Goal",
+          "time": "90+3",
+          "team": "China PR",
+          "player": "Liu Ailing"
+        },
+        {
+          "event": "Goal",
+          "time": "25",
+          "team": "Australia",
+          "player": "Angela Iannotta"
+        },
+        {
+          "event": "Substitute out",
+          "time": "62",
+          "team": "Australia",
+          "player": "Kim Lembryk"
+        },
+        {
+          "event": "Substitute in",
+          "time": "62",
+          "team": "Australia",
+          "player": "Lisa Casagrande"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "62",
+          "team": "Australia",
+          "player": "Kim Lembryk"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "73",
+          "team": "Australia",
+          "player": "Cheryl Salisbury"
+        },
+        {
+          "event": "Substitute out",
+          "time": "77",
+          "team": "Australia",
+          "player": "Cheryl Salisbury"
+        },
+        {
+          "event": "Substitute in",
+          "time": "77",
+          "team": "Australia",
+          "player": "Lizzy Claydon"
+        },
+        {
+          "event": "Substitute out",
+          "time": "81",
+          "team": "Australia",
+          "player": "Julie Murray"
+        },
+        {
+          "event": "Substitute in",
+          "time": "81",
+          "team": "Australia",
+          "player": "Denie Pentecost"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "83",
+          "team": "Australia",
+          "player": "Michelle Watson"
+        },
+        {
+          "event": "Goal",
+          "time": "89",
+          "team": "Australia",
+          "player": "Sunni Hughes"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "Nigeria",
+        "Canada"
+      ],
+      "score": [
+        3,
+        3
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "250",
+      "referee": "Pirom Anprasert",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        5,
+        3,
+        2
+      ],
+      "formation2": [
+        3,
+        4,
+        3
+      ],
+      "initial_squad1": [
+        "Patience Avre",
+        "Omo-Love Branch",
+        "Ann Chiejine",
+        "Phoebe Ebimiekumo",
+        "Prisca Emeafu",
+        "Yinka Kudaisi",
+        "Maureen Mmadu",
+        "Rita Nwadike",
+        "Mavis Ogun",
+        "Adaku Okoroafor",
+        "Florence Omagbemi"
+      ],
+      "bench_players1": [
+        "Nkechi Mbilitam",
+        "Ann Mukoro",
+        "Mercy Akide",
+        "Louisa Akpagu",
+        "Ngozi Ezeocha",
+        "Diana Nwaiwu",
+        "Nkiru Okosieme",
+        "Ugochi Opara",
+        "Ngozi Uche"
+      ],
+      "initial_squad2": [
+        "Silvana Burtini",
+        "Annie Caron",
+        "Carla Chin",
+        "Geri Donnelly",
+        "Janine Helland",
+        "Charmaine Hooper",
+        "Angela Kelly",
+        "Luce Mongrain",
+        "Andrea Neil",
+        "Veronica O'Brien",
+        "Michelle Ring"
+      ],
+      "bench_players2": [
+        "Helen Stoumbos",
+        "Suzanne Gerrior",
+        "Wendy Hawthorne",
+        "Joan McEachern",
+        "Isabelle Morneau",
+        "Suzanne Muir",
+        "Cathy Ross",
+        "Nicole Sedgwick",
+        "Tania Singfield"
+      ],
+      "events": [
+        {
+          "event": "Yellow Card",
+          "time": "14",
+          "team": "Nigeria",
+          "player": "Patience Avre"
+        },
+        {
+          "event": "Goal",
+          "time": "26",
+          "team": "Nigeria",
+          "player": "Rita Nwadike"
+        },
+        {
+          "event": "Substitute out",
+          "time": "41",
+          "team": "Nigeria",
+          "player": "Omo-Love Branch"
+        },
+        {
+          "event": "Substitute in",
+          "time": "41",
+          "team": "Nigeria",
+          "player": "Nkechi Mbilitam"
+        },
+        {
+          "event": "Goal",
+          "time": "60",
+          "team": "Nigeria",
+          "player": "Patience Avre"
+        },
+        {
+          "event": "Substitute out",
+          "time": "60",
+          "team": "Nigeria",
+          "player": "Maureen Mmadu"
+        },
+        {
+          "event": "Substitute in",
+          "time": "60",
+          "team": "Nigeria",
+          "player": "Ann Mukoro"
+        },
+        {
+          "event": "Goal",
+          "time": "77",
+          "team": "Nigeria",
+          "player": "Adaku Okoroafor"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "83",
+          "team": "Nigeria",
+          "player": "Nkechi Mbilitam"
+        },
+        {
+          "event": "Goal",
+          "time": "12",
+          "team": "Canada",
+          "player": "Silvana Burtini"
+        },
+        {
+          "event": "Goal",
+          "time": "20",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "44",
+          "team": "Canada",
+          "player": "Luce Mongrain"
+        },
+        {
+          "event": "Goal",
+          "time": "55",
+          "team": "Canada",
+          "player": "Silvana Burtini"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "Canada",
+          "player": "Veronica O'Brien"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "Canada",
+          "player": "Suzanne Gerrior"
+        },
+        {
+          "event": "Substitute out",
+          "time": "77",
+          "team": "Canada",
+          "player": "Annie Caron"
+        },
+        {
+          "event": "Substitute in",
+          "time": "77",
+          "team": "Canada",
+          "player": "Helen Stoumbos"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "United States",
+        "Denmark"
+      ],
+      "score": [
+        2,
+        0
+      ],
+      "stadium": "Stromvallen (Neutral Site)",
+      "attendance": "2,740",
+      "referee": "Mamadouba Engage Camara",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        5,
+        2,
+        3
+      ],
+      "initial_squad1": [
+        "Joy Fawcett",
+        "Julie Foudy",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Carin Jennings-Gabarra",
+        "Kristine Lilly",
+        "Tiffeny Milbrett",
+        "Carla Overbeck",
+        "Tiffany Roberts",
+        "Briana Scurry",
+        "Tisha Venturini"
+      ],
+      "bench_players1": [
+        "Thori Staples Bryan",
+        "Sarah Rafanelli",
+        "Debbie Keller",
+        "Michelle Akers",
+        "Amanda Cromwell",
+        "Mary Harvey",
+        "Jennifer Lalor",
+        "Holly Manthei",
+        "Saskia Webber"
+      ],
+      "initial_squad2": [
+        "Birgit Christensen",
+        "Kamma Flæng",
+        "Rikke Holm",
+        "Helle Jensen",
+        "Gitte Krogh",
+        "Dorthe Larsen",
+        "Annette Laursen",
+        "Lene Madsen",
+        "Anne Dot Eggers Nielsen",
+        "Katrine Pedersen",
+        "Lene Terp"
+      ],
+      "bench_players2": [
+        "Christina Hansen",
+        "Jeanne Axelsen",
+        "Christina Petersen",
+        "Bettina Allentoft",
+        "Helle Bjerregaard",
+        "Christina Bonde",
+        "Karina Christensen",
+        "Annie Gam-Pedersen",
+        "Louise Hansen",
+        "Lisbet Kolding"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "9",
+          "team": "United States",
+          "player": "Kristine Lilly"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "29",
+          "team": "United States",
+          "player": "Mia Hamm"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "38",
+          "team": "United States",
+          "player": "Julie Foudy"
+        },
+        {
+          "event": "Goal",
+          "time": "49",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Substitute out",
+          "time": "53",
+          "team": "United States",
+          "player": "Linda Hamilton"
+        },
+        {
+          "event": "Substitute in",
+          "time": "53",
+          "team": "United States",
+          "player": "Thori Staples Bryan"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "United States",
+          "player": "Debbie Keller"
+        },
+        {
+          "event": "Substitute out",
+          "time": "85",
+          "team": "United States",
+          "player": "Carin Jennings-Gabarra"
+        },
+        {
+          "event": "Substitute in",
+          "time": "85",
+          "team": "United States",
+          "player": "Sarah Rafanelli"
+        },
+        {
+          "event": "Red Card",
+          "time": "88",
+          "team": "United States",
+          "player": "Briana Scurry"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Denmark",
+          "player": "Annette Laursen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Denmark",
+          "player": "Jeanne Axelsen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "53",
+          "team": "Denmark",
+          "player": "Gitte Krogh"
+        },
+        {
+          "event": "Substitute in",
+          "time": "53",
+          "team": "Denmark",
+          "player": "Christina Hansen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "55",
+          "team": "Denmark",
+          "player": "Dorthe Larsen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "Denmark",
+          "player": "Lene Madsen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "Denmark",
+          "player": "Christina Petersen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "89",
+          "team": "Denmark",
+          "player": "Christina Petersen"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Sweden",
+        "Japan"
+      ],
+      "score": [
+        2,
+        0
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "7,811",
+      "referee": "Petros Mathabela",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        2,
+        5
+      ],
+      "formation2": [
+        3,
+        2,
+        5
+      ],
+      "initial_squad1": [
+        "Anneli Andelen",
+        "Malin Andersson",
+        "Kristin Bengtsson",
+        "Asa Jakobsson",
+        "Ulrika Kalte",
+        "Elisabeth Leidinge",
+        "Helen Nilsson",
+        "Anna Pohjanen",
+        "Pia Sundhage",
+        "Lena Videkull",
+        "Eva Zeikfalvy"
+      ],
+      "bench_players1": [
+        "Anneli Olsson",
+        "Malin Flink",
+        "Asa Lonnqvist",
+        "Anika Bozicevic",
+        "Susanne Hedberg",
+        "Sofia Johansson",
+        "Malin Lundgren",
+        "Annika Nessvold",
+        "Annelie Nilsson"
+      ],
+      "initial_squad2": [
+        "Maki Haneta",
+        "Futaba Kioka",
+        "Kae Nishina",
+        "Akemi Noda",
+        "Yumi Obe",
+        "Nami Otake",
+        "Junko Ozawa",
+        "Homare Sawa",
+        "Asako Takakura",
+        "Tamaki Uchiyama",
+        "Rie Yamaki"
+      ],
+      "bench_players2": [
+        "Kaori Nagamine",
+        "Etsuko Handa",
+        "Kaoru Kadohara",
+        "Tsuru Morimoto",
+        "Shiho Onodera",
+        "Megumi Sakata",
+        "Inesu Takeoka",
+        "Yumi Tomei",
+        "Ryoko Uno"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Sweden",
+          "player": "Asa Jakobsson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Sweden",
+          "player": "Anneli Olsson"
+        },
+        {
+          "event": "Substitute out",
+          "time": "58",
+          "team": "Sweden",
+          "player": "Eva Zeikfalvy"
+        },
+        {
+          "event": "Substitute in",
+          "time": "58",
+          "team": "Sweden",
+          "player": "Asa Lonnqvist"
+        },
+        {
+          "event": "Goal",
+          "time": "66",
+          "team": "Sweden",
+          "player": "Lena Videkull"
+        },
+        {
+          "event": "Goal",
+          "time": "88",
+          "team": "Sweden",
+          "player": "Anneli Andelen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "90",
+          "team": "Sweden",
+          "player": "Anna Pohjanen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "90",
+          "team": "Sweden",
+          "player": "Malin Flink"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "15",
+          "team": "Japan",
+          "player": "Rie Yamaki"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Japan",
+          "player": "Nami Otake"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Japan",
+          "player": "Kaori Nagamine"
+        },
+        {
+          "event": "Substitute out",
+          "time": "76",
+          "team": "Japan",
+          "player": "Homare Sawa"
+        },
+        {
+          "event": "Substitute in",
+          "time": "76",
+          "team": "Japan",
+          "player": "Etsuko Handa"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "A",
+      "teams": [
+        "Brazil",
+        "Germany"
+      ],
+      "score": [
+        1,
+        6
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "3,203",
+      "referee": "Alain Hamer",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        5,
+        2
+      ],
+      "formation2": [
+        2,
+        5,
+        3
+      ],
+      "initial_squad1": [
+        "Roseli de Belo",
+        "Cenira",
+        "Fanta",
+        "Leda Maria",
+        "Margarete Pioresan",
+        "Pretinha",
+        "Elane Rego dos Santos",
+        "Sissi",
+        "Solange",
+        "Suzy",
+        "Valeria"
+      ],
+      "bench_players1": [
+        "Marcia Taffarel",
+        "Tania Maria",
+        "Formiga",
+        "Eliane",
+        "Michael Jackson",
+        "Katia",
+        "Nalvinha",
+        "Nene",
+        "Yara"
+      ],
+      "initial_squad2": [
+        "Birgitt Austermühl",
+        "Anouschka Bernhard",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Birgit Prinz",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players2": [
+        "Tina Wunderlich",
+        "Patricia Brocker",
+        "Pia Wunderlich",
+        "Christine Francke",
+        "Melanie Hoffmann",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Minnert",
+        "Sandra Smisek"
+      ],
+      "events": [
+        {
+          "event": "Yellow Card",
+          "time": "7",
+          "team": "Brazil",
+          "player": "Suzy"
+        },
+        {
+          "event": "Goal",
+          "time": "19",
+          "team": "Brazil",
+          "player": "Roseli de Belo"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "25",
+          "team": "Brazil",
+          "player": "Cenira"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "30",
+          "team": "Brazil",
+          "player": "Solange"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "62",
+          "team": "Brazil",
+          "player": "Leda Maria"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "63",
+          "team": "Brazil",
+          "player": "Suzy"
+        },
+        {
+          "event": "Red Card",
+          "time": "63",
+          "team": "Brazil",
+          "player": "Suzy"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "63",
+          "team": "Brazil",
+          "player": "Suzy"
+        },
+        {
+          "event": "Substitute out",
+          "time": "66",
+          "team": "Brazil",
+          "player": "Pretinha"
+        },
+        {
+          "event": "Substitute in",
+          "time": "66",
+          "team": "Brazil",
+          "player": "Tania Maria"
+        },
+        {
+          "event": "Substitute out",
+          "time": "80",
+          "team": "Brazil",
+          "player": "Valeria"
+        },
+        {
+          "event": "Substitute in",
+          "time": "80",
+          "team": "Brazil",
+          "player": "Formiga"
+        },
+        {
+          "event": "Substitute out",
+          "time": "90",
+          "team": "Brazil",
+          "player": "Leda Maria"
+        },
+        {
+          "event": "Substitute in",
+          "time": "90",
+          "team": "Brazil",
+          "player": "Marcia Taffarel"
+        },
+        {
+          "event": "Goal",
+          "time": "5",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Goal",
+          "time": "22",
+          "team": "Germany",
+          "player": "Maren Meinert"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "35",
+          "team": "Germany",
+          "player": "Birgitt Austermuhl"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "42",
+          "team": "Germany",
+          "player": "Bettina Wiegmann"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Germany",
+          "player": "Birgitt Austermuhl"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Germany",
+          "player": "Tina Wunderlich"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "59",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "65",
+          "team": "Germany",
+          "player": "Tina Wunderlich"
+        },
+        {
+          "event": "Substitute out",
+          "time": "74",
+          "team": "Germany",
+          "player": "Maren Meinert"
+        },
+        {
+          "event": "Substitute in",
+          "time": "74",
+          "team": "Germany",
+          "player": "Patricia Brocker"
+        },
+        {
+          "event": "Goal",
+          "time": "78",
+          "team": "Germany",
+          "player": "Heidi Mohr"
+        },
+        {
+          "event": "Substitute out",
+          "time": "83",
+          "team": "Germany",
+          "player": "Bettina Wiegmann"
+        },
+        {
+          "event": "Substitute in",
+          "time": "83",
+          "team": "Germany",
+          "player": "Pia Wunderlich"
+        },
+        {
+          "event": "Goal",
+          "time": "89",
+          "team": "Germany",
+          "player": "Heidi Mohr"
+        },
+        {
+          "event": "Goal",
+          "time": "90",
+          "team": "Germany",
+          "player": "Anouschka Bernhard"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "Nigeria",
+        "England"
+      ],
+      "score": [
+        2,
+        3
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "1,843",
+      "referee": "Ingrid Jonsson",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        5,
+        3,
+        2
+      ],
+      "formation2": [
+        3,
+        3,
+        4
+      ],
+      "initial_squad1": [
+        "Patience Avre",
+        "Ann Chiejine",
+        "Phoebe Ebimiekumo",
+        "Prisca Emeafu",
+        "Ngozi Ezeocha",
+        "Yinka Kudaisi",
+        "Ann Mukoro",
+        "Rita Nwadike",
+        "Mavis Ogun",
+        "Adaku Okoroafor",
+        "Florence Omagbemi"
+      ],
+      "bench_players1": [
+        "Nkiru Okosieme",
+        "Maureen Mmadu",
+        "Mercy Akide",
+        "Louisa Akpagu",
+        "Omo-Love Branch",
+        "Nkechi Mbilitam",
+        "Diana Nwaiwu",
+        "Ugochi Opara",
+        "Ngozi Uche"
+      ],
+      "initial_squad2": [
+        "Debbie Bampton",
+        "Karen Burke",
+        "Gillian Coultard",
+        "Kerry Davis",
+        "Karen Farley",
+        "Lesley Higgs",
+        "Tina Mapes",
+        "Brenda Sempare",
+        "Marieanne Spacey",
+        "Clare Taylor",
+        "Karen Walker"
+      ],
+      "bench_players2": [
+        "Becky Easton",
+        "Hope Powell",
+        "Samantha Britton",
+        "Pauline Cope",
+        "Julie Fletcher",
+        "Mary Phillip",
+        "Donna Smith",
+        "Louise Waller",
+        "Sian Williams"
+      ],
+      "events": [
+        {
+          "event": "Yellow Card",
+          "time": "5",
+          "team": "Nigeria",
+          "player": "Phoebe Ebimiekumo"
+        },
+        {
+          "event": "Goal",
+          "time": "13",
+          "team": "Nigeria",
+          "player": "Adaku Okoroafor"
+        },
+        {
+          "event": "Substitute out",
+          "time": "44",
+          "team": "Nigeria",
+          "player": "Ngozi Ezeocha"
+        },
+        {
+          "event": "Substitute in",
+          "time": "44",
+          "team": "Nigeria",
+          "player": "Maureen Mmadu"
+        },
+        {
+          "event": "Substitute out",
+          "time": "47",
+          "team": "Nigeria",
+          "player": "Patience Avre"
+        },
+        {
+          "event": "Substitute in",
+          "time": "47",
+          "team": "Nigeria",
+          "player": "Nkiru Okosieme"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "68",
+          "team": "Nigeria",
+          "player": "Yinka Kudaisi"
+        },
+        {
+          "event": "Goal",
+          "time": "74",
+          "team": "Nigeria",
+          "player": "Rita Nwadike"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "90",
+          "team": "Nigeria",
+          "player": "Maureen Mmadu"
+        },
+        {
+          "event": "Goal",
+          "time": "10",
+          "team": "England",
+          "player": "Karen Farley"
+        },
+        {
+          "event": "Goal",
+          "time": "27",
+          "team": "England",
+          "player": "Karen Walker"
+        },
+        {
+          "event": "Goal",
+          "time": "38",
+          "team": "England",
+          "player": "Karen Farley"
+        },
+        {
+          "event": "Substitute out",
+          "time": "58",
+          "team": "England",
+          "player": "Brenda Sempare"
+        },
+        {
+          "event": "Substitute in",
+          "time": "58",
+          "team": "England",
+          "player": "Becky Easton"
+        },
+        {
+          "event": "Substitute out",
+          "time": "70",
+          "team": "England",
+          "player": "Marieanne Spacey"
+        },
+        {
+          "event": "Substitute in",
+          "time": "70",
+          "team": "England",
+          "player": "Hope Powell"
+        },
+        {
+          "event": "Substitute out",
+          "time": "81",
+          "team": "England",
+          "player": "Clare Taylor"
+        },
+        {
+          "event": "Substitute in",
+          "time": "81",
+          "team": "England",
+          "player": "Samantha Britton"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "Norway",
+        "Canada"
+      ],
+      "score": [
+        7,
+        0
+      ],
+      "stadium": "Stromvallen (Neutral Site)",
+      "attendance": "2,715",
+      "referee": "Maria Siqueira",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        4,
+        3
+      ],
+      "formation2": [
+        5,
+        2,
+        3
+      ],
+      "initial_squad1": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarones",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Marianne Pettersen",
+        "Hege Riise",
+        "Heidi Store",
+        "Tina Svensson"
+      ],
+      "bench_players1": [
+        "Agnete Carlsen",
+        "Kristin Sandberg",
+        "Randi Leinan",
+        "Tone Gunn Frustol",
+        "Hege Gunnerod",
+        "Nina Nymark Andersen",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Anita Waage"
+      ],
+      "initial_squad2": [
+        "Silvana Burtini",
+        "Annie Caron",
+        "Carla Chin",
+        "Geri Donnelly",
+        "Janine Helland",
+        "Charmaine Hooper",
+        "Angela Kelly",
+        "Suzanne Muir",
+        "Michelle Ring",
+        "Cathy Ross",
+        "Helen Stoumbos"
+      ],
+      "bench_players2": [
+        "Andrea Neil",
+        "Suzanne Gerrior",
+        "Wendy Hawthorne",
+        "Joan McEachern",
+        "Luce Mongrain",
+        "Isabelle Morneau",
+        "Veronica O'Brien",
+        "Nicole Sedgwick",
+        "Tania Singfield"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "4",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Goal",
+          "time": "12",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Goal",
+          "time": "21",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Norway",
+          "player": "Kristin Sandberg"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Norway",
+          "player": "Randi Leinan"
+        },
+        {
+          "event": "Substitute out",
+          "time": "69",
+          "team": "Norway",
+          "player": "Tone Haugen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "69",
+          "team": "Norway",
+          "player": "Agnete Carlsen"
+        },
+        {
+          "event": "Goal",
+          "time": "71",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Goal",
+          "time": "84",
+          "team": "Norway",
+          "player": "Randi Leinan"
+        },
+        {
+          "event": "Goal",
+          "time": "89",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Goal",
+          "time": "90+3",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "26",
+          "team": "Canada",
+          "player": "Annie Caron"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "36",
+          "team": "Canada",
+          "player": "Charmaine Hooper"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "80",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        },
+        {
+          "event": "Substitute out",
+          "time": "85",
+          "team": "Canada",
+          "player": "Suzanne Muir"
+        },
+        {
+          "event": "Substitute in",
+          "time": "85",
+          "team": "Canada",
+          "player": "Andrea Neil"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "88",
+          "team": "Canada",
+          "player": "Michelle Ring"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "United States",
+        "Australia"
+      ],
+      "score": [
+        4,
+        1
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "1,150",
+      "referee": "Pirom Anprasert",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        4,
+        3,
+        3
+      ],
+      "initial_squad1": [
+        "Amanda Cromwell",
+        "Joy Fawcett",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Kristine Lilly",
+        "Holly Manthei",
+        "Tiffeny Milbrett",
+        "Carla Overbeck",
+        "Thori Staples Bryan",
+        "Tisha Venturini",
+        "Saskia Webber"
+      ],
+      "bench_players1": [
+        "Julie Foudy",
+        "Carin Jennings-Gabarra",
+        "Debbie Keller",
+        "Michelle Akers",
+        "Mary Harvey",
+        "Jennifer Lalor",
+        "Sarah Rafanelli",
+        "Tiffany Roberts",
+        "Briana Scurry"
+      ],
+      "initial_squad2": [
+        "Lisa Casagrande",
+        "Sarah Cooper",
+        "Alison Forman",
+        "Sonia Gegenhuber",
+        "Sunni Hughes",
+        "Angela Iannotta",
+        "Kim Lembryk",
+        "Julie Murray",
+        "Jane Oakley",
+        "Anissa Tann",
+        "Tracey Wheeler"
+      ],
+      "bench_players2": [
+        "Lizzy Claydon",
+        "Kaylene Janssen",
+        "Sacha Wainwright",
+        "Traci Bartlett",
+        "Louise McMurtriel",
+        "Claire Nichols",
+        "Denie Pentecost",
+        "Cheryl Salisbury",
+        "Michelle Watson"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "United States",
+          "player": "Holly Manthei"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "United States",
+          "player": "Carin Jennings-Gabarra"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "55",
+          "team": "United States",
+          "player": "Tisha Venturini"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "United States",
+          "player": "Amanda Cromwell"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "United States",
+          "player": "Julie Foudy"
+        },
+        {
+          "event": "Goal",
+          "time": "69",
+          "team": "United States",
+          "player": "Julie Foudy"
+        },
+        {
+          "event": "Goal",
+          "time": "72",
+          "team": "United States",
+          "player": "Joy Fawcett"
+        },
+        {
+          "event": "Substitute out",
+          "time": "78",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Substitute in",
+          "time": "78",
+          "team": "United States",
+          "player": "Debbie Keller"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "90+2",
+          "team": "United States",
+          "player": "Carla Overbeck"
+        },
+        {
+          "event": "Goal",
+          "time": "90+4",
+          "team": "United States",
+          "player": "Debbie Keller"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "42",
+          "team": "Australia",
+          "player": "Alison Forman"
+        },
+        {
+          "event": "Goal",
+          "time": "54",
+          "team": "Australia",
+          "player": "Lisa Casagrande"
+        },
+        {
+          "event": "Substitute out",
+          "time": "67",
+          "team": "Australia",
+          "player": "Lisa Casagrande"
+        },
+        {
+          "event": "Substitute in",
+          "time": "67",
+          "team": "Australia",
+          "player": "Lizzy Claydon"
+        },
+        {
+          "event": "Substitute out",
+          "time": "75",
+          "team": "Australia",
+          "player": "Jane Oakley"
+        },
+        {
+          "event": "Substitute in",
+          "time": "75",
+          "team": "Australia",
+          "player": "Sacha Wainwright"
+        },
+        {
+          "event": "Substitute out",
+          "time": "82",
+          "team": "Australia",
+          "player": "Kim Lembryk"
+        },
+        {
+          "event": "Substitute in",
+          "time": "82",
+          "team": "Australia",
+          "player": "Kaylene Janssen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "82",
+          "team": "Australia",
+          "player": "Angela Iannotta"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "88",
+          "team": "Australia",
+          "player": "Julie Murray"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
+      "group": "C",
+      "teams": [
+        "China PR",
+        "Denmark"
+      ],
+      "score": [
+        3,
+        1
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "1,619",
+      "referee": "Eduardo Gamboa Martinez",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        2,
+        5,
+        3
+      ],
+      "formation2": [
+        3,
+        3,
+        4
+      ],
+      "initial_squad1": [
+        "Liu Ailing",
+        "Shi Guihong",
+        "Wei Haiying",
+        "Gao Hong",
+        "Xie Huilin",
+        "Zhao Lihong",
+        "Wang Liping",
+        "Wen Lirong",
+        "Sun Wen",
+        "Zhou Yang",
+        "Fan Yunjie"
+      ],
+      "bench_players1": [
+        "Shui Qingxia",
+        "Zhong Honglian",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Niu Lijie",
+        "Sun Qingmei",
+        "Man Yanling",
+        "Li Ying",
+        "Chen Yufeng"
+      ],
+      "initial_squad2": [
+        "Birgit Christensen",
+        "Christina Hansen",
+        "Louise Hansen",
+        "Rikke Holm",
+        "Helle Jensen",
+        "Gitte Krogh",
+        "Dorthe Larsen",
+        "Lene Madsen",
+        "Anne Dot Eggers Nielsen",
+        "Katrine Pedersen",
+        "Lene Terp"
+      ],
+      "bench_players2": [
+        "Christina Bonde",
+        "Christina Petersen",
+        "Bettina Allentoft",
+        "Jeanne Axelsen",
+        "Helle Bjerregaard",
+        "Karina Christensen",
+        "Kamma Flaeng",
+        "Annie Gam-Pedersen",
+        "Lisbet Kolding",
+        "Annette Laursen"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "21",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute out",
+          "time": "73",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute in",
+          "time": "73",
+          "team": "China PR",
+          "player": "Shui Qingxia"
+        },
+        {
+          "event": "Goal",
+          "time": "76",
+          "team": "China PR",
+          "player": "Sun Wen"
+        },
+        {
+          "event": "Goal",
+          "time": "90",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Substitute out",
+          "time": "26",
+          "team": "Denmark",
+          "player": "Helle Jensen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "26",
+          "team": "Denmark",
+          "player": "Christina Bonde"
+        },
+        {
+          "event": "Substitute out",
+          "time": "43",
+          "team": "Denmark",
+          "player": "Katrine Pedersen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "43",
+          "team": "Denmark",
+          "player": "Bettina Allentoft"
+        },
+        {
+          "event": "Goal",
+          "time": "44",
+          "team": "Denmark",
+          "player": "Christina Bonde"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "56",
+          "team": "Denmark",
+          "player": "Anne Dot Eggers Nielsen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "79",
+          "team": "Denmark",
+          "player": "Lene Madsen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "79",
+          "team": "Denmark",
+          "player": "Christina Petersen"
+        }
+      ]
+    },
+    {
+      "phase": "Quarter-finals",
+      "group": "",
+      "teams": [
+        "Norway",
+        "Denmark"
+      ],
+      "score": [
+        3,
+        1
+      ],
+      "stadium": "Tingvallen (Neutral Site)",
+      "attendance": "4,655",
+      "referee": "Pirom Anprasert",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        4,
+        3
+      ],
+      "formation2": [
+        4,
+        4,
+        2
+      ],
+      "initial_squad1": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarones",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Marianne Pettersen",
+        "Hege Riise",
+        "Heidi Store",
+        "Tina Svensson"
+      ],
+      "bench_players1": [
+        "Agnete Carlsen",
+        "Randi Leinan",
+        "Tone Gunn Frustol",
+        "Hege Gunnerod",
+        "Nina Nymark Andersen",
+        "Kristin Sandberg",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Anita Waage"
+      ],
+      "initial_squad2": [
+        "Jeanne Axelsen",
+        "Birgit Christensen",
+        "Kamma Flæng",
+        "Louise Hansen",
+        "Rikke Holm",
+        "Helle Jensen",
+        "Dorthe Larsen",
+        "Lene Madsen",
+        "Anne Dot Eggers Nielsen",
+        "Katrine Pedersen",
+        "Lene Terp"
+      ],
+      "bench_players2": [
+        "Gitte Krogh",
+        "Annette Laursen",
+        "Christina Bonde",
+        "Bettina Allentoft",
+        "Helle Bjerregaard",
+        "Karina Christensen",
+        "Annie Gam-Pedersen",
+        "Christina Hansen",
+        "Lisbet Kolding",
+        "Christina Petersen"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "21",
+          "team": "Norway",
+          "player": "Gro Espeseth"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "23",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Goal",
+          "time": "64",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "76",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Substitute in",
+          "time": "76",
+          "team": "Norway",
+          "player": "Agnete Carlsen"
+        },
+        {
+          "event": "Substitute out",
+          "time": "84",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "84",
+          "team": "Norway",
+          "player": "Randi Leinan"
+        },
+        {
+          "event": "Goal",
+          "time": "85",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Denmark",
+          "player": "Jeanne Axelsen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Denmark",
+          "player": "Gitte Krogh"
+        },
+        {
+          "event": "Substitute out",
+          "time": "63",
+          "team": "Denmark",
+          "player": "Louise Hansen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "63",
+          "team": "Denmark",
+          "player": "Annette Laursen"
+        },
+        {
+          "event": "Goal",
+          "time": "86",
+          "team": "Denmark",
+          "player": "Gitte Krogh"
+        },
+        {
+          "event": "Substitute out",
+          "time": "86",
+          "team": "Denmark",
+          "player": "Lene Madsen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "86",
+          "team": "Denmark",
+          "player": "Christina Bonde"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "90",
+          "team": "Denmark",
+          "player": "Rikke Holm"
+        }
+      ]
+    },
+    {
+      "phase": "Quarter-finals",
+      "group": "",
+      "teams": [
+        "United States",
+        "Japan"
+      ],
+      "score": [
+        4,
+        0
+      ],
+      "stadium": "Stromvallen (Neutral Site)",
+      "attendance": "3,756",
+      "referee": "Eduardo Gamboa Martinez",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        4,
+        2,
+        4
+      ],
+      "initial_squad1": [
+        "Joy Fawcett",
+        "Julie Foudy",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Carin Jennings-Gabarra",
+        "Kristine Lilly",
+        "Tiffeny Milbrett",
+        "Carla Overbeck",
+        "Tiffany Roberts",
+        "Briana Scurry",
+        "Tisha Venturini"
+      ],
+      "bench_players1": [
+        "Debbie Keller",
+        "Thori Staples Bryan",
+        "Amanda Cromwell",
+        "Michelle Akers",
+        "Mary Harvey",
+        "Jennifer Lalor",
+        "Holly Manthei",
+        "Sarah Rafanelli",
+        "Saskia Webber"
+      ],
+      "initial_squad2": [
+        "Etsuko Handa",
+        "Maki Haneta",
+        "Futaba Kioka",
+        "Kae Nishina",
+        "Akemi Noda",
+        "Yumi Obe",
+        "Junko Ozawa",
+        "Asako Takakura",
+        "Yumi Tomei",
+        "Tamaki Uchiyama",
+        "Rie Yamaki"
+      ],
+      "bench_players2": [
+        "Nami Otake",
+        "Kaoru Kadohara",
+        "Tsuru Morimoto",
+        "Kaori Nagamine",
+        "Shiho Onodera",
+        "Megumi Sakata",
+        "Homare Sawa",
+        "Inesu Takeoka",
+        "Ryoko Uno"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "8",
+          "team": "United States",
+          "player": "Kristine Lilly"
+        },
+        {
+          "event": "Goal",
+          "time": "42",
+          "team": "United States",
+          "player": "Kristine Lilly"
+        },
+        {
+          "event": "Goal",
+          "time": "45",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "47",
+          "team": "United States",
+          "player": "Tiffany Roberts"
+        },
+        {
+          "event": "Substitute out",
+          "time": "61",
+          "team": "United States",
+          "player": "Mia Hamm"
+        },
+        {
+          "event": "Substitute in",
+          "time": "61",
+          "team": "United States",
+          "player": "Debbie Keller"
+        },
+        {
+          "event": "Substitute out",
+          "time": "68",
+          "team": "United States",
+          "player": "Kristine Lilly"
+        },
+        {
+          "event": "Substitute in",
+          "time": "68",
+          "team": "United States",
+          "player": "Thori Staples Bryan"
+        },
+        {
+          "event": "Goal",
+          "time": "80",
+          "team": "United States",
+          "player": "Tisha Venturini"
+        },
+        {
+          "event": "Substitute out",
+          "time": "80",
+          "team": "United States",
+          "player": "Tisha Venturini"
+        },
+        {
+          "event": "Substitute in",
+          "time": "80",
+          "team": "United States",
+          "player": "Amanda Cromwell"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Japan",
+          "player": "Etsuko Handa"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Japan",
+          "player": "Nami Otake"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "72",
+          "team": "Japan",
+          "player": "Rie Yamaki"
+        }
+      ]
+    },
+    {
+      "phase": "Quarter-finals",
+      "group": "",
+      "teams": [
+        "Sweden",
+        "China PR"
+      ],
+      "score": [
+        1,
+        1
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "7,537",
+      "referee": "Sonia Denoncourt",
+      "penalties": [
+        3,
+        4
+      ],
+      "formation1": [
+        2,
+        3,
+        5
+      ],
+      "formation2": [
+        2,
+        5,
+        3
+      ],
+      "initial_squad1": [
+        "Anneli Andelen",
+        "Malin Andersson",
+        "Kristin Bengtsson",
+        "Susanne Hedberg",
+        "Ulrika Kalte",
+        "Elisabeth Leidinge",
+        "Helen Nilsson",
+        "Anna Pohjanen",
+        "Pia Sundhage",
+        "Lena Videkull",
+        "Eva Zeikfalvy"
+      ],
+      "bench_players1": [
+        "Malin Flink",
+        "Annika Nessvold",
+        "Asa Lonnqvist",
+        "Anika Bozicevic",
+        "Asa Jakobsson",
+        "Sofia Johansson",
+        "Malin Lundgren",
+        "Annelie Nilsson",
+        "Anneli Olsson"
+      ],
+      "initial_squad2": [
+        "Liu Ailing",
+        "Shi Guihong",
+        "Gao Hong",
+        "Xie Huilin",
+        "Zhao Lihong",
+        "Wang Liping",
+        "Wen Lirong",
+        "Sun Qingmei",
+        "Sun Wen",
+        "Zhou Yang",
+        "Fan Yunjie"
+      ],
+      "bench_players2": [
+        "Wei Haiying",
+        "Chen Yufeng",
+        "Shui Qingxia",
+        "Zhong Honglian",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Niu Lijie",
+        "Man Yanling",
+        "Li Ying"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "Sweden",
+          "player": "Eva Zeikfalvy"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "Sweden",
+          "player": "Asa Lonnqvist"
+        },
+        {
+          "event": "Substitute out",
+          "time": "65",
+          "team": "Sweden",
+          "player": "Kristin Bengtsson"
+        },
+        {
+          "event": "Substitute in",
+          "time": "65",
+          "team": "Sweden",
+          "player": "Annika Nessvold"
+        },
+        {
+          "event": "Substitute out",
+          "time": "71",
+          "team": "Sweden",
+          "player": "Anneli Andelen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "71",
+          "team": "Sweden",
+          "player": "Malin Flink"
+        },
+        {
+          "event": "Goal",
+          "time": "90+3",
+          "team": "Sweden",
+          "player": "Ulrika Kalte"
+        },
+        {
+          "event": "Penalty shootout miss",
+          "time": "2",
+          "team": "Sweden",
+          "player": "Malin Andersson"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "4",
+          "team": "Sweden",
+          "player": "Lena Videkull"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "6",
+          "team": "Sweden",
+          "player": "Anna Pohjanen"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "8",
+          "team": "Sweden",
+          "player": "Pia Sundhage"
+        },
+        {
+          "event": "Penalty shootout miss",
+          "time": "10",
+          "team": "Sweden",
+          "player": "Annika Nessvold"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "22",
+          "team": "China PR",
+          "player": "Xie Huilin"
+        },
+        {
+          "event": "Goal",
+          "time": "29",
+          "team": "China PR",
+          "player": "Sun Qingmei"
+        },
+        {
+          "event": "Substitute out",
+          "time": "51",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute in",
+          "time": "51",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "77",
+          "team": "China PR",
+          "player": "Liu Ailing"
+        },
+        {
+          "event": "Substitute out",
+          "time": "103",
+          "team": "China PR",
+          "player": "Wang Liping"
+        },
+        {
+          "event": "Substitute in",
+          "time": "103",
+          "team": "China PR",
+          "player": "Shui Qingxia"
+        },
+        {
+          "event": "Substitute out",
+          "time": "119",
+          "team": "China PR",
+          "player": "Zhao Lihong"
+        },
+        {
+          "event": "Substitute in",
+          "time": "119",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "1",
+          "team": "China PR",
+          "player": "Sun Wen"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "3",
+          "team": "China PR",
+          "player": "Xie Huilin"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "5",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        },
+        {
+          "event": "Penalty shootout goal",
+          "time": "7",
+          "team": "China PR",
+          "player": "Shui Qingxia"
+        },
+        {
+          "event": "Penalty shootout miss",
+          "time": "9",
+          "team": "China PR",
+          "player": "Liu Ailing"
+        }
+      ]
+    },
+    {
+      "phase": "Quarter-finals",
+      "group": "",
+      "teams": [
+        "Germany",
+        "England"
+      ],
+      "score": [
+        3,
+        0
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "2,317",
+      "referee": "Bente Skogvang",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        2,
+        5,
+        3
+      ],
+      "formation2": [
+        3,
+        3,
+        4
+      ],
+      "initial_squad1": [
+        "Anouschka Bernhard",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Sandra Minnert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Birgit Prinz",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players1": [
+        "Pia Wunderlich",
+        "Patricia Brocker",
+        "Birgitt Austermuhl",
+        "Christine Francke",
+        "Melanie Hoffmann",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Smisek",
+        "Tina Wunderlich"
+      ],
+      "initial_squad2": [
+        "Debbie Bampton",
+        "Karen Burke",
+        "Pauline Cope",
+        "Gillian Coultard",
+        "Kerry Davis",
+        "Karen Farley",
+        "Tina Mapes",
+        "Brenda Sempare",
+        "Marieanne Spacey",
+        "Clare Taylor",
+        "Karen Walker"
+      ],
+      "bench_players2": [
+        "Becky Easton",
+        "Louise Waller",
+        "Samantha Britton",
+        "Julie Fletcher",
+        "Lesley Higgs",
+        "Mary Phillip",
+        "Hope Powell",
+        "Donna Smith",
+        "Sian Williams"
+      ],
+      "events": [
+        {
+          "event": "Goal",
+          "time": "41",
+          "team": "Germany",
+          "player": "Martina Voss-Tecklenburg"
+        },
+        {
+          "event": "Goal",
+          "time": "55",
+          "team": "Germany",
+          "player": "Maren Meinert"
+        },
+        {
+          "event": "Substitute out",
+          "time": "67",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Substitute in",
+          "time": "67",
+          "team": "Germany",
+          "player": "Patricia Brocker"
+        },
+        {
+          "event": "Goal",
+          "time": "82",
+          "team": "Germany",
+          "player": "Heidi Mohr"
+        },
+        {
+          "event": "Substitute out",
+          "time": "85",
+          "team": "Germany",
+          "player": "Maren Meinert"
+        },
+        {
+          "event": "Substitute in",
+          "time": "85",
+          "team": "Germany",
+          "player": "Pia Wunderlich"
+        },
+        {
+          "event": "Substitute out",
+          "time": "46",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Substitute in",
+          "time": "46",
+          "team": "England",
+          "player": "Becky Easton"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "57",
+          "team": "England",
+          "player": "Becky Easton"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "70",
+          "team": "England",
+          "player": "Brenda Sempare"
+        },
+        {
+          "event": "Substitute out",
+          "time": "79",
+          "team": "England",
+          "player": "Tina Mapes"
+        },
+        {
+          "event": "Substitute in",
+          "time": "79",
+          "team": "England",
+          "player": "Louise Waller"
+        },
+        {
+          "event": "Substitute out",
+          "time": "87",
+          "team": "England",
+          "player": "Clare Taylor"
+        },
+        {
+          "event": "Substitute in",
+          "time": "87",
+          "team": "England",
+          "player": "Samantha Britton"
+        }
+      ]
+    },
+    {
+      "phase": "Semi-finals",
+      "group": "",
+      "teams": [
+        "United States",
+        "Norway"
+      ],
+      "score": [
+        0,
+        1
+      ],
+      "stadium": "Arosvallen (Neutral Site)",
+      "attendance": "2,893",
+      "referee": "Alain Hamer",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        2,
+        4
+      ],
+      "formation2": [
+        4,
+        4,
+        2
+      ],
+      "initial_squad1": [
+        "Michelle Akers",
+        "Joy Fawcett",
+        "Julie Foudy",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Carin Jennings-Gabarra",
+        "Kristine Lilly",
+        "Carla Overbeck",
+        "Tiffany Roberts",
+        "Briana Scurry",
+        "Tisha Venturini"
+      ],
+      "bench_players1": [
+        "Tiffeny Milbrett",
+        "Amanda Cromwell",
+        "Mary Harvey",
+        "Debbie Keller",
+        "Jennifer Lalor",
+        "Holly Manthei",
+        "Sarah Rafanelli",
+        "Thori Staples Bryan",
+        "Saskia Webber"
+      ],
+      "initial_squad2": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarønes",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Nina Nymark Andersen",
+        "Hege Riise",
+        "Heidi Støre",
+        "Tina Svensson"
+      ],
+      "bench_players2": [
+        "Marianne Pettersen",
+        "Agnete Carlsen",
+        "Tone Gunn Frustol",
+        "Hege Gunnerod",
+        "Randi Leinan",
+        "Kristin Sandberg",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Anita Waage"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "53",
+          "team": "United States",
+          "player": "Tiffany Roberts"
+        },
+        {
+          "event": "Substitute in",
+          "time": "53",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "6",
+          "team": "Norway",
+          "player": "Tina Svensson"
+        },
+        {
+          "event": "Goal",
+          "time": "10",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "22",
+          "team": "Norway",
+          "player": "Heidi Store"
+        },
+        {
+          "event": "Substitute out",
+          "time": "69",
+          "team": "Norway",
+          "player": "Tone Haugen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "69",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "76",
+          "team": "Norway",
+          "player": "Heidi Store"
+        },
+        {
+          "event": "Red Card",
+          "time": "76",
+          "team": "Norway",
+          "player": "Heidi Store"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "76",
+          "team": "Norway",
+          "player": "Heidi Store"
+        }
+      ]
+    },
+    {
+      "phase": "Semi-finals",
+      "group": "",
+      "teams": [
+        "Germany",
+        "China PR"
+      ],
+      "score": [
+        1,
+        0
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": "3,693",
+      "referee": "Petros Mathabela",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        2,
+        5,
+        3
+      ],
+      "formation2": [
+        2,
+        5,
+        3
+      ],
+      "initial_squad1": [
+        "Birgitt Austermuhl",
+        "Anouschka Bernhard",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Birgit Prinz",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players1": [
+        "Pia Wunderlich",
+        "Patricia Brocker",
+        "Christine Francke",
+        "Melanie Hoffmann",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Minnert",
+        "Sandra Smisek",
+        "Tina Wunderlich"
+      ],
+      "initial_squad2": [
+        "Liu Ailing",
+        "Shi Guihong",
+        "Gao Hong",
+        "Xie Huilin",
+        "Zhao Lihong",
+        "Wang Liping",
+        "Wen Lirong",
+        "Sun Qingmei",
+        "Sun Wen",
+        "Zhou Yang",
+        "Fan Yunjie"
+      ],
+      "bench_players2": [
+        "Chen Yufeng",
+        "Wei Haiying",
+        "Zhong Honglian",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Niu Lijie",
+        "Shui Qingxia",
+        "Man Yanling",
+        "Li Ying"
+      ],
+      "events": [
+        {
+          "event": "Substitute out",
+          "time": "83",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Substitute in",
+          "time": "83",
+          "team": "Germany",
+          "player": "Pia Wunderlich"
+        },
+        {
+          "event": "Goal",
+          "time": "88",
+          "team": "Germany",
+          "player": "Bettina Wiegmann"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "52",
+          "team": "China PR",
+          "player": "Wen Lirong"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "65",
+          "team": "China PR",
+          "player": "Shi Guihong"
+        },
+        {
+          "event": "Substitute out",
+          "time": "86",
+          "team": "China PR",
+          "player": "Fan Yunjie"
+        },
+        {
+          "event": "Substitute in",
+          "time": "86",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        }
+      ]
+    },
+    {
+      "phase": "Third-place match",
+      "group": "",
+      "teams": [
+        "China PR",
+        "United States"
+      ],
+      "score": [
+        0,
+        2
+      ],
+      "stadium": "Stromvallen (Neutral Site)",
+      "attendance": "4,335",
+      "referee": "Sonia Denoncourt",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        3,
+        4,
+        3
+      ],
+      "formation2": [
+        4,
+        2,
+        4
+      ],
+      "initial_squad1": [
+        "Liu Ailing",
+        "Shi Guihong",
+        "Gao Hong",
+        "Xie Huilin",
+        "Zhao Lihong",
+        "Niu Lijie",
+        "Wang Liping",
+        "Wen Lirong",
+        "Sun Qingmei",
+        "Sun Wen",
+        "Fan Yunjie"
+      ],
+      "bench_players1": [
+        "Wei Haiying",
+        "Chen Yufeng",
+        "Zhong Honglian",
+        "Yu Hongqi",
+        "Zhou Hua",
+        "Shui Qingxia",
+        "Zhou Yang",
+        "Man Yanling",
+        "Li Ying"
+      ],
+      "initial_squad2": [
+        "Joy Fawcett",
+        "Julie Foudy",
+        "Linda Hamilton",
+        "Mia Hamm",
+        "Carin Jennings-Gabarra",
+        "Kristine Lilly",
+        "Tiffeny Milbrett",
+        "Carla Overbeck",
+        "Briana Scurry",
+        "Thori Staples Bryan",
+        "Tisha Venturini"
+      ],
+      "bench_players2": [
+        "Tiffany Roberts",
+        "Sarah Rafanelli",
+        "Debbie Keller",
+        "Michelle Akers",
+        "Amanda Cromwell",
+        "Mary Harvey",
+        "Jennifer Lalor",
+        "Holly Manthei",
+        "Saskia Webber"
+      ],
+      "events": [
+        {
+          "event": "Yellow Card",
+          "time": "45",
+          "team": "China PR",
+          "player": "Xie Huilin"
+        },
+        {
+          "event": "Substitute out",
+          "time": "59",
+          "team": "China PR",
+          "player": "Sun Wen"
+        },
+        {
+          "event": "Substitute in",
+          "time": "59",
+          "team": "China PR",
+          "player": "Wei Haiying"
+        },
+        {
+          "event": "Substitute out",
+          "time": "72",
+          "team": "China PR",
+          "player": "Fan Yunjie"
+        },
+        {
+          "event": "Substitute in",
+          "time": "72",
+          "team": "China PR",
+          "player": "Chen Yufeng"
+        },
+        {
+          "event": "Goal",
+          "time": "24",
+          "team": "United States",
+          "player": "Tisha Venturini"
+        },
+        {
+          "event": "Substitute out",
+          "time": "54",
+          "team": "United States",
+          "player": "Linda Hamilton"
+        },
+        {
+          "event": "Substitute in",
+          "time": "54",
+          "team": "United States",
+          "player": "Tiffany Roberts"
+        },
+        {
+          "event": "Goal",
+          "time": "55",
+          "team": "United States",
+          "player": "Mia Hamm"
+        },
+        {
+          "event": "Substitute out",
+          "time": "68",
+          "team": "United States",
+          "player": "Tiffeny Milbrett"
+        },
+        {
+          "event": "Substitute in",
+          "time": "68",
+          "team": "United States",
+          "player": "Debbie Keller"
+        },
+        {
+          "event": "Substitute out",
+          "time": "80",
+          "team": "United States",
+          "player": "Carin Jennings-Gabarra"
+        },
+        {
+          "event": "Substitute in",
+          "time": "80",
+          "team": "United States",
+          "player": "Sarah Rafanelli"
+        }
+      ]
+    },
+    {
+      "phase": "Final",
+      "group": "",
+      "teams": [
+        "Germany",
+        "Norway"
+      ],
+      "score": [
+        0,
+        2
+      ],
+      "stadium": "Rasunda Stadium (Neutral Site)",
+      "attendance": "17,158",
+      "referee": "Ingrid Jonsson",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        2,
+        5,
+        3
+      ],
+      "formation2": [
+        4,
+        3,
+        3
+      ],
+      "initial_squad1": [
+        "Birgitt Austermuhl",
+        "Anouschka Bernhard",
+        "Manuela Goller",
+        "Ursula Lohn",
+        "Maren Meinert",
+        "Heidi Mohr",
+        "Silvia Neid",
+        "Dagmar Pohlmann",
+        "Birgit Prinz",
+        "Martina Voss-Tecklenburg",
+        "Bettina Wiegmann"
+      ],
+      "bench_players1": [
+        "Sandra Smisek",
+        "Pia Wunderlich",
+        "Patricia Brocker",
+        "Christine Francke",
+        "Melanie Hoffmann",
+        "Claudia Klein",
+        "Katja Kraus",
+        "Sandra Minnert",
+        "Tina Wunderlich"
+      ],
+      "initial_squad2": [
+        "Gro Espeseth",
+        "Tone Haugen",
+        "Ann Kristin Aarønes",
+        "Linda Medalen",
+        "Merete Myklebust",
+        "Bente Nordby",
+        "Anne Nymark Andersen",
+        "Nina Nymark Andersen",
+        "Marianne Pettersen",
+        "Hege Riise",
+        "Tina Svensson"
+      ],
+      "bench_players2": [
+        "Agnete Carlsen",
+        "Tone Gunn Frustol",
+        "Hege Gunnerod",
+        "Randi Leinan",
+        "Kristin Sandberg",
+        "Reidun Seth",
+        "Ingrid Sternhoff",
+        "Heidi Store",
+        "Anita Waage"
+      ],
+      "events": [
+        {
+          "event": "Yellow Card",
+          "time": "2",
+          "team": "Germany",
+          "player": "Anouschka Bernhard"
+        },
+        {
+          "event": "Substitute out",
+          "time": "42",
+          "team": "Germany",
+          "player": "Birgit Prinz"
+        },
+        {
+          "event": "Substitute in",
+          "time": "42",
+          "team": "Germany",
+          "player": "Patricia Brocker"
+        },
+        {
+          "event": "Substitute out",
+          "time": "75",
+          "team": "Germany",
+          "player": "Dagmar Pohlmann"
+        },
+        {
+          "event": "Substitute in",
+          "time": "75",
+          "team": "Germany",
+          "player": "Pia Wunderlich"
+        },
+        {
+          "event": "Substitute out",
+          "time": "86",
+          "team": "Germany",
+          "player": "Maren Meinert"
+        },
+        {
+          "event": "Substitute in",
+          "time": "86",
+          "team": "Germany",
+          "player": "Sandra Smisek"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "22",
+          "team": "Norway",
+          "player": "Anne Nymark Andersen"
+        },
+        {
+          "event": "Goal",
+          "time": "37",
+          "team": "Norway",
+          "player": "Hege Riise"
+        },
+        {
+          "event": "Goal",
+          "time": "40",
+          "team": "Norway",
+          "player": "Marianne Pettersen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "58",
+          "team": "Norway",
+          "player": "Linda Medalen"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "70",
+          "team": "Norway",
+          "player": "Ann Kristin Aarones"
+        }
+      ]
+    }
+  ]
+}
