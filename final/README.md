@@ -86,22 +86,27 @@ Awards(award_type, year_wc, player_id, team_id)
 ![.](assets/previa_hierarquico.png)
 
 ## Dataset Preliminar a ser Publicado
-> Elencar os arquivos/bases preliminares dos datasets serão publicados publicados.
 
-título do arquivo/base | link | breve descrição
------ | ----- | -----
-`<título do arquivo/base>` | `<link para arquivo/base>` | `<breve descrição do arquivo/base>`
+world_cup_1991.json | ![link](final/data/processed/world_cup_1991.json) | Documento JSON com os dados da Copa do mundo feminina de 1991
 
-> Os arquivos finais do dataset publicado devem ser colocados na pasta `data`, em subpasta `processed`. Outros arquivos serão colocados em subpastas conforme seu papel (externo, interim, raw). A diferença entre externo e raw é que o raw é em formato não adaptado para uso. A pasta `raw` é opcional, pois pode ser substituída pelo link para a base original da seção anterior.
-> Coloque arquivos que não estejam disponíveis online e sejam acessados pelo notebook. Relacionais (usualmente CSV), XML, JSON e CSV ou triplas para grafos.
+world_cup_1995.json | ![link](final/data/processed/world_cup_1995.json) | Documento JSON com os dados da Copa do mundo feminina de 1995
+
+world_cup_1999.json | ![link](final/data/processed/world_cup_1999.json) | Documento JSON com os dados da Copa do mundo feminina de 1999
+
+world_cup_2003.json | ![link](final/data/processed/world_cup_2003.json) | Documento JSON com os dados da Copa do mundo feminina de 2003
+
+world_cup_2007.json | ![link](final/data/processed/world_cup_2007.json) | Documento JSON com os dados da Copa do mundo feminina de 2007
+
+world_cup_2011.json | ![link](final/data/processed/world_cup_2011.json) | Documento JSON com os dados da Copa do mundo feminina de 2011
+
+world_cup_2015.json | ![link](final/data/processed/world_cup_2015.json) | Documento JSON com os dados da Copa do mundo feminina de 2015
+
+world_cup_2019.json | ![link](final/data/processed/world_cup_2019.json) | Documento JSON com os dados da Copa do mundo feminina de 2019
 
 ## Bases de Dados
-> Elencar as bases de dados fonte utilizadas no projeto.
 
-título da base | link | breve descrição
------ | ----- | -----
-FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às partidas, seleções e sobre as Copas no geral
-Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados para coleta de dados que não estavam presentes na base supracitada
+FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras.
+Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada.
 
 ## Operações realizadas para a construção do dataset
 
