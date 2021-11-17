@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mysql-client = "*"
+pymongo = "*"
+mysql-connector-python = "*"
+beautifulsoup4 = "*"
+pydantic = "*"
+dnspython = "*"
+requests = "*"
+lxml = "*"
+typing = "*"
+bs4 = "*"
+wikipedia = "*"
+wikipedia-api = "*"
+"html.parser" = "*"
+html5lib = "*"
+translate = "*"
+textblob = "*"
+deep-translator = "*"
+unidecode = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
