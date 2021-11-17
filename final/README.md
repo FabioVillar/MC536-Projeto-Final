@@ -105,8 +105,9 @@ Awards(award_type, year_wc, player_id, team_id)
 
 ## Bases de Dados
 
-> FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras.
-> Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada.
+* FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras.
+
+* Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada.
 
 ## Operações realizadas para a construção do dataset
 
