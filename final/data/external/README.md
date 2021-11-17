@@ -70,6 +70,7 @@ https://en.wikipedia.org/wiki/FIFA_Women's_World_Cup_awards
 https://en.wikipedia.org/wiki/{year}_FIFA_Women's_World_Cup
 https://en.wikipedia.org/wiki/{year}_FIFA_Women's_World_Cup_squads
 
+
 {year} = ano da copa (1991 à 2019)
 ~~~
 
