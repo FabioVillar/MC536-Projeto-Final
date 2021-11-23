@@ -154,7 +154,7 @@ Uma outra ideia que exigiu uma reestruturação foi na concepção dos eventos a
 
 ### Montagem dos arquivos `.json`:
 
-Um dos motivos de termos escolhido Python como linguagem principal, foi o suporte à biblioteca `pydantic`, que facilita muito em operações para criação e leitura de arquivos `.json`. Com ela, nosso código se baseou em dividir e preencher as informações em classes que criamos, para em seguida, transformá-las nos arquivos. As classes montadas podem ser conferidas no arquivo [models.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/models.md).
+Um dos motivos de termos escolhido Python como linguagem principal, foi o suporte à biblioteca `pydantic`, que facilita muito em operações para criação e leitura de arquivos `.json`. Com ela, nosso código se baseou em dividir e preencher as informações em classes que criamos, para em seguida, transformá-las nos arquivos. As classes montadas podem ser conferidas no arquivo [models.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/models.py).
 
 ### Banco de dados
 
