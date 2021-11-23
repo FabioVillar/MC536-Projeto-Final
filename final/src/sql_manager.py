@@ -208,7 +208,7 @@ def sql_manager():
     start_year = 1991
     last_year = 2019
     for year in range(start_year, last_year + 1, 4):
-        with open(f'C:/Users/José/Documents/MC536/mc536/final2.0/MC536-Projeto-Final/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f:
+        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
         year_wc = wc_obj['year']
         print(year_wc)
