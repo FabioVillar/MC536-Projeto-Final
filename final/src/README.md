@@ -58,13 +58,19 @@ $ python main.py
 ```sh
 $ python sql_manager.py
 ```
-**É importante ressaltar que o `user` e `password` sejam alterados dentro do arquivo `sql_manager.py`**:
+**É importante ressaltar que o `user`, `password` e `path` sejam alterados dentro do arquivo `sql_manager.py`**:
 
 ~~~python
 def sql_manager():
 
     user = "root" #your user here
     password = "password" #your password here
+~~~
+
+~~~python
+for year in range(start_year, last_year + 1, 4):
+        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore' as f: #your path here
+            wc_obj = json.load(f)
 ~~~
 ### Criar database e collection no MongoDB:
 
