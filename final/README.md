@@ -74,17 +74,21 @@ AWARDS_WC(award_type, year_wc, player_id, team)
 
 ## Detalhamento do Projeto
 
+### Resumo de Execução
 
-> As operações utilizadas para a construção do dataset se encontram na pasta `src`. Mais precisamente, para a montagem dos arquivos .json, basta executar o arquivo [main.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/main.py). Para obter os bancos de dados em SQL e MongoDB, basta seguir as operações contidas em [README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md).
+As operações utilizadas para a construção do dataset se encontram no [README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md) da pasta `src`. Mais precisamente, para a montagem dos arquivos .json, basta executar o arquivo [main.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/main.py). Para obter os bancos de dados em SQL e MongoDB, basta seguir as operações contidas em [README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md).
 
+### Resumo de Operações
 
-* Extração de dados de fontes não estruturadas: Para toda a composição do projeto, foi utilizado somente webscraping para a obtenção dos dados.
+Ao longo do projeto, utilizamos as seguintes operações para a construção do Dataset:
 
-* Integração: Obtivemos dados de dois sites: FBREF e Wikipedia. A utilização de forma mais específica pode ser vista em 
-* tratamento de dados
-* transformação de dados para facilitar análise e pesquisa
+* **Extração de dados de fontes não estruturadas**: Para toda a composição do projeto, foi utilizado somente webscraping para a obtenção dos dados. 
 
-> Se for notebook, ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as operações envolverem queries executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+* **Integração**: Obtivemos dados de dois sites: [FBREF](https://fbref.com/en/) e [Wikipedia](https://www.wikipedia.org/). A utilização, de forma mais específica, pode ser vista em [README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/external/README.md) com mais detalhes sobre as URLs utilizadas em cada parte do projeto.
+
+* **Tratamento de dados**: Um dos maiores desafios do projeto foi o tratamento de dados, principalmente para o preenchimento de informações faltantes de times e jogadoras. Além disso, também foram tratados casos de erro no site [FBREF](https://fbref.com/en/), que serão mais detalhados ao longo do documento.
+
+* **Transformação de dados para facilitar análise e pesquisa**: Ao longo do desenvolvimento do projeto, se mostrou necessário a transformação de alguns tipos de dados para facilitar tanto a concepção dos modelos conceituais e lógicos, quanto para facilitar a elaboração de queries para pesquisa. Um exemplo disso é a substituição de `grupo` como uma entidade, em entregas passadas, para um atributo, nesta entrega final.
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 

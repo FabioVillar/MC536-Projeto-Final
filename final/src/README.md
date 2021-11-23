@@ -7,7 +7,7 @@
 
 ## Instruções
 
-### Para criar o banco de dados no mysql:
+### Criar o banco de dados no mysql:
 
 ```
 sudo /etc/init.d/mysql start
@@ -16,7 +16,7 @@ mysql > create database womens_world_cup;
 
 ```
 
-### Para criar tabelas no mysql:
+### Criar tabelas no mysql:
 
 No diretório `src`:
 ```
@@ -25,8 +25,6 @@ mysql -u root -p womens_world_cup < tables.sql
 ```
 
 ### Rodar scripts em python:
-
-Para rodar os scripts em python:
 
 No diretório `src`:
 
