@@ -63,21 +63,26 @@ Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. 
 
 ~~~
 
-WorldCup(_year_wc_, host, winner)
-Team_wc(_team_id_, year_wc, team_name, coach, group_in_wc, group_points, ovr_points, group, goals_scored, goals_suffered, wins, draws, losses)
+WORLDCUP(_id_, host)
+
+TEAM_WC(_id_, year_wc, team_name, coach, group_in_wc, group_points, goals_scored, overall_points, goals_conceded, wins, draws, losses)
   Ocupante chave estrangeira -> WorldCup(year_wc)
-Player_wc(_player_id_, team_id, player_name, age, position, goals, yellow_cards, red_cards)
+
+PLAYER_WC(_id_, team_id, player_name, age, position, goals, assists, yellow_cards, red_cards, year_wc)
   Ocupante chave estrangeira -> Team_wc(team_id)
-Match_wc(_match_id_, penalties, phase, group, teamA, teamB, scoreA, scoreB, stadium, attendance, referee, formationA, formationB, lineupA, lineupB, benchA, benchB)
+
+MATCH_WC(_id_, penalties, phase, group, teamA, teamB, score, stadium, attendance, referee, formationA, formationB, lineupA, lineupB, reservesA, reservesB, possession, year_wc)
   Ocupante chave estrangeira -> Team_wc(teamA)
   Ocupante chave estrangeira -> Team_wc(teamB)
-Events_wc(_event_id_, match_id, event_type, match_time, team_id, player_id)
-  Ocupante chave estrangeira -> Player_wc(player_id)
-  Ocupante chave estrangeira -> Team_wc(team_id)
+
+EVENTS_WC(_id_, match_id, event_desc, match_time, team, player)
+  Ocupante chave estrangeira -> Player_wc(player)
+  Ocupante chave estrangeira -> Team_wc(team)
   Ocupante chave estrangeira -> Match_wc(match_id)
-Awards(award_type, year_wc, player_id, team_id)
+
+AWARDS_WC(award_type, year_wc, player_id, team)
   Ocupante chave estrangeira -> Player_wc(player_id)
-  Ocupante chave estrangeira -> Team_wc(team_id)
+  Ocupante chave estrangeira -> Team_wc(team)
 
 ~~~
 
@@ -87,31 +92,31 @@ Awards(award_type, year_wc, player_id, team_id)
 
 ## Dataset Preliminar a ser Publicado
 
-> world_cup_1991.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1991.json) | Documento JSON com os dados da Copa do mundo feminina de 1991
+`world_cup_1991.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1991.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1991`
 
-> world_cup_1995.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1995.json) | Documento JSON com os dados da Copa do mundo feminina de 1995
+`world_cup_1995.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1995.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1995`
 
-> world_cup_1999.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1999.json) | Documento JSON com os dados da Copa do mundo feminina de 1999
+`world_cup_1999.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1999.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1999`
 
-> world_cup_2003.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2003.json) | Documento JSON com os dados da Copa do mundo feminina de 2003
+`world_cup_2003.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2003.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2003`
 
-> world_cup_2007.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2007.json) | Documento JSON com os dados da Copa do mundo feminina de 2007
+`world_cup_2007.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2007.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2007`
 
-> world_cup_2011.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2011.json) | Documento JSON com os dados da Copa do mundo feminina de 2011
+`world_cup_2011.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2011.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2011`
 
-> world_cup_2015.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2015.json) | Documento JSON com os dados da Copa do mundo feminina de 2015
+`world_cup_2015.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2015.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2015`
 
-> world_cup_2019.json | ![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2019.json) | Documento JSON com os dados da Copa do mundo feminina de 2019
+`world_cup_2019.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2019.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2019`
 
 ## Bases de Dados
 
-* FBRef| https://fbref.com/en/ | Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras.
+`FBRef` | `https://fbref.com/en/` | `Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras`
 
-* Wikipedia| https://www.wikipedia.org/ | Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada.
+`Wikipedia` | `https://www.wikipedia.org/` | `Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada`
 
 ## Operações realizadas para a construção do dataset
 
-> As operações utilizadas para a construção do dataset se encontram na pasta `src`. Mais precisamente, para a montagem dos arquivos .json, basta executar o arquivo ![main.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/main.py). Para obter os bancos de dados em SQL e MongoDB, basta seguir as operações contidas em ![README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md).
+> As operações utilizadas para a construção do dataset se encontram na pasta `src`. Mais precisamente, para a montagem dos arquivos .json, basta executar o arquivo ![main.py](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/main.py) . Para obter os bancos de dados em SQL e MongoDB, basta seguir as operações contidas em ![README.md](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/src/README.md) .
 
 
 * Extração de dados de fontes não estruturadas: Para toda a composição do projeto, foi utilizado somente webscraping para a obtenção dos dados.
