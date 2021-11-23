@@ -16,6 +16,8 @@ mysql > create database womens_world_cup;
 
 ```
 
+**IMPORTANTE: Certifique-se que o MySQL está ativo!**
+
 ### Criar tabelas no mysql:
 
 No diretório `src`:
@@ -45,7 +47,8 @@ $  python <script.py>
 
 ### Coleta de dados
 
-Para coleta de dados utilzados no banco de dados:
+Para coleta de dados (realização do Webscraping e montagem dos arquivos `.json`):
+
 ```sh
 $ python main.py
 ```
@@ -55,12 +58,14 @@ $ python main.py
 ```sh
 $ python sql_manager.py
 ```
+**É importante ressaltar que o `user` e `password` sejam alterados dentro do arquivo `sql_manager.py`**:
 
-Para utlizar esse script é necessário um arquivo .env, o qual deve conter o usuário mysql como 'mysql_user = "" ' e
-a senha como 'mysql_password = "" '.
+~~~python
+def sql_manager():
 
-
-
+    user = "root" #your user here
+    password = "password" #your password here
+~~~
 ### Criar database e collection no MongoDB:
 
 ```sh

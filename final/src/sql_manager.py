@@ -68,8 +68,8 @@ def insert_event_sql(cursor, match_id, event_obj: Event):
 def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
-                 "(id, penalties, phase, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
-                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s)")
+                 "(id, penalties, phase, group_, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
+                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
     penalties = [str(a) for a in match_obj['penalties']]
     penalties = 'x'.join(penalties)
     score = [str(a) for a in match_obj['score']]
@@ -83,7 +83,7 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     bench1 = ', '.join(match_obj['bench_players1'])
     bench2 = ', '.join(match_obj['bench_players2'])
 
-    data_match = (str(id_key), penalties, match_obj['phase'], id1, id2, score, match_obj['stadium'],
+    data_match = (str(id_key), penalties, match_obj['phase'], match_obj['group'], id1, id2, score, match_obj['stadium'],
                   (str(match_obj['attendance'])
                    ), match_obj['referee'], formation1, formation2, initial1,
                   initial2, bench1, bench2, year_wc
@@ -189,8 +189,8 @@ def insert_awards(awards, year_wc, cursor):
 
 def sql_manager():
 
-    user = os.environ.get('mysql_user')
-    password = os.environ.get('mysql_password')
+    user = "root" #your user here
+    password = "Hahafiqueigaludo123" #your password here
     database = 'womens_world_cup'
     print(user, password)
     try:
@@ -208,7 +208,7 @@ def sql_manager():
     start_year = 1991
     last_year = 2019
     for year in range(start_year, last_year + 1, 4):
-        with open(f'world_cup{year}.json', 'r+', errors='ignore') as f:
+        with open(f'C:/Users/José/Documents/MC536/mc536/final2.0/MC536-Projeto-Final/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
         year_wc = wc_obj['year']
         print(year_wc)
