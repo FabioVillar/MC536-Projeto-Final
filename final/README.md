@@ -95,19 +95,19 @@ AWARDS_WC(award_type, year_wc, player_id, team)
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
 `world_cup_1991.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1991.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1991`
-
+----- | ----- | -----
 `world_cup_1995.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1995.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1995`
-
+----- | ----- | -----
 `world_cup_1999.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1999.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1999`
-
+----- | ----- | -----
 `world_cup_2003.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2003.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2003`
-
+----- | ----- | -----
 `world_cup_2007.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2007.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2007`
-
+----- | ----- | -----
 `world_cup_2011.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2011.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2011`
-
+----- | ----- | -----
 `world_cup_2015.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2015.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2015`
-
+----- | ----- | -----
 `world_cup_2019.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup2019.json)` | `Documento JSON com os dados da Copa do mundo feminina de 2019`
 
 ## Bases de Dados
@@ -115,7 +115,7 @@ título do arquivo/base | link | breve descrição
 título do arquivo/base | link | breve descrição
 ----- | ----- | -----
 `FBRef` | `https://fbref.com/en/` | `Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras`
-
+----- | ----- | -----
 `Wikipedia` | `https://www.wikipedia.org/` | `Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada`
 
 ## Operações realizadas para a construção do dataset
