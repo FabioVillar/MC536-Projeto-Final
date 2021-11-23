@@ -92,6 +92,8 @@ AWARDS_WC(award_type, year_wc, player_id, team)
 
 ## Dataset Preliminar a ser Publicado
 
+título do arquivo/base | link | breve descrição
+----- | ----- | -----
 `world_cup_1991.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1991.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1991`
 
 `world_cup_1995.json` | `![link](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/data/processed/world_cup1995.json)` | `Documento JSON com os dados da Copa do mundo feminina de 1995`
@@ -110,6 +112,8 @@ AWARDS_WC(award_type, year_wc, player_id, team)
 
 ## Bases de Dados
 
+título do arquivo/base | link | breve descrição
+----- | ----- | -----
 `FBRef` | `https://fbref.com/en/` | `Fonte de quase todos os dados relacionados às Copas, seleções, partidas e jogadoras`
 
 `Wikipedia` | `https://www.wikipedia.org/` | `Fonte de dados complementares, usados principalmente para aquisição de dados complementares que não estavam presentes na base supracitada`
