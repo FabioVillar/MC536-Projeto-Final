@@ -69,7 +69,7 @@ def sql_manager():
 
 ~~~python
 for year in range(start_year, last_year + 1, 4):
-        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore' as f: #your path here
+        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f: #your path here
             wc_obj = json.load(f)
 ~~~
 ### Criar database e collection no MongoDB:
