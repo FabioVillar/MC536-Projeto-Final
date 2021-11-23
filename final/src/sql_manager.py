@@ -68,12 +68,12 @@ def insert_event_sql(cursor, match_id, event_obj: Event):
 def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     id_key = uuid.uuid4()
     add_match = ("INSERT INTO Match_wc "
-                 "(id, penalties, phase, group_, teamA, teamB, score, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
-                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
-    penalties = [str(a) for a in match_obj['penalties']]
-    penalties = 'x'.join(penalties)
-    score = [str(a) for a in match_obj['score']]
-    score = 'x'.join(score)
+                 "(id, penaltiesA, penaltiesB, phase, group_, teamA, teamB, scoreA, scoreB, stadium, attendance, referee, formation_A, formation_B, lineupA, lineupB, reservesA, reservesB, year_wc) "
+                 "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)")
+    penalties1 = match_obj['penalties'][0]
+    penalties2 = match_obj['penalties'][1]
+    score1 = match_obj['score'][0]
+    score2 = match_obj['score'][1]
     form1 = [str(a) for a in match_obj['formation1']]
     form2 = [str(a) for a in match_obj['formation2']]
     formation1 = '-'.join(form1)
@@ -83,7 +83,7 @@ def insert_matches_sql(cursor, id1, id2, match_obj: Match, year_wc):
     bench1 = ', '.join(match_obj['bench_players1'])
     bench2 = ', '.join(match_obj['bench_players2'])
 
-    data_match = (str(id_key), penalties, match_obj['phase'], match_obj['group'], id1, id2, score, match_obj['stadium'],
+    data_match = (str(id_key), penalties1, penalties2, match_obj['phase'], match_obj['group'], id1, id2, score1, score2, match_obj['stadium'],
                   (str(match_obj['attendance'])
                    ), match_obj['referee'], formation1, formation2, initial1,
                   initial2, bench1, bench2, year_wc
@@ -189,8 +189,8 @@ def insert_awards(awards, year_wc, cursor):
 
 def sql_manager():
 
-    user = "root" #your user here
-    password = "Hahafiqueigaludo123" #your password here
+    user = 'humor' #your user here
+    password = 'humor' #your password here
     database = 'womens_world_cup'
     print(user, password)
     try:
@@ -208,7 +208,7 @@ def sql_manager():
     start_year = 1991
     last_year = 2019
     for year in range(start_year, last_year + 1, 4):
-        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f:
+        with open(f'your_path', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
         year_wc = wc_obj['year']
         print(year_wc)

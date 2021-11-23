@@ -55,12 +55,14 @@ CREATE TABLE Player_wc (
 
 CREATE TABLE Match_wc (
     id VARCHAR(256) not null,
-    penalties VARCHAR(50),
+    penaltiesA integer not null,
+    penaltiesB integer not null,
     phase VARCHAR(50) not null,
     group_ VARCHAR(50),
     teamA VARCHAR(256) not null,
     teamB VARCHAR(256) not null,
-    score VARCHAR(50) not null,
+    scoreA integer not null,
+    scoreB integer not null,
     stadium VARCHAR(200),
     attendance text,
     referee VARCHAR(200),
