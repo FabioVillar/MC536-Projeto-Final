@@ -56,7 +56,7 @@ $ python main.py
 ```sh
 $ python sql_manager.py
 ```
-**É importante ressaltar que o `user`, `password` e `path` sejam alterados dentro do arquivo `sql_manager.py`**:
+**É importante ressaltar que o `user` e `password` sejam alterados dentro do arquivo `sql_manager.py`**:
 
 ~~~python
 def sql_manager():
