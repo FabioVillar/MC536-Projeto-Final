@@ -5538,7 +5538,7 @@
         0
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "53,058",
+      "attendance": 53058,
       "referee": "Kateryna Monzul",
       "penalties": [
         0,
@@ -5709,7 +5709,7 @@
         1
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "53,058",
+      "attendance": 53058,
       "referee": "Quetzalli Alvarado",
       "penalties": [
         0,
@@ -5880,7 +5880,7 @@
         0
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "20,953",
+      "attendance": 20953,
       "referee": "Anna-Marie Keighley",
       "penalties": [
         0,
@@ -6087,7 +6087,7 @@
         0
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "20,953",
+      "attendance": 20953,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -6384,7 +6384,7 @@
         3
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "31,148",
+      "attendance": 31148,
       "referee": "Ri Hyang Ok",
       "penalties": [
         0,
@@ -6573,7 +6573,7 @@
         0
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "25,942",
+      "attendance": 25942,
       "referee": "Katalin Kulcsár",
       "penalties": [
         0,
@@ -6810,7 +6810,7 @@
         1
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "31,148",
+      "attendance": 31148,
       "referee": "Claudia Umpiérrez",
       "penalties": [
         0,
@@ -7016,7 +7016,7 @@
         0
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "25,942",
+      "attendance": 25942,
       "referee": "Lucila Venegas",
       "penalties": [
         0,
@@ -7187,7 +7187,7 @@
         0
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "11,686",
+      "attendance": 11686,
       "referee": "Thalia Mitsi",
       "penalties": [
         0,
@@ -7364,7 +7364,7 @@
         1
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "10,175",
+      "attendance": 10175,
       "referee": "Salomé Di Iorio",
       "penalties": [
         0,
@@ -7553,7 +7553,7 @@
         1
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "11,686",
+      "attendance": 11686,
       "referee": "Thérèse Neguel",
       "penalties": [
         0,
@@ -7748,7 +7748,7 @@
         0
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "10,175",
+      "attendance": 10175,
       "referee": "Esther Staubli",
       "penalties": [
         0,
@@ -7925,7 +7925,7 @@
         1
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "18,967",
+      "attendance": 18967,
       "referee": "Teodora Albon",
       "penalties": [
         0,
@@ -8102,7 +8102,7 @@
         0
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "35,544",
+      "attendance": 35544,
       "referee": "Yeimy Martínez",
       "penalties": [
         0,
@@ -8260,7 +8260,7 @@
         3
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "18,987",
+      "attendance": 18987,
       "referee": "Margaret Domka",
       "penalties": [
         0,
@@ -8473,7 +8473,7 @@
         0
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "35,544",
+      "attendance": 35544,
       "referee": "Bibiana Steinhaus",
       "penalties": [
         0,
@@ -8656,7 +8656,7 @@
         0
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "32,716",
+      "attendance": 32716,
       "referee": "Stéphanie Frappart",
       "penalties": [
         0,
@@ -8838,7 +8838,7 @@
         1
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "31,441",
+      "attendance": 31441,
       "referee": "Rita Gani",
       "penalties": [
         0,
@@ -9098,7 +9098,7 @@
         0
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "32,716",
+      "attendance": 32716,
       "referee": "Sachiko Yamagishi",
       "penalties": [
         0,
@@ -9245,7 +9245,7 @@
         1
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "31,441",
+      "attendance": 31441,
       "referee": "Pernilla Larsson",
       "penalties": [
         0,
@@ -9445,7 +9445,7 @@
         2
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "13,138",
+      "attendance": 13138,
       "referee": "Qin Liang",
       "penalties": [
         0,
@@ -9640,7 +9640,7 @@
         0
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "28,623",
+      "attendance": 28623,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -9817,7 +9817,7 @@
         1
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "13,138",
+      "attendance": 13138,
       "referee": "Anna-Marie Keighley",
       "penalties": [
         0,
@@ -10011,7 +10011,7 @@
         2
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "28,623",
+      "attendance": 28623,
       "referee": "Carina Vitulano",
       "penalties": [
         0,
@@ -10206,7 +10206,7 @@
         4
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "26,191",
+      "attendance": 26191,
       "referee": "Gladys Lengwe",
       "penalties": [
         0,
@@ -10419,7 +10419,7 @@
         3
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "7,147",
+      "attendance": 7147,
       "referee": "Salomé Di Iorio",
       "penalties": [
         0,
@@ -10638,7 +10638,7 @@
         2
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "26,191",
+      "attendance": 26191,
       "referee": "Katalin Kulcsár",
       "penalties": [
         0,
@@ -10857,7 +10857,7 @@
         1
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "45,420",
+      "attendance": 45420,
       "referee": "Ri Hyang Ok",
       "penalties": [
         0,
@@ -11033,7 +11033,7 @@
         2
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "10,177",
+      "attendance": 10177,
       "referee": "Claudia Umpiérrez",
       "penalties": [
         0,
@@ -11252,7 +11252,7 @@
         1
       ],
       "stadium": "Investors Group Field (Neutral Site)",
-      "attendance": "14,522",
+      "attendance": 14522,
       "referee": "Melissa Borjas",
       "penalties": [
         0,
@@ -11422,7 +11422,7 @@
         1
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "52,193",
+      "attendance": 52193,
       "referee": "Kateryna Monzul",
       "penalties": [
         0,
@@ -11628,7 +11628,7 @@
         1
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "10,177",
+      "attendance": 10177,
       "referee": "Lucila Venegas",
       "penalties": [
         0,
@@ -11798,7 +11798,7 @@
         1
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "13,862",
+      "attendance": 13862,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -12005,7 +12005,7 @@
         5
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "21,562",
+      "attendance": 21562,
       "referee": "Sachiko Yamagishi",
       "penalties": [
         0,
@@ -12218,7 +12218,7 @@
         1
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "21,562",
+      "attendance": 21562,
       "referee": "Anna-Marie Keighley",
       "penalties": [
         0,
@@ -12425,7 +12425,7 @@
         1
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "9,543",
+      "attendance": 9543,
       "referee": "Thalia Mitsi",
       "penalties": [
         0,
@@ -12595,7 +12595,7 @@
         1
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "22,486",
+      "attendance": 22486,
       "referee": "Ri Hyang Ok",
       "penalties": [
         0,
@@ -12820,7 +12820,7 @@
         0
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "15,958",
+      "attendance": 15958,
       "referee": "Bibiana Steinhaus",
       "penalties": [
         0,
@@ -12985,7 +12985,7 @@
         1
       ],
       "stadium": "Moncton Stadium (Neutral Site)",
-      "attendance": "12,054",
+      "attendance": 12054,
       "referee": "Teodora Albon",
       "penalties": [
         0,
@@ -13138,7 +13138,7 @@
         0
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "15,518",
+      "attendance": 15518,
       "referee": "Salomé Di Iorio",
       "penalties": [
         0,
@@ -13350,7 +13350,7 @@
         0
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "53,855",
+      "attendance": 53855,
       "referee": "Anna-Marie Keighley",
       "penalties": [
         0,
@@ -13538,7 +13538,7 @@
         2
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "19,829",
+      "attendance": 19829,
       "referee": "Esther Staubli",
       "penalties": [
         0,
@@ -13720,7 +13720,7 @@
         0
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "19,412",
+      "attendance": 19412,
       "referee": "Stéphanie Frappart",
       "penalties": [
         0,
@@ -13926,7 +13926,7 @@
         1
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "28,717",
+      "attendance": 28717,
       "referee": "Lucila Venegas",
       "penalties": [
         0,
@@ -14094,7 +14094,7 @@
         1
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "24,859",
+      "attendance": 24859,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         5,
@@ -14360,7 +14360,7 @@
         1
       ],
       "stadium": "TD Place Stadium (Neutral Site)",
-      "attendance": "24,141",
+      "attendance": 24141,
       "referee": "Carina Vitulano",
       "penalties": [
         0,
@@ -14535,7 +14535,7 @@
         1
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "19,814",
+      "attendance": 19814,
       "referee": "Kateryna Monzul",
       "penalties": [
         0,
@@ -14698,7 +14698,7 @@
         1
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "54,027",
+      "attendance": 54027,
       "referee": "Claudia Umpiérrez",
       "penalties": [
         0,
@@ -14891,7 +14891,7 @@
         0
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "51,176",
+      "attendance": 51176,
       "referee": "Teodora Albon",
       "penalties": [
         0,
@@ -15074,7 +15074,7 @@
         1
       ],
       "stadium": "Commonwealth Stadium (Neutral Site)",
-      "attendance": "31,467",
+      "attendance": 31467,
       "referee": "Anna-Marie Keighley",
       "penalties": [
         0,
@@ -15237,7 +15237,7 @@
         1
       ],
       "stadium": "Olympic Stadium (Neutral Site)",
-      "attendance": "21,483",
+      "attendance": 21483,
       "referee": "Ri Hyang Ok",
       "penalties": [
         0,
@@ -15419,7 +15419,7 @@
         2
       ],
       "stadium": "BC Place (Neutral Site)",
-      "attendance": "53,341",
+      "attendance": 53341,
       "referee": "Kateryna Monzul",
       "penalties": [
         0,

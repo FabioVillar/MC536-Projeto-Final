@@ -64,7 +64,7 @@ CREATE TABLE Match_wc (
     scoreA integer not null,
     scoreB integer not null,
     stadium VARCHAR(200),
-    attendance text,
+    attendance integer,
     referee VARCHAR(200),
     formation_A TEXT,
     formation_B text,

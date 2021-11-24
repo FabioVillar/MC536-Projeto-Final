@@ -3462,7 +3462,7 @@
         1
       ],
       "stadium": "PreZero Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -3621,7 +3621,7 @@
         1
       ],
       "stadium": "Olympiastadion Berlin (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Jacqui Melksham",
       "penalties": [
         0,
@@ -3804,7 +3804,7 @@
         1
       ],
       "stadium": "Vonovia Ruhrstadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Kirsi Heikkinen",
       "penalties": [
         0,
@@ -3993,7 +3993,7 @@
         1
       ],
       "stadium": "Volkswagen Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Silvia Reyes",
       "penalties": [
         0,
@@ -4146,7 +4146,7 @@
         1
       ],
       "stadium": "BayArena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -4311,7 +4311,7 @@
         0
       ],
       "stadium": "DDV-Stadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Bibiana Steinhaus",
       "penalties": [
         0,
@@ -4464,7 +4464,7 @@
         0
       ],
       "stadium": "WWK Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Quetzalli Alvarado",
       "penalties": [
         0,
@@ -4635,7 +4635,7 @@
         0
       ],
       "stadium": "Stadion im Borussia-Park (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Jenny Palmqvist",
       "penalties": [
         0,
@@ -4770,7 +4770,7 @@
         4
       ],
       "stadium": "Vonovia Ruhrstadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Etsuko Fukano",
       "penalties": [
         0,
@@ -4959,7 +4959,7 @@
         0
       ],
       "stadium": "Commerzbank-Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Sung Mi Cha",
       "penalties": [
         0,
@@ -5130,7 +5130,7 @@
         0
       ],
       "stadium": "BayArena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Christina Pedersen",
       "penalties": [
         0,
@@ -5307,7 +5307,7 @@
         2
       ],
       "stadium": "DDV-Stadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Thérèse Neguel",
       "penalties": [
         0,
@@ -5478,7 +5478,7 @@
         1
       ],
       "stadium": "WWK Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Estela Alvarez",
       "penalties": [
         0,
@@ -5631,7 +5631,7 @@
         0
       ],
       "stadium": "PreZero Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "",
       "penalties": [
         0,
@@ -5796,7 +5796,7 @@
         2
       ],
       "stadium": "Vonovia Ruhrstadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Gyöngyi Gaál",
       "penalties": [
         0,
@@ -6003,7 +6003,7 @@
         0
       ],
       "stadium": "Volkswagen Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -6180,7 +6180,7 @@
         0
       ],
       "stadium": "WWK Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -6345,7 +6345,7 @@
         2
       ],
       "stadium": "PreZero Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Jenny Palmqvist",
       "penalties": [
         0,
@@ -6534,7 +6534,7 @@
         4
       ],
       "stadium": "Stadion im Borussia-Park (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Kirsi Heikkinen",
       "penalties": [
         0,
@@ -6747,7 +6747,7 @@
         1
       ],
       "stadium": "DDV-Stadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Finau Vulivuli",
       "penalties": [
         0,
@@ -6912,7 +6912,7 @@
         1
       ],
       "stadium": "BayArena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Estela Alvarez",
       "penalties": [
         0,
@@ -7089,7 +7089,7 @@
         3
       ],
       "stadium": "Commerzbank-Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Bibiana Steinhaus",
       "penalties": [
         0,
@@ -7278,7 +7278,7 @@
         0
       ],
       "stadium": "Vonovia Ruhrstadion (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Christina Pedersen",
       "penalties": [
         0,
@@ -7419,7 +7419,7 @@
         1
       ],
       "stadium": "Volkswagen Arena (Neutral Site)",
-      "attendance": "",
+      "attendance": 0,
       "referee": "Etsuko Fukano",
       "penalties": [
         0,
@@ -7602,7 +7602,7 @@
         1
       ],
       "stadium": "BayArena (Neutral Site)",
-      "attendance": "26,395",
+      "attendance": 26395,
       "referee": "Jenny Palmqvist",
       "penalties": [
         3,
@@ -7851,7 +7851,7 @@
         1
       ],
       "stadium": "Volkswagen Arena (Neutral Site)",
-      "attendance": "26,067",
+      "attendance": 26067,
       "referee": "Quetzalli Alvarado",
       "penalties": [
         0,
@@ -8040,7 +8040,7 @@
         1
       ],
       "stadium": "WWK Arena (Neutral Site)",
-      "attendance": "24,605",
+      "attendance": 24605,
       "referee": "Silvia Reyes",
       "penalties": [
         0,
@@ -8241,7 +8241,7 @@
         2
       ],
       "stadium": "DDV-Stadion (Neutral Site)",
-      "attendance": "25,598",
+      "attendance": 25598,
       "referee": "Jacqui Melksham",
       "penalties": [
         3,
@@ -8514,7 +8514,7 @@
         3
       ],
       "stadium": "Stadion im Borussia-Park (Neutral Site)",
-      "attendance": "25,676",
+      "attendance": 25676,
       "referee": "Kirsi Heikkinen",
       "penalties": [
         0,
@@ -8685,7 +8685,7 @@
         1
       ],
       "stadium": "Commerzbank-Arena (Neutral Site)",
-      "attendance": "45,434",
+      "attendance": 45434,
       "referee": "Carol-Anne Chenard",
       "penalties": [
         0,
@@ -8868,7 +8868,7 @@
         1
       ],
       "stadium": "PreZero Arena (Neutral Site)",
-      "attendance": "25,515",
+      "attendance": 25515,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -9033,7 +9033,7 @@
         2
       ],
       "stadium": "Commerzbank-Arena (Neutral Site)",
-      "attendance": "48,817",
+      "attendance": 48817,
       "referee": "Bibiana Steinhaus",
       "penalties": [
         3,

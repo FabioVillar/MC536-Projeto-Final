@@ -16,17 +16,6 @@ def insert_wc_db(collection, object):
         raise e
 
 
-def create_table(client):
-    db = client.womens_world_cup
-    table = db.world_cups
-    try:
-        result = db.table.create_index(
-            [('world_cup_id', pymongo.ASCENDING)], unique=True)
-        return table
-    except Exception as e:
-        raise e
-
-
 def mongo():
 
     try:
@@ -34,7 +23,8 @@ def mongo():
 
     except Exception as e:
         raise e
-    table = create_table(client)
+    db = client.womens_world_cup
+    table = db.world_cups
     for i in range(1991, 2020, 4):
         with open(f'world_cup{i}.json','r+',errors='ignore') as f:
             wc_obj = json.load(f)

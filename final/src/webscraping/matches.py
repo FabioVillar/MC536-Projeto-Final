@@ -20,7 +20,7 @@ def fix_name(name, year):
 
 def get_matches(year, page_id, new_cup):
 
-    print("Getting Matches...", end="")
+    attendance = ""
 
     link = 'https://fbref.com/en/comps/106/'
 
@@ -65,7 +65,8 @@ def get_matches(year, page_id, new_cup):
             match.teams = [team1, team2]
             match.score = [int(score[0]), int(score[1])]
             match.stadium = match_data[10].text
-            match.attendance = match_data[9].text
+            if match_data[9].text:
+                match.attendance =  int(match_data[9].text.replace(',', ''))
             match.referee = match_data[11].text
 
             for team in new_cup.teams:
@@ -94,7 +95,8 @@ def get_matches(year, page_id, new_cup):
                 team1 = match_data[4].find('a').text
                 team2 = match_data[6].find('a').text
                 score = match_data[5].find('a').text.split('–')
-                attendance = match_data[7].text
+                if match_data[7].text:
+                    attendance = int(match_data[7].text.replace(',', ''))
                 stadium = match_data[8].text
                 referee = match_data[9].text
                 match_link = 'https://fbref.com' + match_data[10].find('a').get('href')
@@ -102,7 +104,8 @@ def get_matches(year, page_id, new_cup):
                 team1 = match_data[3].find('a').text
                 team2 = match_data[5].find('a').text
                 score = match_data[4].find('a').text.split('–')
-                attendance = match_data[6].text
+                if match_data[6].text:
+                    attendance = int(match_data[6].text.replace(',', ''))
                 stadium = match_data[7].text
                 referee = match_data[8].text
                 match_link = 'https://fbref.com' + match_data[9].find('a').get('href')
@@ -123,7 +126,8 @@ def get_matches(year, page_id, new_cup):
             match.teams = [team1, team2]
             match.score = [int(score[0]), int(score[1])]
             match.stadium = stadium
-            match.attendance = attendance
+            if attendance:
+                match.attendance = int(attendance)
             match.referee = referee
 
             for team in new_cup.teams:
@@ -138,7 +142,7 @@ def get_matches(year, page_id, new_cup):
 
             new_cup.matches.append(match)
     
-    print("Ok!")
+    
     return
 
 

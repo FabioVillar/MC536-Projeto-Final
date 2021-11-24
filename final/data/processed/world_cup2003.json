@@ -3303,7 +3303,7 @@
         0
       ],
       "stadium": "Lincoln Financial Field (Neutral Site)",
-      "attendance": "13,486",
+      "attendance": 13486,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -3466,7 +3466,7 @@
         3
       ],
       "stadium": "Lincoln Financial Field (Neutral Site)",
-      "attendance": "24,347",
+      "attendance": 24347,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -3646,7 +3646,7 @@
         1
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "16,340",
+      "attendance": 16340,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -3815,7 +3815,7 @@
         0
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "16,404",
+      "attendance": 16404,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -4025,7 +4025,7 @@
         1
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "35,000",
+      "attendance": 35000,
       "referee": "Dongqing Zhang",
       "penalties": [
         0,
@@ -4218,7 +4218,7 @@
         0
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "34,144",
+      "attendance": 34144,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -4393,7 +4393,7 @@
         2
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "8,500",
+      "attendance": 8500,
       "referee": "Bola Abidoye",
       "penalties": [
         0,
@@ -4550,7 +4550,7 @@
         0
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "10,027",
+      "attendance": 10027,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -4713,7 +4713,7 @@
         4
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "15,490",
+      "attendance": 15490,
       "referee": "Xonam Agboyi",
       "penalties": [
         0,
@@ -4906,7 +4906,7 @@
         0
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "15,490",
+      "attendance": 15490,
       "referee": "Sueli Tortura",
       "penalties": [
         0,
@@ -5081,7 +5081,7 @@
         0
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "16,316",
+      "attendance": 16316,
       "referee": "Dongqing Zhang",
       "penalties": [
         0,
@@ -5262,7 +5262,7 @@
         0
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "15,529",
+      "attendance": 15529,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -5442,7 +5442,7 @@
         0
       ],
       "stadium": "Lincoln Financial Field (Neutral Site)",
-      "attendance": "31,553",
+      "attendance": 31553,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -5610,7 +5610,7 @@
         3
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "13,929",
+      "attendance": 13929,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -5779,7 +5779,7 @@
         0
       ],
       "stadium": "Lincoln Financial Field (Neutral Site)",
-      "attendance": "31,553",
+      "attendance": 31553,
       "referee": "Florencia Romano",
       "penalties": [
         0,
@@ -5930,7 +5930,7 @@
         1
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "13,929",
+      "attendance": 13929,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -6087,7 +6087,7 @@
         1
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "17,618",
+      "attendance": 17618,
       "referee": "Cristina Babadac",
       "penalties": [
         0,
@@ -6250,7 +6250,7 @@
         7
       ],
       "stadium": "Gillette Stadium (Neutral Site)",
-      "attendance": "14,356",
+      "attendance": 14356,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -6449,7 +6449,7 @@
         6
       ],
       "stadium": "Robert F. Kennedy Memorial Stadium (Neutral Site)",
-      "attendance": "17,618",
+      "attendance": 17618,
       "referee": "Bola Abidoye",
       "penalties": [
         0,
@@ -6629,7 +6629,7 @@
         1
       ],
       "stadium": "Gillette Stadium (Neutral Site)",
-      "attendance": "14,356",
+      "attendance": 14356,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -6810,7 +6810,7 @@
         0
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "22,828",
+      "attendance": 22828,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -6979,7 +6979,7 @@
         3
       ],
       "stadium": "MAPFRE Stadium (Neutral Site)",
-      "attendance": "22,828",
+      "attendance": 22828,
       "referee": "Sueli Tortura",
       "penalties": [
         0,
@@ -7171,7 +7171,7 @@
         1
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "19,132",
+      "attendance": 19132,
       "referee": "Xonam Agboyi",
       "penalties": [
         0,
@@ -7352,7 +7352,7 @@
         0
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "19,132",
+      "attendance": 19132,
       "referee": "Florencia Romano",
       "penalties": [
         0,
@@ -7479,7 +7479,7 @@
         2
       ],
       "stadium": "Gillette Stadium (Neutral Site)",
-      "attendance": "25,103",
+      "attendance": 25103,
       "referee": "Dongqing Zhang",
       "penalties": [
         0,
@@ -7648,7 +7648,7 @@
         0
       ],
       "stadium": "Gillette Stadium (Neutral Site)",
-      "attendance": "25,103",
+      "attendance": 25103,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -7817,7 +7817,7 @@
         0
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "20,021",
+      "attendance": 20021,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -8022,7 +8022,7 @@
         1
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "20,021",
+      "attendance": 20021,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -8203,7 +8203,7 @@
         0
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "27,623",
+      "attendance": 27623,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -8324,7 +8324,7 @@
         2
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "27,623",
+      "attendance": 27623,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -8487,7 +8487,7 @@
         1
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "25,253",
+      "attendance": 25253,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -8674,7 +8674,7 @@
         1
       ],
       "stadium": "Dignity Health Sports Park (Neutral Site)",
-      "attendance": "26,137",
+      "attendance": 26137,
       "referee": "Cristina Babadac",
       "penalties": [
         0,

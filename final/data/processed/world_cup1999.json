@@ -3291,7 +3291,7 @@
         3
       ],
       "stadium": "Giants Stadium (Neutral Site)",
-      "attendance": "78,972",
+      "attendance": 78972,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -3454,7 +3454,7 @@
         1
       ],
       "stadium": "Giants Stadium (Neutral Site)",
-      "attendance": "78,972",
+      "attendance": 78972,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -3677,7 +3677,7 @@
         2
       ],
       "stadium": "CEFCU Stadium (Neutral Site)",
-      "attendance": "23,298",
+      "attendance": 23298,
       "referee": "Virginia Tovar",
       "penalties": [
         0,
@@ -3834,7 +3834,7 @@
         1
       ],
       "stadium": "CEFCU Stadium (Neutral Site)",
-      "attendance": "23,298",
+      "attendance": 23298,
       "referee": "Maria Siqueira",
       "penalties": [
         0,
@@ -3955,7 +3955,7 @@
         2
       ],
       "stadium": "Foxboro Stadium (Neutral Site)",
-      "attendance": "14,873",
+      "attendance": 14873,
       "referee": "Xiudi Zuo",
       "penalties": [
         0,
@@ -4124,7 +4124,7 @@
         1
       ],
       "stadium": "Rose Bowl (Neutral Site)",
-      "attendance": "17,100",
+      "attendance": 17100,
       "referee": "Bola Abidoye",
       "penalties": [
         0,
@@ -4281,7 +4281,7 @@
         1
       ],
       "stadium": "Foxboro Stadium (Neutral Site)",
-      "attendance": "14,867",
+      "attendance": 14867,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -4474,7 +4474,7 @@
         2
       ],
       "stadium": "Rose Bowl (Neutral Site)",
-      "attendance": "17,100",
+      "attendance": 17100,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -4667,7 +4667,7 @@
         1
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "16,448",
+      "attendance": 16448,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -4860,7 +4860,7 @@
         3
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "16,448",
+      "attendance": 16448,
       "referee": "Fatou Gaye",
       "penalties": [
         0,
@@ -5053,7 +5053,7 @@
         5
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "17,668",
+      "attendance": 17668,
       "referee": "Sandra Hunt",
       "penalties": [
         0,
@@ -5240,7 +5240,7 @@
         0
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "17,668",
+      "attendance": 17668,
       "referee": "Elke Guenthner",
       "penalties": [
         0,
@@ -5439,7 +5439,7 @@
         0
       ],
       "stadium": "Soldier Field (Neutral Site)",
-      "attendance": "65,080",
+      "attendance": 65080,
       "referee": "Gitte Nielsen",
       "penalties": [
         0,
@@ -5638,7 +5638,7 @@
         1
       ],
       "stadium": "Soldier Field (Neutral Site)",
-      "attendance": "65,080",
+      "attendance": 65080,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -5849,7 +5849,7 @@
         1
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "20,129",
+      "attendance": 20129,
       "referee": "Martha Toro",
       "penalties": [
         0,
@@ -6042,7 +6042,7 @@
         0
       ],
       "stadium": "Providence Park (Neutral Site)",
-      "attendance": "20,129",
+      "attendance": 20129,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -6223,7 +6223,7 @@
         4
       ],
       "stadium": "Giants Stadium (Neutral Site)",
-      "attendance": "29,401",
+      "attendance": 29401,
       "referee": "Xiudi Zuo",
       "penalties": [
         0,
@@ -6410,7 +6410,7 @@
         1
       ],
       "stadium": "Giants Stadium (Neutral Site)",
-      "attendance": "29,401",
+      "attendance": 29401,
       "referee": "Sandra Hunt",
       "penalties": [
         0,
@@ -6591,7 +6591,7 @@
         2
       ],
       "stadium": "Soldier Field (Neutral Site)",
-      "attendance": "34,256",
+      "attendance": 34256,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -6754,7 +6754,7 @@
         0
       ],
       "stadium": "Soldier Field (Neutral Site)",
-      "attendance": "34,256",
+      "attendance": 34256,
       "referee": "Marisela Contreras",
       "penalties": [
         0,
@@ -6947,7 +6947,7 @@
         3
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "22,109",
+      "attendance": 22109,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -7158,7 +7158,7 @@
         0
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "22,109",
+      "attendance": 22109,
       "referee": "Maria Siqueira",
       "penalties": [
         0,
@@ -7327,7 +7327,7 @@
         2
       ],
       "stadium": "Foxboro Stadium (Neutral Site)",
-      "attendance": "50,484",
+      "attendance": 50484,
       "referee": "Bola Abidoye",
       "penalties": [
         0,
@@ -7484,7 +7484,7 @@
         0
       ],
       "stadium": "Foxboro Stadium (Neutral Site)",
-      "attendance": "50,484",
+      "attendance": 50484,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -7659,7 +7659,7 @@
         0
       ],
       "stadium": "CEFCU Stadium (Neutral Site)",
-      "attendance": "21,411",
+      "attendance": 21411,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -7822,7 +7822,7 @@
         1
       ],
       "stadium": "CEFCU Stadium (Neutral Site)",
-      "attendance": "21,411",
+      "attendance": 21411,
       "referee": "Im Eun-ju",
       "penalties": [
         0,
@@ -8003,7 +8003,7 @@
         2
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "54,642",
+      "attendance": 54642,
       "referee": "Martha Toro",
       "penalties": [
         0,
@@ -8190,7 +8190,7 @@
         3
       ],
       "stadium": "Jack Kent Cooke Stadium (Neutral Site)",
-      "attendance": "54,642",
+      "attendance": 54642,
       "referee": "Virginia Tovar",
       "penalties": [
         0,
@@ -8389,7 +8389,7 @@
         0
       ],
       "stadium": "Stanford Stadium (Neutral Site)",
-      "attendance": "73,123",
+      "attendance": 73123,
       "referee": "Katriina Elovirta",
       "penalties": [
         0,
@@ -8552,7 +8552,7 @@
         4
       ],
       "stadium": "Foxboro Stadium (Neutral Site)",
-      "attendance": "28,986",
+      "attendance": 28986,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -8721,7 +8721,7 @@
         0
       ],
       "stadium": "Rose Bowl (Neutral Site)",
-      "attendance": "90,185",
+      "attendance": 90185,
       "referee": "Im Eun-ju",
       "penalties": [
         4,
@@ -8914,7 +8914,7 @@
         0
       ],
       "stadium": "Rose Bowl (Neutral Site)",
-      "attendance": "90,185",
+      "attendance": 90185,
       "referee": "Nicole Petignat",
       "penalties": [
         5,

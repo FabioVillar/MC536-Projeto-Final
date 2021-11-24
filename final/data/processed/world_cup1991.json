@@ -2256,7 +2256,7 @@
         0
       ],
       "stadium": "Tianhe Stadium (Neutral Site)",
-      "attendance": "65,000",
+      "attendance": 65000,
       "referee": "Salvador Imperatore Marcone",
       "penalties": [
         0,
@@ -2403,7 +2403,7 @@
         0
       ],
       "stadium": "Jiangmen Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Rafael Rodriguez",
       "penalties": [
         0,
@@ -2550,7 +2550,7 @@
         5
       ],
       "stadium": "Jiangmen Stadium (Neutral Site)",
-      "attendance": "11,000",
+      "attendance": 11000,
       "referee": "Fathi Boucetta",
       "penalties": [
         0,
@@ -2709,7 +2709,7 @@
         1
       ],
       "stadium": "New Plaza Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Lu Jun",
       "penalties": [
         0,
@@ -2844,7 +2844,7 @@
         0
       ],
       "stadium": "Tianhe Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Omer Yengo",
       "penalties": [
         0,
@@ -2985,7 +2985,7 @@
         3
       ],
       "stadium": "Ying Dong Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "John Toro Rendón",
       "penalties": [
         0,
@@ -3138,7 +3138,7 @@
         0
       ],
       "stadium": "Guangdong Provincial People's Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Salvador Imperatore Marcone",
       "penalties": [
         0,
@@ -3291,7 +3291,7 @@
         0
       ],
       "stadium": "Zhongshan Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Jim McCluskey",
       "penalties": [
         0,
@@ -3426,7 +3426,7 @@
         3
       ],
       "stadium": "Zhongshan Stadium (Neutral Site)",
-      "attendance": "10,000",
+      "attendance": 10000,
       "referee": "Fathi Boucetta",
       "penalties": [
         0,
@@ -3567,7 +3567,7 @@
         5
       ],
       "stadium": "Ying Dong Stadium (Neutral Site)",
-      "attendance": "15,500",
+      "attendance": 15500,
       "referee": "Vadim Zhuk",
       "penalties": [
         0,
@@ -3726,7 +3726,7 @@
         2
       ],
       "stadium": "Guangdong Provincial People's Stadium (Neutral Site)",
-      "attendance": "27,000",
+      "attendance": 27000,
       "referee": "Vassilios Nikakis",
       "penalties": [
         0,
@@ -3867,7 +3867,7 @@
         8
       ],
       "stadium": "New Plaza Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Gyanu Shrestha",
       "penalties": [
         0,
@@ -4032,7 +4032,7 @@
         2
       ],
       "stadium": "Ying Dong Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Lu Jun",
       "penalties": [
         0,
@@ -4155,7 +4155,7 @@
         3
       ],
       "stadium": "New Plaza Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "John Toro Rendón",
       "penalties": [
         0,
@@ -4290,7 +4290,7 @@
         2
       ],
       "stadium": "Zhongshan Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Jim McCluskey",
       "penalties": [
         0,
@@ -4437,7 +4437,7 @@
         1
       ],
       "stadium": "Ying Dong Stadium (Neutral Site)",
-      "attendance": "15,500",
+      "attendance": 15500,
       "referee": "Vadim Zhuk",
       "penalties": [
         0,
@@ -4590,7 +4590,7 @@
         0
       ],
       "stadium": "Jiangmen Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Rafael Rodriguez",
       "penalties": [
         0,
@@ -4737,7 +4737,7 @@
         1
       ],
       "stadium": "New Plaza Stadium (Neutral Site)",
-      "attendance": "14,000",
+      "attendance": 14000,
       "referee": "Gyanu Shrestha",
       "penalties": [
         0,
@@ -4890,7 +4890,7 @@
         1
       ],
       "stadium": "Zhongshan Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Vassilios Nikakis",
       "penalties": [
         0,
@@ -5049,7 +5049,7 @@
         1
       ],
       "stadium": "Tianhe Stadium (Neutral Site)",
-      "attendance": "55,000",
+      "attendance": 55000,
       "referee": "John Toro Rendón",
       "penalties": [
         0,
@@ -5202,7 +5202,7 @@
         0
       ],
       "stadium": "New Plaza Stadium (Neutral Site)",
-      "attendance": "12,000",
+      "attendance": 12000,
       "referee": "Omer Yengo",
       "penalties": [
         0,
@@ -5361,7 +5361,7 @@
         2
       ],
       "stadium": "Jiangmen Stadium (Neutral Site)",
-      "attendance": "13,000",
+      "attendance": 13000,
       "referee": "Rafael Rodriguez",
       "penalties": [
         0,
@@ -5514,7 +5514,7 @@
         4
       ],
       "stadium": "Ying Dong Stadium (Neutral Site)",
-      "attendance": "16,000",
+      "attendance": 16000,
       "referee": "Jim McCluskey",
       "penalties": [
         0,
@@ -5655,7 +5655,7 @@
         2
       ],
       "stadium": "Guangdong Provincial People's Stadium (Neutral Site)",
-      "attendance": "20,000",
+      "attendance": 20000,
       "referee": "Salvador Imperatore Marcone",
       "penalties": [
         0,
@@ -5808,7 +5808,7 @@
         0
       ],
       "stadium": "Guangdong Provincial People's Stadium (Neutral Site)",
-      "attendance": "20,000",
+      "attendance": 20000,
       "referee": "Cláudia Vasconcelos",
       "penalties": [
         0,
@@ -5943,7 +5943,7 @@
         1
       ],
       "stadium": "Tianhe Stadium (Neutral Site)",
-      "attendance": "63,000",
+      "attendance": 63000,
       "referee": "Vadim Zhuk",
       "penalties": [
         0,
