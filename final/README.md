@@ -227,8 +227,7 @@ Um ponto que podemos ver, a partir da imagem, é que as duas maiores pontuaçõe
 >   
 >   * O MongoDB facilita as queries para obtenção de dados gerais das copas, onde podemos juntar vários dados e retornar para o usuário. Neste caso, fizemos uma querie no MongoDB que retorna, para cada copa, algumas estatísticas
 
-Resultado (MongoDB):
-~~~
+~~~BSON
 db.getCollection('world_cups').aggregate([
     {
         "$project": {
@@ -297,7 +296,7 @@ db.getCollection('world_cups').aggregate([
 ])
 ~~~
 
-Resultado:
+Resultado (MongoDB):
 
 ~~~
 /* 1 */
