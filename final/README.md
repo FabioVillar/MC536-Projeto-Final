@@ -171,22 +171,26 @@ A criação das queries para o MongoDB, banco de dados escolhido, foi desafiador
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-> Liste aqui as perguntas de pesquisa/análise e respectivas análises.
-> Nem todas as perguntas precisam de queries que as implementam.
-> É possível haver perguntas em que a solução é apenas descrita para
-> demonstrar o potencial da base.
->
 ### Pergunta/Análise 1
-> * Pergunta 1: Qual a taxa de vitória de cada formação? 
+> * Pergunta 1: Qual a quantidade de vitórias de cada formação? 
 >   
->   * Será feita uma coleta de todas as ocorrências da formação, que está presente nos objetos da classe Match, e, por meio desta, o número de vitórias obtidas por cada seleção que utilizou esta formação. Desta forma, será possível obter a taxa de vitória.
+>   * Será feita uma coleta de todas as ocorrências da formação, que está presente nos objetos da classe Match, e, por meio desta, o número de vitórias obtidas por cada seleção que utilizou esta formação. Desta forma, será possível obter o número total de vitórias de cada formação:
 
 ~~~SQL
+Criando uma tabela formação como mandante/ vitórias:
+CREATE VIEW Home_Wins_View AS SELECT M.formation_A AS 'Formation', COUNT(*) AS 'Wins' FROM Match_wc M, WorldCup W WHERE (M.year_wc = W.id AND (M.scoreA>M.scoreB)) GROUP BY M.formation_A;
 
+Criando uma tabela formação como visitante/vitórias:
+CREATE VIEW Away_Wins_View AS SELECT M.formation_B AS 'Formation', COUNT(*) AS 'Wins' FROM Match_wc M, WorldCup W WHERE (M.year_wc = W.id AND (M.scoreA<M.scoreB)) GROUP BY M.formation_B;
+
+Conseguindo o número de vitórias total para cada formação:
+SELECT f1.Formation, f1.Wins + f2.Wins AS 'Wins' FROM Home_Wins_View f1, Away_Wins_View f2 WHERE f1.Formation = f2.Formation ORDER BY Wins DESC;
 ~~~
 
+![.](assets/result_pergunta_1.png)
+
 ### Pergunta/Análise 2
-> * Pergunta 2: Qual a porcentagem de vitória de uma seleção que abre o placar?
+> * Pergunta 2: Qual o número de vitórias de uma seleção que abre o placar?
 >   
 >   * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a taxa de vitória.
 
@@ -277,4 +281,225 @@ db.getCollection('world_cups').aggregate([
 ])
 ~~~
 
+Resultado:
+
+~~~
+/* 1 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10a"),
+    "year" : 1991,
+    "host" : "China PR",
+    "total_goals_scored_in_wc" : 99,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "United States",
+            "player" : "Carin Jennings",
+            "year" : 1991
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "United States",
+            "player" : "Michelle Akers",
+            "year" : 1991
+        }
+    ],
+    "players_age_average" : 21.25,
+    "matches_attendance_average" : 19807.6923076923
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10b"),
+    "year" : 1995,
+    "host" : "Sweden",
+    "total_goals_scored_in_wc" : 99,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "Norway",
+            "player" : "Hege Riise",
+            "year" : 1995
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "Norway",
+            "player" : "Ann Kristin Aarones",
+            "year" : 1995
+        }
+    ],
+    "players_age_average" : 24.0,
+    "matches_attendance_average" : 4319.0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10c"),
+    "year" : 1999,
+    "host" : "United States",
+    "total_goals_scored_in_wc" : 123,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "China",
+            "player" : "Sun Wen",
+            "year" : 1999
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "China",
+            "player" : "Sun Wen",
+            "year" : 1999
+        }
+    ],
+    "players_age_average" : 26.375,
+    "matches_attendance_average" : 37944.21875
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10d"),
+    "year" : 2003,
+    "host" : "United States",
+    "total_goals_scored_in_wc" : 107,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "Germany",
+            "player" : "Birgit Prinz",
+            "year" : 2003
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "Germany",
+            "player" : "Birgit Prinz",
+            "year" : 2003
+        }
+    ],
+    "players_age_average" : 25.75,
+    "matches_attendance_average" : 20524.65625
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10e"),
+    "year" : 2007,
+    "host" : "China PR",
+    "total_goals_scored_in_wc" : 111,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "Brazil",
+            "player" : "Marta",
+            "year" : 2007
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "Brazil",
+            "player" : "Marta",
+            "year" : 2007
+        }
+    ],
+    "players_age_average" : 24.8125,
+    "matches_attendance_average" : 36779.84375
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c10f"),
+    "year" : 2011,
+    "host" : "Germany",
+    "total_goals_scored_in_wc" : 86,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "Japan",
+            "player" : "Homare Sawa",
+            "year" : 2011
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "Japan",
+            "player" : "Homare Sawa",
+            "year" : 2011
+        }
+    ],
+    "players_age_average" : 25.6875,
+    "matches_attendance_average" : 7753.34375
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c110"),
+    "year" : 2015,
+    "host" : "Canada",
+    "total_goals_scored_in_wc" : 146,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "United States",
+            "player" : "Carli Lloyd",
+            "year" : 2015
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "Germany",
+            "player" : "Celia Sasic",
+            "year" : 2015
+        }
+    ],
+    "players_age_average" : 25.7916666666667,
+    "matches_attendance_average" : 26028.5769230769
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("619d812a4d68ea616246c111"),
+    "year" : 2019,
+    "host" : "France",
+    "total_goals_scored_in_wc" : 146,
+    "world_cup_best_player" : [ 
+        {
+            "award" : "Golden_Ball 1",
+            "team" : "United States",
+            "player" : "Megan Rapinoe",
+            "year" : 2019
+        }
+    ],
+    "player_with_most_goals" : [ 
+        {
+            "award" : "Golden_Boot 1",
+            "team" : "United States",
+            "player" : "Megan Rapinoe",
+            "year" : 2019
+        }
+    ],
+    "players_age_average" : 27.8333333333333,
+    "matches_attendance_average" : 21059.9615384615
+}
+~~~
+
+## Possíveis perguntas/queries não implementadas:
+
+* Para SQL:
+  * A quantidade de substituições afeta no desempenho das equipes?
+    * Como, no database, temos todas as substituições feitas em cada partida, podemos, para cada equipe, contabilizar o número de substituições em cada jogo. Dessa forma, pelo resultado da partida, podemos contabilizar o fator resultado x número de substituições;
+  * Existe relação entre determinadas seleções com o público das partidas? Ou isso é mais evidente em diferentes fases dos jogos?
+    * A partir de cada partida, podemos ver seu público e associar a cada equipe disputando a partida.
+* Para MongoDB:
+  * Basicamente poderíamos retornar qualquer estatística geral sobre cada copa (como sumário) para o usuário!
 
