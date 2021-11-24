@@ -6,7 +6,7 @@ import uuid
 import json
 from unidecode import unidecode
 import os
-
+import platform
 
 
 def find_player_id(cursor, player, year_wc):
@@ -204,7 +204,11 @@ def sql_manager():
         else:
             print(err)
     basedir = os.path.abspath(os.path.dirname(__file__))
-    basedir = basedir.replace('/src','')
+    if platform.system() == 'Linux':
+        basedir = basedir.replace('/src','')
+    else:
+        basedir = basedir.replace('\\src','')
+    
     cursor = cnx.cursor(buffered=True)
     start_year = 1991
     last_year = 2019

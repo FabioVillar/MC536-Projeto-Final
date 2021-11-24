@@ -66,6 +66,13 @@ def sql_manager():
 ~~~
 
 
+### Conectar o mongo no localhost
+
+```sh
+$ mongod
+```
+
+
 ### Criar database e collection no MongoDB:
 
 ```sh

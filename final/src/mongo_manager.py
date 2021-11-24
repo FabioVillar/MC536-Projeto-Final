@@ -5,6 +5,7 @@ from models import *
 import pymongo
 import json
 import os
+import platform
 # id copa do mundo - > ano
 
 
@@ -26,7 +27,10 @@ def mongo():
         raise e
 
     basedir = os.path.abspath(os.path.dirname(__file__))
-    basedir = basedir.replace('/src','')
+    if platform.system() == 'Linux':
+        basedir = basedir.replace('/src','')
+    else:
+        basedir = basedir.replace('\\src','')
     db = client.womens_world_cup
     table = db.world_cups
     for i in range(1991, 2020, 4):
