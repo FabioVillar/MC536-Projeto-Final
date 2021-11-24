@@ -19,14 +19,14 @@ $ mysql > create database womens_world_cup;
 
 ### Criar tabelas no mysql:
 
-No diretório `src`/`src`, uma vez que womens_world_cup ja foi criada:
+No diretório `src`, uma vez que womens_world_cup ja foi criada:
 ```
 $ mysql -u root -p womens_world_cup < tables.sql
 ```
 
 ### Rodar scripts em python:
 
-No diretório `src`/`src`:
+No diretório `src`:
 
 Sincronizar packages necessarios para rodar os programas .py:
 ```sh
