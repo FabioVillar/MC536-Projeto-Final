@@ -162,7 +162,7 @@ Após a criação dos arquivos `.json` (um para cada copa), como já mencionado,
 
 ### Criação de Queries (Relacional)
 
-Para o banco de dados realicional, a criação de queries foi bastante facilitada por conta dos conceitos aprendidos em aula, já que utilizamos SQL, amplamente discutido em aula. Foram realizadas queries que respondem perguntas e análises mais profundas sobre o dataset. Estas serão detalhadas em seguida no documento. Com relação ao ambiente do MySQL, a principal dificuldade encontrada foi no setting do ambiente tanto para a importação de dados quanto para o teste de queries.
+Para o banco de dados relacional, a criação de queries foi bastante facilitada por conta dos conceitos aprendidos em aula, já que utilizamos SQL, amplamente discutido em aula. Foram realizadas queries que respondem perguntas e análises mais profundas sobre o dataset. Estas serão detalhadas em seguida no documento. Com relação ao ambiente do MySQL, a principal dificuldade encontrada foi no setting do ambiente tanto para a importação de dados quanto para o teste de queries.
 
 ### Criação de Queries (Hierárquico)
 
@@ -515,5 +515,7 @@ Resultado (MongoDB):
     * Como, no database, temos todas as substituições feitas em cada partida, podemos, para cada equipe, contabilizar o número de substituições em cada jogo. Dessa forma, pelo resultado da partida, podemos contabilizar o fator resultado x número de substituições;
   * Existe relação entre determinadas seleções com o público das partidas? Ou isso é mais evidente em diferentes fases dos jogos?
     * A partir de cada partida, podemos ver seu público e associar a cada equipe disputando a partida.
+  * Qual o número de vitórias de uma seleção que abre o placar?  
+    * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a quantidade de vitórias associadas.
 * Para MongoDB:
   * Basicamente poderíamos retornar qualquer estatística geral sobre cada copa (como sumário) para o usuário!
