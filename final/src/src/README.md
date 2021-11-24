@@ -10,10 +10,9 @@
 ### Criar o banco de dados no mysql:
 
 ```
-sudo /etc/init.d/mysql start
-sudo -u root -p
-mysql > create database womens_world_cup;
-
+$ sudo /etc/init.d/mysql start
+$ sudo -u root -p
+$ mysql > create database womens_world_cup;
 ```
 
 **IMPORTANTE: Certifique-se que o MySQL está ativo!**
@@ -22,8 +21,7 @@ mysql > create database womens_world_cup;
 
 No diretório `src`/`src`, uma vez que womens_world_cup ja foi criada:
 ```
-mysql -u root -p womens_world_cup < tables.sql
-
+$ mysql -u root -p womens_world_cup < tables.sql
 ```
 
 ### Rodar scripts em python:
@@ -71,9 +69,7 @@ def sql_manager():
 ### Criar database e collection no MongoDB:
 
 ```sh
-
 $ python mongo_manager.py
-
 ```
 
 Caso não haja a database womens_world_cup e a collection world_cups no mongo, o script mongo_manger cria automaticamente ambos e insere os objetos.
