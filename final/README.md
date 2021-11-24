@@ -196,13 +196,29 @@ Discussão:
 Podemos ver que, entre as formações, as mais vitoriosas (top 5) são as que possuem 4 jogadoras na defesa.
 
 ### Pergunta/Query 2
-> * Pergunta 2: Qual o número de vitórias de uma seleção que abre o placar?
+> * Pergunta 2: Conflitos históricos entre países são refletidos em campo?
 >   
->   * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a taxa de vitória.
+>   * Escolhendo duas seleções com rivalidades histórica (EUA x Coréia do Norte, Inglaterra x França, Japão x EUA) podemos avaliar se a média de determinadas estatísticas de jogo reflete o confronto.
 
+Para dados entre confrontos específicos (exemplo: Japão x EUA):
 ~~~SQL
-
+SELECT event_desc AS 'Event', COUNT()/(SELECT count() FROM Match_wc M, Team_wc T, Team_wc TT WHERE  ((M.teamA = T.id AND M.teamB = TT.id) AND ((T.team_name = 'United States' AND TT.team_name = 'Japan') OR (T.team_name = 'Japan' AND TT.team_name = 'United States')))) AS 'Average' from Events_wc E where E.match_id in (SELECT M.id FROM Match_wc M, Team_wc T, Team_wc TT WHERE  ((M.teamA = T.id AND M.teamB = TT.id) AND ((T.team_name = 'United States' AND TT.team_name = 'Japan') OR (T.team_name = 'Japan' AND TT.team_name = 'United States')))) GROUP BY event_desc;
 ~~~
+
+Resultado:
+
+![.](assets/confronto_esp.png)
+
+Dados gerais:
+~~~SQL
+SELECT event_desc AS 'Event', COUNT()/(SELECT COUNT() FROM Match_wc M, Team_wc T, Team_wc TT WHERE  ((M.teamA = T.id AND M.teamB = TT.id))) AS 'Average' from Events_wc E where E.match_id in (SELECT M.id FROM Match_wc M, Team_wc T, Team_wc TT WHERE  ((M.teamA = T.id AND M.teamB = TT.id) )) GROUP BY event_desc; 
+~~~
+
+Resultado:
+
+![.](assets/confronto_geral.png)
+
+Discussão: Podemos, por exemplo, comparar o número de eventos que avaliam situações de confronto em campo, como a média de cartões amarelos e cartões vermelhos, com as estatísticas gerais. Neste caso, por exemplo, a média de cartões vermelhos é maior que a geral.
 
 ### Pergunta/Query 3
 > * Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?

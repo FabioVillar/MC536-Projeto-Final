@@ -55,7 +55,7 @@
     {
       "name": "Australia",
       "coach": "Tom Sermanni",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "D",
       "position_group": 0,
@@ -265,7 +265,7 @@
     {
       "name": "Brazil",
       "coach": "Kleiton Lima",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 10,
       "group": "D",
       "position_group": 0,
@@ -694,7 +694,7 @@
     {
       "name": "Colombia",
       "coach": "Ricardo Rozo",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "C",
       "position_group": 0,
@@ -904,7 +904,7 @@
     {
       "name": "England",
       "coach": "Hope Powell",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 8,
       "group": "B",
       "position_group": 0,
@@ -1324,7 +1324,7 @@
     {
       "name": "France",
       "coach": "Bruno Bini",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 7,
       "group": "A",
       "position_group": 0,
@@ -1534,7 +1534,7 @@
     {
       "name": "Germany",
       "coach": "Silvia Neid",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 9,
       "group": "A",
       "position_group": 0,
@@ -1744,7 +1744,7 @@
     {
       "name": "Japan",
       "coach": "Norio Sasaki",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 13,
       "group": "B",
       "position_group": 0,
@@ -1963,7 +1963,7 @@
     {
       "name": "Korea DPR",
       "coach": "Kim Kwang-min",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "C",
       "position_group": 0,
@@ -2173,7 +2173,7 @@
     {
       "name": "Mexico",
       "coach": "Leonardo Cuéllar",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 2,
       "group": "B",
       "position_group": 0,
@@ -2392,7 +2392,7 @@
     {
       "name": "New Zealand",
       "coach": "John Herdman",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "B",
       "position_group": 0,
@@ -2602,7 +2602,7 @@
     {
       "name": "Nigeria",
       "coach": "Governing Country:\n    CAF\n    \n    ",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -2821,7 +2821,7 @@
     {
       "name": "Norway",
       "coach": "Eli Landsem",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "D",
       "position_group": 0,
@@ -3031,7 +3031,7 @@
     {
       "name": "Sweden",
       "coach": "Thomas Dennerby",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 15,
       "group": "C",
       "position_group": 0,
@@ -3241,7 +3241,7 @@
     {
       "name": "United States",
       "coach": "Pia Sundhage",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 11,
       "group": "C",
       "position_group": 0,

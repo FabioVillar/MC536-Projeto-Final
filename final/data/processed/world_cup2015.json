@@ -55,7 +55,7 @@
     {
       "name": "Australia",
       "coach": "Alen Stajcic",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 7,
       "group": "D",
       "position_group": 0,
@@ -283,7 +283,7 @@
     {
       "name": "Brazil",
       "coach": "Vadão",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 9,
       "group": "E",
       "position_group": 0,
@@ -511,7 +511,7 @@
     {
       "name": "Cameroon",
       "coach": "Carl Enow Ngachu",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "C",
       "position_group": 0,
@@ -739,7 +739,7 @@
     {
       "name": "Canada",
       "coach": "John Herdman",
-      "points_group_stage": 0,
+      "points_group_stage": 5,
       "points_overall": 8,
       "group": "A",
       "position_group": 0,
@@ -967,7 +967,7 @@
     {
       "name": "China PR",
       "coach": "Hao Wei",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 7,
       "group": "A",
       "position_group": 0,
@@ -1195,7 +1195,7 @@
     {
       "name": "Colombia",
       "coach": "Fabián Taborda",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "F",
       "position_group": 0,
@@ -1423,7 +1423,7 @@
     {
       "name": "Costa Rica",
       "coach": "Amelia Valverde",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 2,
       "group": "E",
       "position_group": 0,
@@ -2107,7 +2107,7 @@
     {
       "name": "England",
       "coach": "Mark Sampson",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 15,
       "group": "F",
       "position_group": 0,
@@ -2335,7 +2335,7 @@
     {
       "name": "France",
       "coach": "Philippe Bergeroo",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 10,
       "group": "F",
       "position_group": 0,
@@ -2563,7 +2563,7 @@
     {
       "name": "Germany",
       "coach": "Silvia Neid",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 11,
       "group": "B",
       "position_group": 0,
@@ -2791,7 +2791,7 @@
     {
       "name": "Japan",
       "coach": "Norio Sasaki",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 18,
       "group": "C",
       "position_group": 0,
@@ -3019,7 +3019,7 @@
     {
       "name": "Korea Republic",
       "coach": "Yoon Deok-yeo",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "E",
       "position_group": 0,
@@ -3247,7 +3247,7 @@
     {
       "name": "Mexico",
       "coach": "Leonardo Cuéllar",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "F",
       "position_group": 0,
@@ -3475,7 +3475,7 @@
     {
       "name": "Netherlands",
       "coach": "Roger Reijners",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "A",
       "position_group": 0,
@@ -3703,7 +3703,7 @@
     {
       "name": "New Zealand",
       "coach": "Tony Readings",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 2,
       "group": "A",
       "position_group": 0,
@@ -3931,7 +3931,7 @@
     {
       "name": "Nigeria",
       "coach": "Edwin Okon",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "D",
       "position_group": 0,
@@ -4159,7 +4159,7 @@
     {
       "name": "Norway",
       "coach": "Even Pellerud",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 7,
       "group": "B",
       "position_group": 0,
@@ -4387,7 +4387,7 @@
     {
       "name": "Spain",
       "coach": "Ignacio Quereda",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "E",
       "position_group": 0,
@@ -4615,7 +4615,7 @@
     {
       "name": "Sweden",
       "coach": "Pia Sundhage",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "D",
       "position_group": 0,
@@ -4843,7 +4843,7 @@
     {
       "name": "Switzerland",
       "coach": "Martina Voss-Tecklenburg",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "C",
       "position_group": 0,
@@ -5071,7 +5071,7 @@
     {
       "name": "Thailand",
       "coach": "Nuengruethai Sathongwien",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "B",
       "position_group": 0,
@@ -5299,7 +5299,7 @@
     {
       "name": "United States",
       "coach": "Jill Ellis",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 19,
       "group": "D",
       "position_group": 0,

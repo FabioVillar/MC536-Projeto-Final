@@ -55,7 +55,7 @@
     {
       "name": "Australia",
       "coach": "Greg Brown",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "D",
       "position_group": 0,
@@ -256,7 +256,7 @@
     {
       "name": "Brazil",
       "coach": "Wilson de Oliveira Rica",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 11,
       "group": "B",
       "position_group": 0,
@@ -457,7 +457,7 @@
     {
       "name": "Canada",
       "coach": "Neil Turnbull",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "C",
       "position_group": 0,
@@ -658,7 +658,7 @@
     {
       "name": "China PR",
       "coach": "Ma Yuanan",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 16,
       "group": "D",
       "position_group": 0,
@@ -1060,7 +1060,7 @@
     {
       "name": "Germany",
       "coach": "Tina Theune",
-      "points_group_stage": 0,
+      "points_group_stage": 5,
       "points_overall": 5,
       "group": "B",
       "position_group": 0,
@@ -1261,7 +1261,7 @@
     {
       "name": "Ghana",
       "coach": "Emmanuel Kwasi Afranie",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "D",
       "position_group": 0,
@@ -1462,7 +1462,7 @@
     {
       "name": "Italy",
       "coach": "Carlo Facchin",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "B",
       "position_group": 0,
@@ -1663,7 +1663,7 @@
     {
       "name": "Japan",
       "coach": "Satoshi Miyauchi",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "C",
       "position_group": 0,
@@ -1864,7 +1864,7 @@
     {
       "name": "Korea DPR",
       "coach": "Myong Tong-chan",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -2266,7 +2266,7 @@
     {
       "name": "Nigeria",
       "coach": "Ismaila Mabo",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "A",
       "position_group": 0,
@@ -2467,7 +2467,7 @@
     {
       "name": "Norway",
       "coach": "Per-Mathias Høgmo",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 13,
       "group": "C",
       "position_group": 0,
@@ -2677,7 +2677,7 @@
     {
       "name": "Russia",
       "coach": "Yuri Bystritsky",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "C",
       "position_group": 0,
@@ -2878,7 +2878,7 @@
     {
       "name": "Sweden",
       "coach": "Marika Domanski-Lyfors",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "D",
       "position_group": 0,
@@ -3079,7 +3079,7 @@
     {
       "name": "United States",
       "coach": "Tony DiCicco",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 16,
       "group": "A",
       "position_group": 0,

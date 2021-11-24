@@ -250,7 +250,7 @@
     {
       "name": "Australia",
       "coach": "Adrian Santrac",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 1,
       "group": "D",
       "position_group": 0,
@@ -469,7 +469,7 @@
     {
       "name": "Brazil",
       "coach": "Paulo Gonçalves",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 7,
       "group": "B",
       "position_group": 0,
@@ -670,7 +670,7 @@
     {
       "name": "Canada",
       "coach": "Even Pellerud",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 9,
       "group": "C",
       "position_group": 0,
@@ -871,7 +871,7 @@
     {
       "name": "China PR",
       "coach": "Ma Liangxing",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 7,
       "group": "D",
       "position_group": 0,
@@ -1072,7 +1072,7 @@
     {
       "name": "France",
       "coach": "Élisabeth Loisel",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "B",
       "position_group": 0,
@@ -1273,7 +1273,7 @@
     {
       "name": "Germany",
       "coach": "Tina Theune",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 18,
       "group": "C",
       "position_group": 0,
@@ -1474,7 +1474,7 @@
     {
       "name": "Ghana",
       "coach": "Oko Aryee",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 3,
       "group": "D",
       "position_group": 0,
@@ -1675,7 +1675,7 @@
     {
       "name": "Japan",
       "coach": "Eiji Ueda",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "C",
       "position_group": 0,
@@ -1876,7 +1876,7 @@
     {
       "name": "Korea DPR",
       "coach": "Ri Song-gun",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -2488,7 +2488,7 @@
     {
       "name": "Norway",
       "coach": "Åge Steen",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "B",
       "position_group": 0,
@@ -2689,7 +2689,7 @@
     {
       "name": "Russia",
       "coach": "Yuri Bystritsky",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "D",
       "position_group": 0,
@@ -2890,7 +2890,7 @@
     {
       "name": "Sweden",
       "coach": "Marika Domanski-Lyfors",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 12,
       "group": "A",
       "position_group": 0,
@@ -3091,7 +3091,7 @@
     {
       "name": "United States",
       "coach": "April Heinrichs",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 15,
       "group": "A",
       "position_group": 0,

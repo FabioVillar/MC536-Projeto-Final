@@ -37,6 +37,8 @@ def create_new_cup(year, page_id):
     else:
         get_stats(year, new_cup)
 
+    get_points_group_stage(year, new_cup, page_id)
+
     #getting matches
     get_matches(year, page_id, new_cup)
     

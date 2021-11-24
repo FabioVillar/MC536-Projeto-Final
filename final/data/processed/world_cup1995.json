@@ -244,7 +244,7 @@
     {
       "name": "Brazil",
       "coach": "Ademar Fonseca",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -445,7 +445,7 @@
     {
       "name": "Canada",
       "coach": "Sylvie Béliveau",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 1,
       "group": "B",
       "position_group": 0,
@@ -646,7 +646,7 @@
     {
       "name": "China PR",
       "coach": "Ma Yuanan",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 8,
       "group": "C",
       "position_group": 0,
@@ -847,7 +847,7 @@
     {
       "name": "Denmark",
       "coach": "Keld Gantzhorn",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "C",
       "position_group": 0,
@@ -1057,7 +1057,7 @@
     {
       "name": "England",
       "coach": "Ted Copeland",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 6,
       "group": "B",
       "position_group": 0,
@@ -1258,7 +1258,7 @@
     {
       "name": "Germany",
       "coach": "Gero Bisanz",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 12,
       "group": "A",
       "position_group": 0,
@@ -1459,7 +1459,7 @@
     {
       "name": "Japan",
       "coach": "Tamotsu Suzuki",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -1660,7 +1660,7 @@
     {
       "name": "Nigeria",
       "coach": "Paul Hamilton",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 1,
       "group": "B",
       "position_group": 0,
@@ -1870,7 +1870,7 @@
     {
       "name": "Norway",
       "coach": "Even Pellerud",
-      "points_group_stage": 0,
+      "points_group_stage": 10,
       "points_overall": 18,
       "group": "B",
       "position_group": 0,
@@ -2071,7 +2071,7 @@
     {
       "name": "Sweden",
       "coach": "Bengt Simonsson",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 7,
       "group": "A",
       "position_group": 0,
@@ -2272,7 +2272,7 @@
     {
       "name": "United States",
       "coach": "Tony DiCicco",
-      "points_group_stage": 0,
+      "points_group_stage": 7,
       "points_overall": 13,
       "group": "C",
       "position_group": 0,

@@ -220,7 +220,31 @@ def get_stats_2019(new_cup):
                     k.goals.append(k.goals[0] - k.goals[1])
                     k.points_overall = int(info[8].text)
 
+def get_points_group_stage(year, world_cup, page_id):
 
+    if (year == 2019):
+        fbref_link = 'https://fbref.com/en/comps/106/Womens-World-Cup-Stats'
+    else:
+        fbref_link = f'https://fbref.com/en/comps/106/{page_id}/{year}-Womens-World-Cup-Stats'
+
+    fbref_page = requests.get(fbref_link).text #request
+    soup = BeautifulSoup(fbref_page, 'lxml') #parsing
+    content = soup.find('div', id='content')
+    group_stage = content.find('div', id = 'all_Group stage')
+    group_div = group_stage.find('div', id='div_Group stage')
+    groups = group_div.find_all('div', class_='table_wrapper tabbed')
+
+    for i in groups:
+        results = i.find_all('div')
+        body = results[2].find('tbody').find_all('tr')
+        for k in body:
+            stats = k.find_all('td')
+            name = stats[0].find('span')['title']
+            for j in world_cup.teams:
+                if (j.name == name):
+                    j.points_group_stage = int(stats[8].text)
+
+    return
                 
 
 

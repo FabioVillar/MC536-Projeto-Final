@@ -55,7 +55,7 @@
     {
       "name": "Argentina",
       "coach": "Carlos Borrello",
-      "points_group_stage": 0,
+      "points_group_stage": 2,
       "points_overall": 2,
       "group": "D",
       "position_group": 0,
@@ -283,7 +283,7 @@
     {
       "name": "Australia",
       "coach": "Ante Milicic",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 7,
       "group": "C",
       "position_group": 0,
@@ -511,7 +511,7 @@
     {
       "name": "Brazil",
       "coach": "Vadão",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "C",
       "position_group": 0,
@@ -739,7 +739,7 @@
     {
       "name": "Cameroon",
       "coach": "Last Match: Loss 0–3 at England",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "E",
       "position_group": 0,
@@ -967,7 +967,7 @@
     {
       "name": "Canada",
       "coach": "Kenneth Heiner-Møller",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 6,
       "group": "E",
       "position_group": 0,
@@ -1195,7 +1195,7 @@
     {
       "name": "Chile",
       "coach": "José Letelier",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "F",
       "position_group": 0,
@@ -1423,7 +1423,7 @@
     {
       "name": "China PR",
       "coach": "Jia Xiuquan",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "B",
       "position_group": 0,
@@ -1651,7 +1651,7 @@
     {
       "name": "England",
       "coach": "Phil Neville",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 15,
       "group": "D",
       "position_group": 0,
@@ -1879,7 +1879,7 @@
     {
       "name": "France",
       "coach": "Corinne Diacre",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 12,
       "group": "A",
       "position_group": 0,
@@ -2107,7 +2107,7 @@
     {
       "name": "Germany",
       "coach": "Martina Voss-Tecklenburg",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 12,
       "group": "B",
       "position_group": 0,
@@ -2335,7 +2335,7 @@
     {
       "name": "Italy",
       "coach": "Milena Bertolini",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 9,
       "group": "C",
       "position_group": 0,
@@ -2791,7 +2791,7 @@
     {
       "name": "Japan",
       "coach": "Asako Takakura",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "D",
       "position_group": 0,
@@ -3247,7 +3247,7 @@
     {
       "name": "Netherlands",
       "coach": "Sarina Wiegman",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 18,
       "group": "E",
       "position_group": 0,
@@ -3703,7 +3703,7 @@
     {
       "name": "Nigeria",
       "coach": "Thomas Dennerby",
-      "points_group_stage": 0,
+      "points_group_stage": 3,
       "points_overall": 3,
       "group": "A",
       "position_group": 0,
@@ -3931,7 +3931,7 @@
     {
       "name": "Norway",
       "coach": "Martin Sjögren",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 7,
       "group": "A",
       "position_group": 0,
@@ -4159,7 +4159,7 @@
     {
       "name": "Scotland",
       "coach": "Shelley Kerr",
-      "points_group_stage": 0,
+      "points_group_stage": 1,
       "points_overall": 1,
       "group": "D",
       "position_group": 0,
@@ -4615,7 +4615,7 @@
     {
       "name": "Spain",
       "coach": "Jorge Vilda",
-      "points_group_stage": 0,
+      "points_group_stage": 4,
       "points_overall": 4,
       "group": "B",
       "position_group": 0,
@@ -4843,7 +4843,7 @@
     {
       "name": "Sweden",
       "coach": "Peter Gerhardsson",
-      "points_group_stage": 0,
+      "points_group_stage": 6,
       "points_overall": 15,
       "group": "F",
       "position_group": 0,
@@ -5299,7 +5299,7 @@
     {
       "name": "United States",
       "coach": "Jill Ellis",
-      "points_group_stage": 0,
+      "points_group_stage": 9,
       "points_overall": 21,
       "group": "F",
       "position_group": 0,

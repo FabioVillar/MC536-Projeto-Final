@@ -20,7 +20,7 @@ def get_world_cups():
     while (start_year<=final_year):
         print(start_year)
         basedir = os.path.abspath(os.path.dirname(__file__))
-        basedir = basedir.replace('/src','')
+        basedir = basedir.replace('\\src','')
         if not os.path.isfile(f'{basedir}/data/processed/world_cup{start_year}.json'):
             new_cup = cup.create_new_cup(start_year, page_id)
             new_cup.awards = awards.get_awards_by_year(awards_list, start_year)
