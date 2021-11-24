@@ -1,9 +1,8 @@
 import sys
 from requests.api import get
 from models import *
-sys.path.insert(0, '/previa/src/webscraping/')
+sys.path.insert(0, '/final/src/src/webscraping/')
 from webscraping import cup
-from webscraping import matches
 from webscraping import awards
 import json
 import os
@@ -20,12 +19,13 @@ def get_world_cups():
 
     while (start_year<=final_year):
         print(start_year)
-
-        if not os.path.isfile(f'world_cup{start_year}.json'):
+        basedir = os.path.abspath(os.path.dirname(__file__))
+        basedir = basedir.replace('/src','')
+        if not os.path.isfile(f'{basedir}/data/processed/world_cup{start_year}.json'):
             new_cup = cup.create_new_cup(start_year, page_id)
             new_cup.awards = awards.get_awards_by_year(awards_list, start_year)
             cup_list.append(new_cup)
-            with open(f'world_cup{start_year}.json', 'w+', encoding="utf-8") as f:
+            with open(f'{basedir}/data/processed/world_cup{start_year}.json', 'w+', encoding="utf-8") as f:
                 json.dump(
                     new_cup.dict(exclude_none=True),
                     f,
