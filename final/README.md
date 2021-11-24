@@ -11,7 +11,7 @@
 
 ## Slides da Apresentação
 
-[Slides](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/previa/assets/Apresenta%C3%A7%C3%A3o%20Pr%C3%A9via%20-%20Akers.pdf)
+[Slides](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/slides/Apresenta%C3%A7%C3%A3o%20Final%20-%20Akers.pdf)
 
 ## Modelo Conceitual
 
@@ -171,7 +171,7 @@ A criação das queries para o MongoDB, banco de dados escolhido, foi desafiador
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
 
-### Pergunta/Análise 1
+### Pergunta/Query 1
 > * Pergunta 1: Qual a quantidade de vitórias de cada formação? 
 >   
 >   * Será feita uma coleta de todas as ocorrências da formação, que está presente nos objetos da classe Match, e, por meio desta, o número de vitórias obtidas por cada seleção que utilizou esta formação. Desta forma, será possível obter o número total de vitórias de cada formação:
