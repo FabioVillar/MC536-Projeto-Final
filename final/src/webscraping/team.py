@@ -79,10 +79,10 @@ def create_new_player(name, stats, year, team_name):
                             if (new_player.position == ''):
                                 new_player.position = stat[1].find('a').text
                             if (new_player.age == 0):
-                                print(comparing_name)
+                                
                                 string  = stat[2].text
                                 age = [int(s) for s in string.split() if s.isdigit()]
-                                print(age)
+                                
                                 new_player.age = int(year - age[0])
                     else:
                         meter+=1
@@ -95,7 +95,7 @@ def create_new_player(name, stats, year, team_name):
 
 def create_new_team(link, name, page_id, year):
 
-    print('https://fbref.com'+link)
+    
     #requests
     team_page = requests.get('https://fbref.com'+link).text #request
     soup = BeautifulSoup(team_page, 'lxml') #parsing

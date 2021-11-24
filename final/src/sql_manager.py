@@ -189,8 +189,8 @@ def insert_awards(awards, year_wc, cursor):
 
 def sql_manager():
 
-    user = 'humor' #your user here
-    password = 'humor' #your password here
+    user = 'root' #your user here
+    password = 'admin123' #your password here
     database = 'womens_world_cup'
     print(user, password)
     try:
@@ -208,7 +208,7 @@ def sql_manager():
     start_year = 1991
     last_year = 2019
     for year in range(start_year, last_year + 1, 4):
-        with open(f'your_path', 'r+', errors='ignore') as f:
+        with open(f'world_cup{year}.json', 'r+', errors='ignore') as f:
             wc_obj = json.load(f)
         year_wc = wc_obj['year']
         print(year_wc)

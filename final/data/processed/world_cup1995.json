@@ -2484,7 +2484,7 @@
         1
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "14,500",
+      "attendance": 14500,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -2647,7 +2647,7 @@
         0
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "3,824",
+      "attendance": 3824,
       "referee": "Petros Mathabela",
       "penalties": [
         0,
@@ -2780,7 +2780,7 @@
         0
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "4,344",
+      "attendance": 4344,
       "referee": "Alain Hamer",
       "penalties": [
         0,
@@ -2991,7 +2991,7 @@
         3
       ],
       "stadium": "Stromvallen (Neutral Site)",
-      "attendance": "4,635",
+      "attendance": 4635,
       "referee": "Ingrid Jonsson",
       "penalties": [
         0,
@@ -3162,169 +3162,6 @@
     },
     {
       "phase": "Group stage",
-      "group": "B",
-      "teams": [
-        "England",
-        "Canada"
-      ],
-      "score": [
-        3,
-        2
-      ],
-      "stadium": "Olympia (Neutral Site)",
-      "attendance": "655",
-      "referee": "Eva Oedlund",
-      "penalties": [
-        0,
-        0
-      ],
-      "formation1": [
-        4,
-        3,
-        3
-      ],
-      "formation2": [
-        4,
-        4,
-        2
-      ],
-      "initial_squad1": [
-        "Debbie Bampton",
-        "Samantha Britton",
-        "Karen Burke",
-        "Pauline Cope",
-        "Gillian Coultard",
-        "Karen Farley",
-        "Tina Mapes",
-        "Brenda Sempare",
-        "Marieanne Spacey",
-        "Clare Taylor",
-        "Karen Walker"
-      ],
-      "bench_players1": [
-        "Hope Powell",
-        "Kerry Davis",
-        "Becky Easton",
-        "Julie Fletcher",
-        "Lesley Higgs",
-        "Mary Phillip",
-        "Donna Smith",
-        "Louise Waller",
-        "Sian Williams"
-      ],
-      "initial_squad2": [
-        "Silvana Burtini",
-        "Carla Chin",
-        "Geri Donnelly",
-        "Janine Helland",
-        "Charmaine Hooper",
-        "Angela Kelly",
-        "Andrea Neil",
-        "Veronica O'Brien",
-        "Michelle Ring",
-        "Cathy Ross",
-        "Helen Stoumbos"
-      ],
-      "bench_players2": [
-        "Suzanne Muir",
-        "Annie Caron",
-        "Suzanne Gerrior",
-        "Wendy Hawthorne",
-        "Joan McEachern",
-        "Luce Mongrain",
-        "Isabelle Morneau",
-        "Nicole Sedgwick",
-        "Tania Singfield"
-      ],
-      "events": [
-        {
-          "event": "Penalty Goal",
-          "time": "51",
-          "team": "England",
-          "player": "Gillian Coultard"
-        },
-        {
-          "event": "Substitute out",
-          "time": "70",
-          "team": "England",
-          "player": "Tina Mapes"
-        },
-        {
-          "event": "Substitute in",
-          "time": "70",
-          "team": "England",
-          "player": "Hope Powell"
-        },
-        {
-          "event": "Substitute out",
-          "time": "75",
-          "team": "England",
-          "player": "Karen Walker"
-        },
-        {
-          "event": "Substitute in",
-          "time": "75",
-          "team": "England",
-          "player": "Kerry Davis"
-        },
-        {
-          "event": "Penalty Goal",
-          "time": "76",
-          "team": "England",
-          "player": "Marieanne Spacey"
-        },
-        {
-          "event": "Yellow Card",
-          "time": "77",
-          "team": "England",
-          "player": "Karen Farley"
-        },
-        {
-          "event": "Goal",
-          "time": "85",
-          "team": "England",
-          "player": "Gillian Coultard"
-        },
-        {
-          "event": "Yellow Card",
-          "time": "17",
-          "team": "Canada",
-          "player": "Helen Stoumbos"
-        },
-        {
-          "event": "Yellow Card",
-          "time": "44",
-          "team": "Canada",
-          "player": "Geri Donnelly"
-        },
-        {
-          "event": "Substitute out",
-          "time": "78",
-          "team": "Canada",
-          "player": "Cathy Ross"
-        },
-        {
-          "event": "Substitute in",
-          "time": "78",
-          "team": "Canada",
-          "player": "Suzanne Muir"
-        },
-        {
-          "event": "Goal",
-          "time": "87",
-          "team": "Canada",
-          "player": "Helen Stoumbos"
-        },
-        {
-          "event": "Goal",
-          "time": "90+1",
-          "team": "Canada",
-          "player": "Geri Donnelly"
-        }
-      ]
-    },
-    {
-      "phase": "Group stage",
       "group": "C",
       "teams": [
         "Denmark",
@@ -3335,7 +3172,7 @@
         0
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "1,500",
+      "attendance": 1500,
       "referee": "Bente Skogvang",
       "penalties": [
         0,
@@ -3537,6 +3374,169 @@
     },
     {
       "phase": "Group stage",
+      "group": "B",
+      "teams": [
+        "England",
+        "Canada"
+      ],
+      "score": [
+        3,
+        2
+      ],
+      "stadium": "Olympia (Neutral Site)",
+      "attendance": 655,
+      "referee": "Eva Oedlund",
+      "penalties": [
+        0,
+        0
+      ],
+      "formation1": [
+        4,
+        3,
+        3
+      ],
+      "formation2": [
+        4,
+        4,
+        2
+      ],
+      "initial_squad1": [
+        "Debbie Bampton",
+        "Samantha Britton",
+        "Karen Burke",
+        "Pauline Cope",
+        "Gillian Coultard",
+        "Karen Farley",
+        "Tina Mapes",
+        "Brenda Sempare",
+        "Marieanne Spacey",
+        "Clare Taylor",
+        "Karen Walker"
+      ],
+      "bench_players1": [
+        "Hope Powell",
+        "Kerry Davis",
+        "Becky Easton",
+        "Julie Fletcher",
+        "Lesley Higgs",
+        "Mary Phillip",
+        "Donna Smith",
+        "Louise Waller",
+        "Sian Williams"
+      ],
+      "initial_squad2": [
+        "Silvana Burtini",
+        "Carla Chin",
+        "Geri Donnelly",
+        "Janine Helland",
+        "Charmaine Hooper",
+        "Angela Kelly",
+        "Andrea Neil",
+        "Veronica O'Brien",
+        "Michelle Ring",
+        "Cathy Ross",
+        "Helen Stoumbos"
+      ],
+      "bench_players2": [
+        "Suzanne Muir",
+        "Annie Caron",
+        "Suzanne Gerrior",
+        "Wendy Hawthorne",
+        "Joan McEachern",
+        "Luce Mongrain",
+        "Isabelle Morneau",
+        "Nicole Sedgwick",
+        "Tania Singfield"
+      ],
+      "events": [
+        {
+          "event": "Penalty Goal",
+          "time": "51",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Substitute out",
+          "time": "70",
+          "team": "England",
+          "player": "Tina Mapes"
+        },
+        {
+          "event": "Substitute in",
+          "time": "70",
+          "team": "England",
+          "player": "Hope Powell"
+        },
+        {
+          "event": "Substitute out",
+          "time": "75",
+          "team": "England",
+          "player": "Karen Walker"
+        },
+        {
+          "event": "Substitute in",
+          "time": "75",
+          "team": "England",
+          "player": "Kerry Davis"
+        },
+        {
+          "event": "Penalty Goal",
+          "time": "76",
+          "team": "England",
+          "player": "Marieanne Spacey"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "77",
+          "team": "England",
+          "player": "Karen Farley"
+        },
+        {
+          "event": "Goal",
+          "time": "85",
+          "team": "England",
+          "player": "Gillian Coultard"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "17",
+          "team": "Canada",
+          "player": "Helen Stoumbos"
+        },
+        {
+          "event": "Yellow Card",
+          "time": "44",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        },
+        {
+          "event": "Substitute out",
+          "time": "78",
+          "team": "Canada",
+          "player": "Cathy Ross"
+        },
+        {
+          "event": "Substitute in",
+          "time": "78",
+          "team": "Canada",
+          "player": "Suzanne Muir"
+        },
+        {
+          "event": "Goal",
+          "time": "87",
+          "team": "Canada",
+          "player": "Helen Stoumbos"
+        },
+        {
+          "event": "Goal",
+          "time": "90+1",
+          "team": "Canada",
+          "player": "Geri Donnelly"
+        }
+      ]
+    },
+    {
+      "phase": "Group stage",
       "group": "A",
       "teams": [
         "Brazil",
@@ -3547,7 +3547,7 @@
         2
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "2,286",
+      "attendance": 2286,
       "referee": "Catherine Leann Hepburn",
       "penalties": [
         0,
@@ -3686,7 +3686,7 @@
         2
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "5,855",
+      "attendance": 5855,
       "referee": "Linda May Black",
       "penalties": [
         0,
@@ -3867,7 +3867,7 @@
         0
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "5,520",
+      "attendance": 5520,
       "referee": "Eduardo Gamboa Martinez",
       "penalties": [
         0,
@@ -4042,7 +4042,7 @@
         2
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "1,500",
+      "attendance": 1500,
       "referee": "Maria Siqueira",
       "penalties": [
         0,
@@ -4241,7 +4241,7 @@
         3
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "250",
+      "attendance": 250,
       "referee": "Pirom Anprasert",
       "penalties": [
         0,
@@ -4422,7 +4422,7 @@
         0
       ],
       "stadium": "Stromvallen (Neutral Site)",
-      "attendance": "2,740",
+      "attendance": 2740,
       "referee": "Mamadouba Engage Camara",
       "penalties": [
         0,
@@ -4616,7 +4616,7 @@
         0
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "7,811",
+      "attendance": 7811,
       "referee": "Petros Mathabela",
       "penalties": [
         0,
@@ -4773,7 +4773,7 @@
         6
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "3,203",
+      "attendance": 3203,
       "referee": "Alain Hamer",
       "penalties": [
         0,
@@ -5026,7 +5026,7 @@
         3
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "1,843",
+      "attendance": 1843,
       "referee": "Ingrid Jonsson",
       "penalties": [
         0,
@@ -5213,7 +5213,7 @@
         0
       ],
       "stadium": "Stromvallen (Neutral Site)",
-      "attendance": "2,715",
+      "attendance": 2715,
       "referee": "Maria Siqueira",
       "penalties": [
         0,
@@ -5406,7 +5406,7 @@
         1
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "1,150",
+      "attendance": 1150,
       "referee": "Pirom Anprasert",
       "penalties": [
         0,
@@ -5611,7 +5611,7 @@
         1
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "1,619",
+      "attendance": 1619,
       "referee": "Eduardo Gamboa Martinez",
       "penalties": [
         0,
@@ -5769,7 +5769,7 @@
         1
       ],
       "stadium": "Tingvallen (Neutral Site)",
-      "attendance": "4,655",
+      "attendance": 4655,
       "referee": "Pirom Anprasert",
       "penalties": [
         0,
@@ -5945,7 +5945,7 @@
         0
       ],
       "stadium": "Stromvallen (Neutral Site)",
-      "attendance": "3,756",
+      "attendance": 3756,
       "referee": "Eduardo Gamboa Martinez",
       "penalties": [
         0,
@@ -6108,7 +6108,7 @@
         1
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "7,537",
+      "attendance": 7537,
       "referee": "Sonia Denoncourt",
       "penalties": [
         3,
@@ -6343,7 +6343,7 @@
         0
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "2,317",
+      "attendance": 2317,
       "referee": "Bente Skogvang",
       "penalties": [
         0,
@@ -6512,7 +6512,7 @@
         1
       ],
       "stadium": "Arosvallen (Neutral Site)",
-      "attendance": "2,893",
+      "attendance": 2893,
       "referee": "Alain Hamer",
       "penalties": [
         0,
@@ -6651,7 +6651,7 @@
         0
       ],
       "stadium": "Olympia (Neutral Site)",
-      "attendance": "3,693",
+      "attendance": 3693,
       "referee": "Petros Mathabela",
       "penalties": [
         0,
@@ -6772,7 +6772,7 @@
         2
       ],
       "stadium": "Stromvallen (Neutral Site)",
-      "attendance": "4,335",
+      "attendance": 4335,
       "referee": "Sonia Denoncourt",
       "penalties": [
         0,
@@ -6929,7 +6929,7 @@
         2
       ],
       "stadium": "Rasunda Stadium (Neutral Site)",
-      "attendance": "17,158",
+      "attendance": 17158,
       "referee": "Ingrid Jonsson",
       "penalties": [
         0,

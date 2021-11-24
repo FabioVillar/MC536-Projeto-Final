@@ -3447,7 +3447,7 @@
         0
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "28,098",
+      "attendance": 28098,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -3702,7 +3702,7 @@
         2
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "35,100",
+      "attendance": 35100,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -3854,7 +3854,7 @@
         2
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "27,146",
+      "attendance": 27146,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -4031,7 +4031,7 @@
         1
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "21,740",
+      "attendance": 21740,
       "referee": "Huijun Niu",
       "penalties": [
         0,
@@ -4178,7 +4178,7 @@
         0
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "33,500",
+      "attendance": 33500,
       "referee": "Pannipar Kamnueng",
       "penalties": [
         0,
@@ -4355,7 +4355,7 @@
         1
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "25,952",
+      "attendance": 25952,
       "referee": "Adriana Correa",
       "penalties": [
         0,
@@ -4544,7 +4544,7 @@
         2
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "50,800",
+      "attendance": 50800,
       "referee": "Dianne Ferreira-James",
       "penalties": [
         0,
@@ -4733,7 +4733,7 @@
         1
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "30,752",
+      "attendance": 30752,
       "referee": "Christine Baitinger",
       "penalties": [
         0,
@@ -4904,7 +4904,7 @@
         1
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "27,730",
+      "attendance": 27730,
       "referee": "",
       "penalties": [
         0,
@@ -5069,7 +5069,7 @@
         0
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "35,600",
+      "attendance": 35600,
       "referee": "Gyöngyi Gaál",
       "penalties": [
         0,
@@ -5222,7 +5222,7 @@
         0
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "35,600",
+      "attendance": 35600,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -5380,7 +5380,7 @@
         0
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "27,730",
+      "attendance": 27730,
       "referee": "Jenny Palmqvist",
       "penalties": [
         0,
@@ -5515,7 +5515,7 @@
         0
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "33,835",
+      "attendance": 33835,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -5716,7 +5716,7 @@
         0
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "54,000",
+      "attendance": 54000,
       "referee": "Mayumi Oiwa",
       "penalties": [
         0,
@@ -5899,7 +5899,7 @@
         1
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "33,835",
+      "attendance": 33835,
       "referee": "Huijun Niu",
       "penalties": [
         0,
@@ -6064,7 +6064,7 @@
         4
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "54,000",
+      "attendance": 54000,
       "referee": "Jennifer Bennett",
       "penalties": [
         0,
@@ -6271,7 +6271,7 @@
         6
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "30,730",
+      "attendance": 30730,
       "referee": "Dianne Ferreira-James",
       "penalties": [
         0,
@@ -6508,7 +6508,7 @@
         2
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "39,817",
+      "attendance": 39817,
       "referee": "Adriana Correa",
       "penalties": [
         0,
@@ -6679,7 +6679,7 @@
         1
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "26,100",
+      "attendance": 26100,
       "referee": "Mayumi Oiwa",
       "penalties": [
         0,
@@ -6832,7 +6832,7 @@
         2
       ],
       "stadium": "Tianjin Olympic Center Stadium (Neutral Site)",
-      "attendance": "33,196",
+      "attendance": 33196,
       "referee": "Christine Baitinger",
       "penalties": [
         0,
@@ -7026,7 +7026,7 @@
         2
       ],
       "stadium": "Chengdu Sports Center (Neutral Site)",
-      "attendance": "29,300",
+      "attendance": 29300,
       "referee": "Gyöngyi Gaál",
       "penalties": [
         0,
@@ -7215,7 +7215,7 @@
         2
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "43,817",
+      "attendance": 43817,
       "referee": "Jennifer Bennett",
       "penalties": [
         0,
@@ -7434,7 +7434,7 @@
         0
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "43,817",
+      "attendance": 43817,
       "referee": "Kari Seitz",
       "penalties": [
         0,
@@ -7593,7 +7593,7 @@
         0
       ],
       "stadium": "Tianjin Olympic Center Stadium (Neutral Site)",
-      "attendance": "56,208",
+      "attendance": 56208,
       "referee": "",
       "penalties": [
         0,
@@ -7776,7 +7776,7 @@
         0
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "37,200",
+      "attendance": 37200,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
@@ -7928,7 +7928,7 @@
         0
       ],
       "stadium": "Tianjin Olympic Center Stadium (Neutral Site)",
-      "attendance": "29,586",
+      "attendance": 29586,
       "referee": "Jenny Palmqvist",
       "penalties": [
         0,
@@ -8075,7 +8075,7 @@
         0
       ],
       "stadium": "Wuhan Sports Center Stadium (Neutral Site)",
-      "attendance": "52,000",
+      "attendance": 52000,
       "referee": "Gyöngyi Gaál",
       "penalties": [
         0,
@@ -8246,7 +8246,7 @@
         2
       ],
       "stadium": "Tianjin Olympic Center Stadium (Neutral Site)",
-      "attendance": "35,061",
+      "attendance": 35061,
       "referee": "Christine Baitinger",
       "penalties": [
         0,
@@ -8417,7 +8417,7 @@
         0
       ],
       "stadium": "Tianjin Olympic Center Stadium (Neutral Site)",
-      "attendance": "53,819",
+      "attendance": 53819,
       "referee": "",
       "penalties": [
         0,
@@ -8594,7 +8594,7 @@
         4
       ],
       "stadium": "Yellow Dragon Sports Center (Neutral Site)",
-      "attendance": "47,818",
+      "attendance": 47818,
       "referee": "Nicole Petignat",
       "penalties": [
         0,
@@ -8783,7 +8783,7 @@
         4
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "32,068",
+      "attendance": 32068,
       "referee": "Gyöngyi Gaál",
       "penalties": [
         0,
@@ -8972,7 +8972,7 @@
         0
       ],
       "stadium": "Hongkou Stadium (Neutral Site)",
-      "attendance": "31,000",
+      "attendance": 31000,
       "referee": "Tammy Ogston",
       "penalties": [
         0,
