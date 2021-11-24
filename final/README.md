@@ -33,7 +33,7 @@ TEAM_WC(_id_, year_wc, team_name, coach, group_in_wc, group_points, goals_scored
 PLAYER_WC(_id_, team_id, player_name, age, position, goals, assists, yellow_cards, red_cards, year_wc)
   Ocupante chave estrangeira -> Team_wc(team_id)
 
-MATCH_WC(_id_, penalties, phase, group, teamA, teamB, score, stadium, attendance, referee, formationA, formationB, lineupA, lineupB, reservesA, reservesB, possession, year_wc)
+MATCH_WC(_id_, penaltiesA, penaltiesB, phase, group_, teamA, teamB, scoreA, scoreB, stadium, attendance, referee, formationA, formationB, lineupA, lineupB, reservesA, reservesB, possession, year_wc)
   Ocupante chave estrangeira -> Team_wc(teamA)
   Ocupante chave estrangeira -> Team_wc(teamB)
 
@@ -162,12 +162,11 @@ Após a criação dos arquivos `.json` (um para cada copa), como já mencionado,
 
 ### Criação de Queries (Relacional)
 
+Para o banco de dados realicional, a criação de queries foi bastante facilitada por conta dos conceitos aprendidos em aula, já que utilizamos SQL, amplamente discutido em aula. Foram realizadas queries que respondem perguntas e análises mais profundas sobre o dataset. Estas serão detalhadas em seguida no documento. Com relação ao ambiente do MySQL, a principal dificuldade encontrada foi no setting do ambiente tanto para a importação de dados quanto para o teste de queries.
 
 ### Criação de Queries (Hierárquico)
 
-
-
-
+A criação das queries para o MongoDB, banco de dados escolhido, foi desafiadora, já que as informações sobre a criação e elaboração tiveram que ser exploradas do zero, pois este não é um banco de dados muito focado nas aulas. Dessa maneira, tivemos que aprender um modo alternativo de fazê-las no MongoDB, no caso, a aggregation, que funciona de forma análoga à uma VIEW no SQL. Essas agregações não funcionam de uma forma usual, foi necessário elaborar funções, como `map` e `filter`. Apesar disso, o MongoDB permite a junção de múltiplas informações em um mesmo documento, o que pode ser útil para um usuário que deseja ver dados gerais. Dessa forma, elaboramos queries que realizam o empacotamento de diversos dados da copa, como `audiência média da partida` e `média de idade das jogadoras`.
 
 
 ## Perguntas de Pesquisa/Análise Combinadas e Respectivas Análises
@@ -182,15 +181,100 @@ Após a criação dos arquivos `.json` (um para cada copa), como já mencionado,
 >   
 >   * Será feita uma coleta de todas as ocorrências da formação, que está presente nos objetos da classe Match, e, por meio desta, o número de vitórias obtidas por cada seleção que utilizou esta formação. Desta forma, será possível obter a taxa de vitória.
 
+~~~SQL
+
+~~~
+
 ### Pergunta/Análise 2
 > * Pergunta 2: Qual a porcentagem de vitória de uma seleção que abre o placar?
 >   
 >   * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a taxa de vitória.
 
+~~~SQL
+
+~~~
+
 ### Pergunta/Análise 3
-> * Pergunta 3: Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?
+> * Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?
 >   
 >   * Cada jogadora tem a sua idade salva como atributo de classe, e, com base nisso e na seleção em que atuam, é possível traçar uma relação entre a média de idade e o desempenho da seleção na Copa.
 
-> Coloque um link para o arquivo do notebook que executa o conjunto de queries. Ele estará dentro da pasta `notebook`. Se por alguma razão o código não for executável no Jupyter, coloque na pasta `src`. Se as queries forem executadas atraves de uma interface de um SGBD não executável no Jupyter, como o Cypher, apresente na forma de markdown.
+~~~SQL
+
+~~~
+
+### Pergunta/Querie 4
+> * Quais as estatísticas principais de cada copa?
+>   
+>   * O MongoDB facilita as queries para obtenção de dados gerais das copas, onde podemos juntar vários dados e retornar para o usuário. Neste caso, fizemos uma querie no MongoDB que retorna, para cada copa, algumas estatísticas
+
+~~~
+db.getCollection('world_cups').aggregate([
+    {
+        "$project": {
+            "year": "$year",
+            "host": "$host",
+            "total_goals_scored_in_wc": {  $sum : {
+                    "$map": {
+                        "input": "$teams.goals",
+                        "as": "el",
+                        "in": { $sum: { $slice: [
+                                    "$$el",
+                                    0,
+                                    1
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "world_cup_best_player": {
+                "$filter": {
+                    "input": "$awards",
+                    "as": "el",
+                    "cond": {$eq: [
+                            "$$el.award",
+                            "Golden_Ball 1"
+                        ]
+                    }
+                }
+            },
+            "player_with_most_goals": {
+                "$filter": {
+                    "input": "$awards",
+                    "as": "el",
+                    "cond": {$eq: [
+                            "$$el.award",
+                            "Golden_Boot 1"
+                        ]
+                    }
+                }
+            },
+            "players_age_average": {  $avg : {
+                    "$map": {
+                        "input": "$teams.players.age",
+                        "as": "el",
+                        "in": { $sum: { $slice: [
+                                    "$$el",
+                                    0,
+                                    1
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            "matches_attendance_average": {  $avg : {
+                    "$map": {
+                        "input": "$matches.attendance",
+                        "as": "el",
+                        "in": ("$$el")
+                    }
+                }
+            }
+        }
+    }
+])
+~~~
+
 
