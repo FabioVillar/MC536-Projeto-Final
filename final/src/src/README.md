@@ -10,25 +10,23 @@
 ### Criar o banco de dados no mysql:
 
 ```
-sudo /etc/init.d/mysql start
-sudo -u root -p
-mysql > create database womens_world_cup;
-
+$ sudo /etc/init.d/mysql start
+$ sudo -u root -p
+$ mysql > create database womens_world_cup;
 ```
 
 **IMPORTANTE: Certifique-se que o MySQL está ativo!**
 
 ### Criar tabelas no mysql:
 
-No diretório `src`:
+No diretório `src`/`src`, uma vez que womens_world_cup ja foi criada:
 ```
-mysql -u root -p womens_world_cup < tables.sql
-
+$ mysql -u root -p womens_world_cup < tables.sql
 ```
 
 ### Rodar scripts em python:
 
-No diretório `src`:
+No diretório `src`/`src`:
 
 Sincronizar packages necessarios para rodar os programas .py:
 ```sh
@@ -67,17 +65,11 @@ def sql_manager():
     password = "password" #your password here
 ~~~
 
-~~~python
-for year in range(start_year, last_year + 1, 4):
-        with open(f'your/complete/path/final/data/processed/world_cup{year}.json', 'r+', errors='ignore') as f: #your path here
-            wc_obj = json.load(f)
-~~~
+
 ### Criar database e collection no MongoDB:
 
 ```sh
-
 $ python mongo_manager.py
-
 ```
 
 Caso não haja a database womens_world_cup e a collection world_cups no mongo, o script mongo_manger cria automaticamente ambos e insere os objetos.
