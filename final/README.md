@@ -11,7 +11,7 @@
 
 ## Slides da Apresentação
 
-[Slides](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/slides/Apresenta%C3%A7%C3%A3o%20Final%20-%20Akers.pdf)
+[Slides](https://github.com/FabioVillar/MC536-Projeto-Final/blob/main/final/slides/Apresenta%C3%A7%C3%A3o%20Final-%20Akers.pdf)
 
 ## Modelo Conceitual
 
