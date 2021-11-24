@@ -187,9 +187,15 @@ Conseguindo o número de vitórias total para cada formação:
 SELECT f1.Formation, f1.Wins + f2.Wins AS 'Wins' FROM Home_Wins_View f1, Away_Wins_View f2 WHERE f1.Formation = f2.Formation ORDER BY Wins DESC;
 ~~~
 
+Resultado (MySQL):
+
 ![.](assets/result_pergunta_1.png)
 
-### Pergunta/Análise 2
+Discussão:
+
+Podemos ver que, entre as formações, as mais vitoriosas (top 5) são as que possuem 4 jogadoras na defesa.
+
+### Pergunta/Query 2
 > * Pergunta 2: Qual o número de vitórias de uma seleção que abre o placar?
 >   
 >   * Com base nas informações de cada partida, é possível verificar qual seleção abriu o placar em cada partida, e, por meio do resultado final, ver se ela conseguiu a vitória. Fazendo essa análise para cada partida com gols, é possível obter a taxa de vitória.
@@ -198,20 +204,30 @@ SELECT f1.Formation, f1.Wins + f2.Wins AS 'Wins' FROM Home_Wins_View f1, Away_Wi
 
 ~~~
 
-### Pergunta/Análise 3
+### Pergunta/Query 3
 > * Qual a relação entre a média das idades de uma seleção e seu desempenho na copa?
 >   
 >   * Cada jogadora tem a sua idade salva como atributo de classe, e, com base nisso e na seleção em que atuam, é possível traçar uma relação entre a média de idade e o desempenho da seleção na Copa.
 
 ~~~SQL
-
+SELECT T.year_wc AS 'Year', T.team_name AS 'Team', T.overall_points AS 'Points', AVG(P.age) AS 'Avg Age' FROM Team_wc T, Player_wc P, WorldCup W WHERE (T.year_wc = W.id AND P.team_id = T.id) GROUP BY T.id ORDER BY Points DESC;
 ~~~
 
-### Pergunta/Querie 4
+Resultado (MySQL):
+
+![.](assets/result_pergunta_3.png)
+
+
+Discussão:
+
+Um ponto que podemos ver, a partir da imagem, é que as duas maiores pontuações de todos os tempos (ambos USA) foram com times mais experientes, com média de idade a partir de 28 anos. Também podemos perceber que, entre os 20 primeiros, não encontramos times com médias inferiores a 23 anos.
+
+### Pergunta/Query 4
 > * Quais as estatísticas principais de cada copa?
 >   
 >   * O MongoDB facilita as queries para obtenção de dados gerais das copas, onde podemos juntar vários dados e retornar para o usuário. Neste caso, fizemos uma querie no MongoDB que retorna, para cada copa, algumas estatísticas
 
+Resultado (MongoDB):
 ~~~
 db.getCollection('world_cups').aggregate([
     {
@@ -502,4 +518,3 @@ Resultado:
     * A partir de cada partida, podemos ver seu público e associar a cada equipe disputando a partida.
 * Para MongoDB:
   * Basicamente poderíamos retornar qualquer estatística geral sobre cada copa (como sumário) para o usuário!
-
